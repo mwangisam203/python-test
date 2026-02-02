@@ -73,6 +73,9 @@ an2 = Monkey("Kabanzy", 13)
 an2.speech()
 an2.what_i_do()
 
+an3 = Pig("fattyme", 6, "red-hot")
+an3.what_i_do()
+
 
         
 
