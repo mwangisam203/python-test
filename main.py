@@ -49,7 +49,7 @@ class Animal:
         print(f"I am {self.name}, and I am {self.age} years old")
 
     def speech(self):
-        print("I am too tired to speak, pleas!!")
+        print("I am too tired to speak, can you google me??  please!!")
 
 class Pig(Animal):
     def __init__(self, name, age, color):
@@ -68,6 +68,7 @@ class Monkey(Animal):
 
 an1 = Animal("dogma", 8)
 an1.what_i_do()
+an1.speech()
 
 an2 = Monkey("Kabanzy", 13)
 an2.speech()
@@ -75,6 +76,9 @@ an2.what_i_do()
 
 an3 = Pig("fattyme", 6, "red-hot")
 an3.what_i_do()
+an3.speech()
+
+
 
 
         
