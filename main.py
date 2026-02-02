@@ -52,11 +52,24 @@ class Animal:
         print("I am too tired to speak, pleas!!")
 
 class Pig(Animal):
-    def __init__(self, name, age):
+    def __init__(self, name, age, color):
         super().__init__(name, age)
         self.color = color
 
-        
+    def speech(self):
+        print("ngroooollll !!")
+
+    def what_i_do(self):
+        print(f"I am {self.name}, and Im {self.age} years old, my color is {self.color}")
+
+class Monkey(Animal):
+    def speech(self):
+        print("Chappy chappy chapping !!")
+
+an1 = Animal("dogma", 8)
+an1.what_i_do()
+
+
         
 
 
