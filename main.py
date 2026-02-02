@@ -39,6 +39,26 @@ print(course.get_average_grade())
 print(course.add_student(stud1))
 
 
+# Example 2 Inheritance Claases 
+class Animal:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def what_i_do(self):
+        print(f"I am {self.name}, and I am {self.age} years old")
+
+    def speech(self):
+        print("I am too tired to speak, pleas!!")
+
+class Pig(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
+        self.color = color
+
+        
+        
+
 
 
         
