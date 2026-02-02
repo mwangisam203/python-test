@@ -36,7 +36,7 @@ course.add_student(stud1)
 course.add_student(stud2)
 
 print(course.get_average_grade())
-
+print(course.add_student(stud1))
 
 
 
