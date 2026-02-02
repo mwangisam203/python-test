@@ -69,6 +69,10 @@ class Monkey(Animal):
 an1 = Animal("dogma", 8)
 an1.what_i_do()
 
+an2 = Monkey("Kabanzy", 13)
+an2.speech()
+an2.what_i_do()
+
 
         
 
