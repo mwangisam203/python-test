@@ -13,7 +13,24 @@ class Course:
         self.max_students = max_students
         self.students = []
 
+    def add_student(self, student):
+        if len(self.student) < self.max_students:
+            self.students.append(student)
+            return True
+        return False
     
+    def get_average_grade(self):
+        pass
+
+stud1 = Student("Craig", 16, 90)
+stud2 = Student("Hancho", 15, 98)
+stud3 = Student("Annete", 17, 89)
+
+course = Course("Biochem", 2)
+
+course.add_student(stud1)
+course.add_student(stud2)
+
 
 
 
