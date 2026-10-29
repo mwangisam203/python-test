@@ -28,3 +28,5 @@ python3 -m unittest -v test_main.ImportTests
 1. **Run examples only when the file is executed.** `if __name__ == "__main__"` calls `main()` when you run `python3 main.py`. Importing the classes for tests prints nothing. `ImportTests` checks this in a fresh Python process.
 
 2. **Test instance attributes.** `__init__` stores values on `self`. `StudentAttributeTests` checks Craig's name, age, and grade, then changes another student's name to show that each object keeps its own attributes.
+
+3. **Test a method return value.** `get_grade()` returns the stored number. `StudentGradeTests` tries 0, 89.5, and 100; `subTest` labels each input so a failure identifies the grade that caused it.

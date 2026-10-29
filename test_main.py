@@ -36,5 +36,12 @@ class StudentAttributeTests(unittest.TestCase):
         self.assertEqual(craig.name, "Craig")
         self.assertEqual(annete.name, "Anne")
 
+class StudentGradeTests(unittest.TestCase):
+    def test_get_grade_returns_the_students_grade(self):
+        for grade in (0, 89.5, 100):
+            with self.subTest(grade=grade):
+                student = Student("Craig", 16, grade)
+                self.assertEqual(student.get_grade(), grade)
+
 if __name__ == "__main__":
     unittest.main()
