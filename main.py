@@ -32,6 +32,9 @@ class Course:
         return False
 
     def get_average_grade(self):
+        if not self.students:
+            return 0
+
         value = 0
         for student in self.students:
             value += student.get_grade()

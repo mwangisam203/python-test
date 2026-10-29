@@ -38,3 +38,5 @@ python3 -m unittest -v test_main.ImportTests
 6. **Validate grade updates in one method.** `set_grade()` checks the range before assigning the new value, and `__init__` reuses it. `GradeUpdateTests` updates 50 to 85 and verifies an invalid update leaves the old grade unchanged. Use this method for updates; assigning `.grade` directly bypasses the check.
 
 7. **Require a positive course capacity.** `Course("Biochem", 2)` creates two available places and an empty student list. `CourseCapacityTests` rejects zero, negative numbers, decimals, strings, booleans, and `None`. `type(max_students) is int` requires an actual integer, so `True` is rejected too.
+
+8. **Handle empty and populated course averages.** `get_average_grade()` returns 0 for an empty course to avoid dividing by zero. `CourseAverageTests` checks one grade of 90, the average of 90 and 99 (94.5), and a grade update. `assertAlmostEqual` is useful when comparing decimal calculations.

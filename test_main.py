@@ -92,5 +92,23 @@ class CourseCapacityTests(unittest.TestCase):
         self.assertEqual(course.max_students, 2)
         self.assertEqual(course.students, [])
 
+class CourseAverageTests(unittest.TestCase):
+    def test_empty_course_average_is_zero(self):
+        self.assertEqual(Course("Biochem", 2).get_average_grade(), 0)
+
+    def test_average_for_one_and_two_students(self):
+        course = Course("Biochem", 2)
+        course.add_student(Student("Craig", 16, 90))
+        self.assertEqual(course.get_average_grade(), 90)
+        course.add_student(Student("Hancho", 15, 99))
+        self.assertAlmostEqual(course.get_average_grade(), 94.5)
+
+    def test_average_uses_updated_grades(self):
+        student = Student("Craig", 16, 50)
+        course = Course("Biochem", 1)
+        course.add_student(student)
+        student.set_grade(80)
+        self.assertEqual(course.get_average_grade(), 80)
+
 if __name__ == "__main__":
     unittest.main()
