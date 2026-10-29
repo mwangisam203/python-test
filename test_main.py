@@ -110,5 +110,22 @@ class CourseAverageTests(unittest.TestCase):
         student.set_grade(80)
         self.assertEqual(course.get_average_grade(), 80)
 
+class CourseEnrollmentTests(unittest.TestCase):
+    def test_students_can_join_until_the_course_is_full(self):
+        course = Course("Biochem", 2)
+        craig = Student("Craig", 16, 90)
+        hancho = Student("Hancho", 15, 98)
+        annete = Student("Annete", 17, 89)
+        self.assertTrue(course.add_student(craig))
+        self.assertTrue(course.add_student(hancho))
+        self.assertFalse(course.add_student(annete))
+        self.assertEqual(course.students, [craig, hancho])
+
+    def test_courses_have_separate_student_lists(self):
+        biochem = Course("Biochem", 2)
+        maths = Course("Maths", 2)
+        biochem.add_student(Student("Craig", 16, 90))
+        self.assertEqual(maths.students, [])
+
 if __name__ == "__main__":
     unittest.main()
