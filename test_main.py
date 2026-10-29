@@ -64,5 +64,20 @@ class PassingGradeTests(unittest.TestCase):
         self.assertTrue(student.has_passed(70))
         self.assertFalse(student.has_passed(80))
 
+class GradeUpdateTests(unittest.TestCase):
+    def test_grade_can_be_updated(self):
+        student = Student("Craig", 16, 50)
+        student.set_grade(85)
+        self.assertEqual(student.get_grade(), 85)
+        self.assertTrue(student.has_passed())
+
+    def test_invalid_update_keeps_previous_grade(self):
+        student = Student("Craig", 16, 90)
+        for grade in (-1, 101):
+            with self.subTest(grade=grade):
+                with self.assertRaises(ValueError):
+                    student.set_grade(grade)
+                self.assertEqual(student.get_grade(), 90)
+
 if __name__ == "__main__":
     unittest.main()

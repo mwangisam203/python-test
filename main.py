@@ -2,12 +2,16 @@ class Student:
     def __init__(self, name, age, grade):
         self.name = name
         self.age = age
-        if not 0 <= grade <= 100:
-            raise ValueError("Grade must be between 0 and 100")
-        self.grade = grade
+        self.set_grade(grade)
 
     def get_grade(self):
         return self.grade
+
+    def set_grade(self, grade):
+        """Validate a new grade before storing it."""
+        if not 0 <= grade <= 100:
+            raise ValueError("Grade must be between 0 and 100")
+        self.grade = grade
 
     def has_passed(self, passing_grade=60):
         """Return whether the grade meets the passing mark."""
