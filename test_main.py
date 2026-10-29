@@ -143,5 +143,29 @@ class DuplicateEnrollmentTests(unittest.TestCase):
         self.assertTrue(course.add_student(second))
         self.assertEqual(len(course.students), 2)
 
+class StudentRemovalTests(unittest.TestCase):
+    def test_removing_a_student_frees_a_place(self):
+        course = Course("Biochem", 1)
+        craig = Student("Craig", 16, 90)
+        hancho = Student("Hancho", 15, 98)
+        course.add_student(craig)
+        self.assertFalse(course.add_student(hancho))
+        self.assertTrue(course.remove_student(craig))
+        self.assertTrue(course.add_student(hancho))
+        self.assertEqual(course.students, [hancho])
+
+    def test_removing_an_absent_student_returns_false(self):
+        course = Course("Biochem", 1)
+        student = Student("Craig", 16, 90)
+        self.assertFalse(course.remove_student(student))
+        self.assertEqual(course.students, [])
+
+    def test_removing_last_student_resets_average(self):
+        course = Course("Biochem", 1)
+        student = Student("Craig", 16, 90)
+        course.add_student(student)
+        course.remove_student(student)
+        self.assertEqual(course.get_average_grade(), 0)
+
 if __name__ == "__main__":
     unittest.main()

@@ -44,3 +44,5 @@ python3 -m unittest -v test_main.ImportTests
 9. **Test enrollment at the capacity limit.** `add_student()` returns `True` when a student joins and `False` when the course is full. `CourseEnrollmentTests` fills two places, rejects the third student, and checks that separate courses have separate student lists.
 
 10. **Prevent duplicate enrollment.** `student in self.students` stops the same student object from taking two places. `DuplicateEnrollmentTests` checks this even when space remains. Two different student objects may share a name and still enroll because no custom equality method is defined.
+
+11. **Remove a student from a list.** `remove_student()` returns `True` after removal or `False` if the student is absent. `StudentRemovalTests` shows that removing a student frees a place and removing the last student makes the course average 0 again.

@@ -33,6 +33,13 @@ class Course:
             return True
         return False
 
+    def remove_student(self, student):
+        """Remove an enrolled student and report whether it succeeded."""
+        if student not in self.students:
+            return False
+        self.students.remove(student)
+        return True
+
     def get_average_grade(self):
         if not self.students:
             return 0
