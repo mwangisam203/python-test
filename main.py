@@ -2,7 +2,9 @@ class Student:
     def __init__(self, name, age, grade):
         self.name = name
         self.age = age
-        self.grade = grade  # max grade = 100
+        if not 0 <= grade <= 100:
+            raise ValueError("Grade must be between 0 and 100")
+        self.grade = grade
 
     def get_grade(self):
         return self.grade

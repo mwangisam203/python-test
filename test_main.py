@@ -43,5 +43,16 @@ class StudentGradeTests(unittest.TestCase):
                 student = Student("Craig", 16, grade)
                 self.assertEqual(student.get_grade(), grade)
 
+class GradeValidationTests(unittest.TestCase):
+    def test_out_of_range_grades_raise_value_error(self):
+        for grade in (-1, 101):
+            with self.subTest(grade=grade):
+                with self.assertRaisesRegex(ValueError, "between 0 and 100"):
+                    Student("Craig", 16, grade)
+
+    def test_boundary_grades_are_allowed(self):
+        self.assertEqual(Student("Craig", 16, 0).get_grade(), 0)
+        self.assertEqual(Student("Craig", 16, 100).get_grade(), 100)
+
 if __name__ == "__main__":
     unittest.main()
