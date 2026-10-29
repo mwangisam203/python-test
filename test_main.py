@@ -79,5 +79,18 @@ class GradeUpdateTests(unittest.TestCase):
                     student.set_grade(grade)
                 self.assertEqual(student.get_grade(), 90)
 
+class CourseCapacityTests(unittest.TestCase):
+    def test_capacity_must_be_a_positive_integer(self):
+        for capacity in (0, -1, 2.5, "2", True, None):
+            with self.subTest(capacity=capacity):
+                with self.assertRaisesRegex(ValueError, "positive integer"):
+                    Course("Biochem", capacity)
+
+    def test_course_starts_with_an_empty_student_list(self):
+        course = Course("Biochem", 2)
+        self.assertEqual(course.name, "Biochem")
+        self.assertEqual(course.max_students, 2)
+        self.assertEqual(course.students, [])
+
 if __name__ == "__main__":
     unittest.main()

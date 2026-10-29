@@ -36,3 +36,5 @@ python3 -m unittest -v test_main.ImportTests
 5. **Use a default argument for a passing mark.** `has_passed()` uses 60 unless a caller supplies another mark. `PassingGradeTests` checks 59 fails and 60 passes, then checks a grade of 75 against custom marks of 70 and 80.
 
 6. **Validate grade updates in one method.** `set_grade()` checks the range before assigning the new value, and `__init__` reuses it. `GradeUpdateTests` updates 50 to 85 and verifies an invalid update leaves the old grade unchanged. Use this method for updates; assigning `.grade` directly bypasses the check.
+
+7. **Require a positive course capacity.** `Course("Biochem", 2)` creates two available places and an empty student list. `CourseCapacityTests` rejects zero, negative numbers, decimals, strings, booleans, and `None`. `type(max_students) is int` requires an actual integer, so `True` is rejected too.

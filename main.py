@@ -19,6 +19,8 @@ class Student:
 
 class Course:
     def __init__(self, name, max_students):
+        if type(max_students) is not int or max_students < 1:
+            raise ValueError("Course capacity must be a positive integer")
         self.name = name
         self.max_students = max_students
         self.students = []
