@@ -26,6 +26,8 @@ class Course:
         self.students = []
 
     def add_student(self, student):
+        if student in self.students:
+            return False
         if len(self.students) < self.max_students:
             self.students.append(student)
             return True

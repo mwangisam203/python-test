@@ -127,5 +127,21 @@ class CourseEnrollmentTests(unittest.TestCase):
         biochem.add_student(Student("Craig", 16, 90))
         self.assertEqual(maths.students, [])
 
+class DuplicateEnrollmentTests(unittest.TestCase):
+    def test_same_student_cannot_join_twice(self):
+        course = Course("Biochem", 3)
+        student = Student("Craig", 16, 90)
+        self.assertTrue(course.add_student(student))
+        self.assertFalse(course.add_student(student))
+        self.assertEqual(course.students, [student])
+
+    def test_different_objects_can_have_the_same_name(self):
+        course = Course("Biochem", 2)
+        first = Student("Craig", 16, 90)
+        second = Student("Craig", 17, 80)
+        self.assertTrue(course.add_student(first))
+        self.assertTrue(course.add_student(second))
+        self.assertEqual(len(course.students), 2)
+
 if __name__ == "__main__":
     unittest.main()
