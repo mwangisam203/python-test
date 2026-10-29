@@ -46,3 +46,5 @@ python3 -m unittest -v test_main.ImportTests
 10. **Prevent duplicate enrollment.** `student in self.students` stops the same student object from taking two places. `DuplicateEnrollmentTests` checks this even when space remains. Two different student objects may share a name and still enroll because no custom equality method is defined.
 
 11. **Remove a student from a list.** `remove_student()` returns `True` after removal or `False` if the student is absent. `StudentRemovalTests` shows that removing a student frees a place and removing the last student makes the course average 0 again.
+
+12. **Find the highest grade with max.** `max(student.get_grade() for student in self.students)` finds the largest current grade. `HighestGradeTests` checks ties, updates, and a grade of 0. An empty course returns `None`, which means no result rather than a score of zero.

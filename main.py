@@ -50,6 +50,13 @@ class Course:
 
         return value / len(self.students)
 
+    def get_highest_grade(self):
+        """Return the highest grade, or None when nobody is enrolled."""
+        if not self.students:
+            return None
+        return max(student.get_grade() for student in self.students)
+
+
 # Example 2: Inheritance
 
 class Animal:

@@ -167,5 +167,25 @@ class StudentRemovalTests(unittest.TestCase):
         course.remove_student(student)
         self.assertEqual(course.get_average_grade(), 0)
 
+class HighestGradeTests(unittest.TestCase):
+    def test_empty_course_has_no_highest_grade(self):
+        self.assertIsNone(Course("Biochem", 2).get_highest_grade())
+
+    def test_highest_grade_includes_ties_and_updates(self):
+        course = Course("Biochem", 3)
+        craig = Student("Craig", 16, 90)
+        hancho = Student("Hancho", 15, 98)
+        annete = Student("Annete", 17, 98)
+        for student in (craig, hancho, annete):
+            course.add_student(student)
+        self.assertEqual(course.get_highest_grade(), 98)
+        craig.set_grade(100)
+        self.assertEqual(course.get_highest_grade(), 100)
+
+    def test_zero_is_a_valid_highest_grade(self):
+        course = Course("Biochem", 1)
+        course.add_student(Student("Craig", 16, 0))
+        self.assertEqual(course.get_highest_grade(), 0)
+
 if __name__ == "__main__":
     unittest.main()
