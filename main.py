@@ -1,4 +1,4 @@
-class Student():
+class Student:
     def __init__(self, name, age, grade):
         self.name = name
         self.age = age
@@ -6,7 +6,7 @@ class Student():
 
     def get_grade(self):
         return self.grade
-    
+
 class Course:
     def __init__(self, name, max_students):
         self.name = name
@@ -18,7 +18,7 @@ class Course:
             self.students.append(student)
             return True
         return False
-    
+
     def get_average_grade(self):
         value = 0
         for student in self.students:
@@ -26,20 +26,8 @@ class Course:
 
         return value / len(self.students)
 
-stud1 = Student("Craig", 16, 90)
-stud2 = Student("Hancho", 15, 98)
-stud3 = Student("Annete", 17, 89)
+# Example 2: Inheritance
 
-course = Course("Biochem", 2)
-
-course.add_student(stud1)
-course.add_student(stud2)
-
-print(course.get_average_grade())
-print(course.add_student(stud1))
-
-
-# Example 2 Inheritance Claases 
 class Animal:
     def __init__(self, name, age):
         self.name = name
@@ -66,24 +54,33 @@ class Monkey(Animal):
     def speech(self):
         print("Chappy chappy chapping !!")
 
-an1 = Animal("dogma", 8)
-an1.what_i_do()
-an1.speech()
 
-an2 = Monkey("Kabanzy", 13)
-an2.speech()
-an2.what_i_do()
+def main():
+    """Run the student, course, and animal examples."""
+    stud1 = Student("Craig", 16, 90)
+    stud2 = Student("Hancho", 15, 98)
+    stud3 = Student("Annete", 17, 89)
 
-an3 = Pig("fattyme", 6, "red-hot")
-an3.what_i_do()
-an3.speech()
+    course = Course("Biochem", 2)
+
+    course.add_student(stud1)
+    course.add_student(stud2)
+
+    print(course.get_average_grade())
+    print(course.add_student(stud1))
+
+    an1 = Animal("dogma", 8)
+    an1.what_i_do()
+    an1.speech()
+
+    an2 = Monkey("Kabanzy", 13)
+    an2.speech()
+    an2.what_i_do()
+
+    an3 = Pig("fattyme", 6, "red-hot")
+    an3.what_i_do()
+    an3.speech()
 
 
-
-
-        
-
-
-
-        
-        
+if __name__ == "__main__":
+    main()

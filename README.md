@@ -1,9 +1,28 @@
-# Test Project
+# Python class practice
 
-This is a simple Python test project.
+This project teaches Python classes with `Student`, `Course`, `Animal`, `Monkey`,
+and `Pig`. Each numbered lesson has its own Git commit and tests in `test_main.py`.
+Read the lessons below alongside the code; the tests show concrete inputs and
+expected results.
 
-## Setup
+Run the examples from this directory:
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+python3 main.py
+```
+
+Run all tests (Python standard library only; no packages to install):
+
+```bash
+python3 -m unittest -v
+```
+
+Run just one lesson's tests, for example:
+
+```bash
+python3 -m unittest -v test_main.ImportTests
+```
+
+## Lessons
+
+1. **Run examples only when the file is executed.** `if __name__ == "__main__"` calls `main()` when you run `python3 main.py`. Importing the classes for tests prints nothing. `ImportTests` checks this in a fresh Python process.
