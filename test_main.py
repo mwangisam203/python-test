@@ -54,5 +54,15 @@ class GradeValidationTests(unittest.TestCase):
         self.assertEqual(Student("Craig", 16, 0).get_grade(), 0)
         self.assertEqual(Student("Craig", 16, 100).get_grade(), 100)
 
+class PassingGradeTests(unittest.TestCase):
+    def test_default_passing_mark_is_sixty(self):
+        self.assertFalse(Student("Craig", 16, 59).has_passed())
+        self.assertTrue(Student("Hancho", 15, 60).has_passed())
+
+    def test_passing_mark_can_be_supplied(self):
+        student = Student("Annete", 17, 75)
+        self.assertTrue(student.has_passed(70))
+        self.assertFalse(student.has_passed(80))
+
 if __name__ == "__main__":
     unittest.main()

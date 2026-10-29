@@ -9,6 +9,10 @@ class Student:
     def get_grade(self):
         return self.grade
 
+    def has_passed(self, passing_grade=60):
+        """Return whether the grade meets the passing mark."""
+        return self.grade >= passing_grade
+
 class Course:
     def __init__(self, name, max_students):
         self.name = name

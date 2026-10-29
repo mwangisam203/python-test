@@ -32,3 +32,5 @@ python3 -m unittest -v test_main.ImportTests
 3. **Test a method return value.** `get_grade()` returns the stored number. `StudentGradeTests` tries 0, 89.5, and 100; `subTest` labels each input so a failure identifies the grade that caused it.
 
 4. **Keep grades between zero and one hundred.** The constructor raises `ValueError` for numeric grades outside 0–100. `GradeValidationTests` checks -1 and 101 are rejected while 0 and 100 are accepted.
+
+5. **Use a default argument for a passing mark.** `has_passed()` uses 60 unless a caller supplies another mark. `PassingGradeTests` checks 59 fails and 60 passes, then checks a grade of 75 against custom marks of 70 and 80.
