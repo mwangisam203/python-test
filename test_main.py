@@ -22,5 +22,19 @@ class ImportTests(unittest.TestCase):
         self.assertEqual(result.stdout, "")
         self.assertEqual(result.stderr, "")
 
+class StudentAttributeTests(unittest.TestCase):
+    def test_constructor_stores_name_age_and_grade(self):
+        student = Student("Craig", 16, 90)
+        self.assertEqual(student.name, "Craig")
+        self.assertEqual(student.age, 16)
+        self.assertEqual(student.grade, 90)
+
+    def test_students_have_separate_attributes(self):
+        craig = Student("Craig", 16, 90)
+        annete = Student("Annete", 17, 89)
+        annete.name = "Anne"
+        self.assertEqual(craig.name, "Craig")
+        self.assertEqual(annete.name, "Anne")
+
 if __name__ == "__main__":
     unittest.main()
