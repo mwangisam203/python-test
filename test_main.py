@@ -187,5 +187,26 @@ class HighestGradeTests(unittest.TestCase):
         course.add_student(Student("Craig", 16, 0))
         self.assertEqual(course.get_highest_grade(), 0)
 
+class AnimalTests(unittest.TestCase):
+    def test_animal_stores_name_and_age(self):
+        animal = Animal("dogma", 8)
+        self.assertEqual(animal.name, "dogma")
+        self.assertEqual(animal.age, 8)
+
+    def test_animal_description_is_printed(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            Animal("dogma", 8).what_i_do()
+        self.assertEqual(output.getvalue(), "I am dogma, and I am 8 years old\n")
+
+    def test_animal_default_speech_is_printed(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            Animal("dogma", 8).speech()
+        self.assertEqual(
+            output.getvalue(),
+            "I am too tired to speak, can you google me??  please!!\n",
+        )
+
 if __name__ == "__main__":
     unittest.main()

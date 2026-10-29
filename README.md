@@ -48,3 +48,5 @@ python3 -m unittest -v test_main.ImportTests
 11. **Remove a student from a list.** `remove_student()` returns `True` after removal or `False` if the student is absent. `StudentRemovalTests` shows that removing a student frees a place and removing the last student makes the course average 0 again.
 
 12. **Find the highest grade with max.** `max(student.get_grade() for student in self.students)` finds the largest current grade. `HighestGradeTests` checks ties, updates, and a grade of 0. An empty course returns `None`, which means no result rather than a score of zero.
+
+13. **Capture printed output in a test.** `AnimalTests` checks the base class attributes and printed messages. `io.StringIO()` stores text in memory; `redirect_stdout(output)` captures `print()` inside its `with` block. The expected strings include the final newline (`\n`).
