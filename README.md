@@ -50,3 +50,5 @@ python3 -m unittest -v test_main.ImportTests
 12. **Find the highest grade with max.** `max(student.get_grade() for student in self.students)` finds the largest current grade. `HighestGradeTests` checks ties, updates, and a grade of 0. An empty course returns `None`, which means no result rather than a score of zero.
 
 13. **Capture printed output in a test.** `AnimalTests` checks the base class attributes and printed messages. `io.StringIO()` stores text in memory; `redirect_stdout(output)` captures `print()` inside its `with` block. The expected strings include the final newline (`\n`).
+
+14. **Test inheritance and method overriding.** `Monkey(Animal)` inherits `__init__` and `what_i_do()` but defines its own `speech()`. `MonkeyInheritanceTests` checks the inherited attributes and description, then verifies the monkey prints its own sound. `assertIsInstance(monkey, Animal)` checks the parent relationship.

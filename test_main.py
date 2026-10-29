@@ -208,5 +208,24 @@ class AnimalTests(unittest.TestCase):
             "I am too tired to speak, can you google me??  please!!\n",
         )
 
+class MonkeyInheritanceTests(unittest.TestCase):
+    def test_monkey_inherits_the_animal_constructor(self):
+        monkey = Monkey("Kabanzy", 13)
+        self.assertIsInstance(monkey, Animal)
+        self.assertEqual(monkey.name, "Kabanzy")
+        self.assertEqual(monkey.age, 13)
+
+    def test_monkey_inherits_the_description_method(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            Monkey("Kabanzy", 13).what_i_do()
+        self.assertEqual(output.getvalue(), "I am Kabanzy, and I am 13 years old\n")
+
+    def test_monkey_overrides_speech(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            Monkey("Kabanzy", 13).speech()
+        self.assertEqual(output.getvalue(), "Chappy chappy chapping !!\n")
+
 if __name__ == "__main__":
     unittest.main()
