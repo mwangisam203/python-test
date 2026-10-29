@@ -52,3 +52,5 @@ python3 -m unittest -v test_main.ImportTests
 13. **Capture printed output in a test.** `AnimalTests` checks the base class attributes and printed messages. `io.StringIO()` stores text in memory; `redirect_stdout(output)` captures `print()` inside its `with` block. The expected strings include the final newline (`\n`).
 
 14. **Test inheritance and method overriding.** `Monkey(Animal)` inherits `__init__` and `what_i_do()` but defines its own `speech()`. `MonkeyInheritanceTests` checks the inherited attributes and description, then verifies the monkey prints its own sound. `assertIsInstance(monkey, Animal)` checks the parent relationship.
+
+15. **Test super and polymorphism.** `Pig.__init__` calls `super().__init__(name, age)` to set the parent attributes, then adds `color`. `PigInheritanceTests` checks those attributes and both overridden methods. Its final test loops through three animal types and calls `speech()` on each: Python chooses the method for the actual object. This behavior is called polymorphism.

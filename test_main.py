@@ -227,5 +227,40 @@ class MonkeyInheritanceTests(unittest.TestCase):
             Monkey("Kabanzy", 13).speech()
         self.assertEqual(output.getvalue(), "Chappy chappy chapping !!\n")
 
+class PigInheritanceTests(unittest.TestCase):
+    def test_super_initializes_parent_attributes(self):
+        pig = Pig("fattyme", 6, "red-hot")
+        self.assertIsInstance(pig, Animal)
+        self.assertEqual(pig.name, "fattyme")
+        self.assertEqual(pig.age, 6)
+        self.assertEqual(pig.color, "red-hot")
+
+    def test_pig_description_includes_its_color(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            Pig("fattyme", 6, "red-hot").what_i_do()
+        self.assertEqual(
+            output.getvalue(),
+            "I am fattyme, and Im 6 years old, my color is red-hot\n",
+        )
+
+    def test_pig_overrides_speech(self):
+        output = io.StringIO()
+        with redirect_stdout(output):
+            Pig("fattyme", 6, "red-hot").speech()
+        self.assertEqual(output.getvalue(), "ngroooollll !!\n")
+
+    def test_same_method_call_uses_each_animals_implementation(self):
+        animals = [Animal("dogma", 8), Monkey("Kabanzy", 13), Pig("fattyme", 6, "red-hot")]
+        output = io.StringIO()
+        with redirect_stdout(output):
+            for animal in animals:
+                animal.speech()
+        self.assertEqual(output.getvalue().splitlines(), [
+            "I am too tired to speak, can you google me??  please!!",
+            "Chappy chappy chapping !!",
+            "ngroooollll !!",
+        ])
+
 if __name__ == "__main__":
     unittest.main()
