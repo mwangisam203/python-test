@@ -349,5 +349,12 @@ class LearningTipsTests(unittest.TestCase):
             numbered_names.append((number, student.name))
         self.assertEqual(numbered_names, [(1, "Craig"), (2, "Hancho"), (3, "Annete")])
 
+    def test_zip_pairs_students_with_grade_updates(self):
+        new_grades = [95, 70, 65]
+        for student, grade in zip(self.students, new_grades):
+            student.set_grade(grade)
+        self.assertEqual([student.get_grade() for student in self.students], new_grades)
+        self.assertAlmostEqual(self.course.get_average_grade(), 230 / 3)
+
 if __name__ == "__main__":
     unittest.main()
