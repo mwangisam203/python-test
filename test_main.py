@@ -317,5 +317,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(passing_names, ["Craig", "Hancho"])
         self.assertEqual(len(self.course.students), 3)
 
+    def test_dictionary_comprehension_builds_a_gradebook(self):
+        gradebook = {student.name: student.get_grade() for student in self.students}
+        self.assertEqual(gradebook, {"Craig": 90, "Hancho": 60, "Annete": 45})
+        self.assertEqual(gradebook["Hancho"], 60)
+
 if __name__ == "__main__":
     unittest.main()
