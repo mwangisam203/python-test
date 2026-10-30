@@ -72,3 +72,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 21. **Filter a comprehension with a condition.** Adding `if student.has_passed()` keeps only students whose grades meet the default passing mark of 60. Craig (90) and Hancho (60) are selected; Annete (45) is left out. Filtering creates a result without removing anyone from the course.
 
 22. **Map names to grades with a dictionary.** `{student.name: student.get_grade() for student in students}` builds a dictionary. `gradebook["Hancho"]` looks up 60 by name. Dictionary keys are unique: this example assumes different names; duplicate names would overwrite an earlier entry.
+
+23. **Use get for an optional dictionary entry.** `gradebook.get("Maya", "Not enrolled")` returns the supplied default because Maya is absent. An existing key still returns its grade: `get("Craig", "Not enrolled")` is 90. Calling `.get()` does not add the missing key.

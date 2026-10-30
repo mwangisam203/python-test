@@ -322,5 +322,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(gradebook, {"Craig": 90, "Hancho": 60, "Annete": 45})
         self.assertEqual(gradebook["Hancho"], 60)
 
+    def test_dictionary_get_supplies_a_missing_value(self):
+        gradebook = {student.name: student.get_grade() for student in self.students}
+        self.assertEqual(gradebook.get("Craig", "Not enrolled"), 90)
+        self.assertEqual(gradebook.get("Maya", "Not enrolled"), "Not enrolled")
+        self.assertNotIn("Maya", gradebook)
+
 if __name__ == "__main__":
     unittest.main()
