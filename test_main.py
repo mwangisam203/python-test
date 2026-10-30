@@ -363,5 +363,11 @@ class LearningTipsTests(unittest.TestCase):
             [student.name for student in self.course.students], ["Craig", "Hancho", "Annete"]
         )
 
+    def test_sum_totals_a_stream_of_grades(self):
+        total = sum(student.get_grade() for student in self.students)
+        self.assertEqual(total, 195)
+        self.assertAlmostEqual(total / len(self.students), self.course.get_average_grade())
+        self.assertEqual(sum([]), 0)
+
 if __name__ == "__main__":
     unittest.main()

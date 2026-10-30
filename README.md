@@ -84,3 +84,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 27. **Pair students and new grades with zip.** `zip(students, [95, 70, 65])` pairs each student with a new grade. The loop calls `set_grade()` for each pair, and the course average becomes `230 / 3`. By default, `zip()` stops at the shorter input; these inputs both have three items.
 
 28. **Sort by a grade without changing the roster.** `sorted(students, key=lambda student: student.get_grade())` returns a new list in ascending grade order: Annete (45), Hancho (60), Craig (90). The small `lambda` function supplies the value used for sorting. The course keeps its enrollment order.
+
+29. **Total grades with sum.** `sum(student.get_grade() for student in students)` adds 90 + 60 + 45 to get 195. Dividing by the three students gives the course average of 65. `sum([])` returns 0; dividing by the length of an empty list would still raise `ZeroDivisionError`.
