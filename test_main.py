@@ -262,5 +262,24 @@ class PigInheritanceTests(unittest.TestCase):
             "ngroooollll !!",
         ])
 
+
+class LearningTipsTests(unittest.TestCase):
+    """Practice small Python ideas using the same fresh examples in each test."""
+
+    def setUp(self):
+        self.students = [
+            Student("Craig", 16, 90),
+            Student("Hancho", 15, 60),
+            Student("Annete", 17, 45),
+        ]
+        self.course = Course("Python", 3)
+        for student in self.students:
+            self.course.add_student(student)
+
+    def test_set_up_provides_a_fresh_course(self):
+        self.assertEqual(self.course.name, "Python")
+        self.assertEqual(self.course.students, self.students)
+        self.assertEqual([student.get_grade() for student in self.students], [90, 60, 45])
+
 if __name__ == "__main__":
     unittest.main()

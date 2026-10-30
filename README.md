@@ -54,3 +54,9 @@ python3 -m unittest -v test_main.ImportTests
 14. **Test inheritance and method overriding.** `Monkey(Animal)` inherits `__init__` and `what_i_do()` but defines its own `speech()`. `MonkeyInheritanceTests` checks the inherited attributes and description, then verifies the monkey prints its own sound. `assertIsInstance(monkey, Animal)` checks the parent relationship.
 
 15. **Test super and polymorphism.** `Pig.__init__` calls `super().__init__(name, age)` to set the parent attributes, then adds `color`. `PigInheritanceTests` checks those attributes and both overridden methods. Its final test loops through three animal types and calls `speech()` on each: Python chooses the method for the actual object. This behavior is called polymorphism.
+
+## More practice: lessons 16–35
+
+These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `python3 -m unittest -v test_main.LearningTipsTests`.
+
+16. **Reuse fresh examples with setUp.** `LearningTipsTests.setUp()` runs before every test in that class. It creates a Python course and three students: Craig (90), Hancho (60), and Annete (45). Every test starts with fresh objects, so changing a grade in one test does not change another test. `test_set_up_provides_a_fresh_course` checks these starting values.
