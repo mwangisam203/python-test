@@ -74,3 +74,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 22. **Map names to grades with a dictionary.** `{student.name: student.get_grade() for student in students}` builds a dictionary. `gradebook["Hancho"]` looks up 60 by name. Dictionary keys are unique: this example assumes different names; duplicate names would overwrite an earlier entry.
 
 23. **Use get for an optional dictionary entry.** `gradebook.get("Maya", "Not enrolled")` returns the supplied default because Maya is absent. An existing key still returns its grade: `get("Craig", "Not enrolled")` is 90. Calling `.get()` does not add the missing key.
+
+24. **Collect unique values with a set.** After changing Annete's grade to 60, the grades are 90, 60, and 60. `{student.get_grade() for student in students}` produces the set `{90, 60}`. Sets keep unique values; compare membership or whole sets rather than relying on display order.

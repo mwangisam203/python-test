@@ -328,5 +328,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(gradebook.get("Maya", "Not enrolled"), "Not enrolled")
         self.assertNotIn("Maya", gradebook)
 
+    def test_set_comprehension_removes_duplicate_grades(self):
+        self.students[2].set_grade(60)
+        unique_grades = {student.get_grade() for student in self.students}
+        self.assertEqual(unique_grades, {90, 60})
+        self.assertIn(60, unique_grades)
+        self.assertEqual(len(unique_grades), 2)
+
 if __name__ == "__main__":
     unittest.main()
