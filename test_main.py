@@ -382,5 +382,13 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(all(student.has_passed() for student in self.students))
         self.assertTrue(all([]))
 
+    def test_empty_lists_are_false_and_populated_lists_are_true(self):
+        empty_course = Course("Maths", 2)
+        self.assertEqual(len(empty_course.students), 0)
+        self.assertFalse(bool(empty_course.students))
+        empty_course.add_student(self.students[0])
+        self.assertEqual(len(empty_course.students), 1)
+        self.assertTrue(bool(empty_course.students))
+
 if __name__ == "__main__":
     unittest.main()

@@ -90,3 +90,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 30. **Ask whether any student needs help.** `any(not student.has_passed() for student in students)` is `True` while Annete has 45. Raising her grade to 60 makes it `False`. `any()` answers whether at least one item is true; an empty input gives `False`.
 
 31. **Ask whether all students pass.** `all(student.has_passed() for student in students)` starts as `False` and becomes `True` after Annete reaches 60. `all([])` also returns `True` because no item fails the condition. Check that a course has students separately if that matters.
+
+32. **Check whether a roster is empty.** An empty list has length 0 and is false in a condition. After enrollment, the roster has length 1 and is true. This is why `if not self.students` works as the empty-course check in `get_average_grade()`.
