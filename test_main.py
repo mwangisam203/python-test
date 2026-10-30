@@ -292,5 +292,11 @@ class LearningTipsTests(unittest.TestCase):
         copied[0].set_grade(80)
         self.assertEqual(self.course.students[0].get_grade(), 80)
 
+    def test_negative_index_reads_the_last_enrolled_student(self):
+        last_student = self.course.students[-1]
+        self.assertIs(last_student, self.students[2])
+        self.assertEqual(last_student.name, "Annete")
+        self.assertEqual(self.course.students[-2].name, "Hancho")
+
 if __name__ == "__main__":
     unittest.main()

@@ -62,3 +62,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 16. **Reuse fresh examples with setUp.** `LearningTipsTests.setUp()` runs before every test in that class. It creates a Python course and three students: Craig (90), Hancho (60), and Annete (45). Every test starts with fresh objects, so changing a grade in one test does not change another test. `test_set_up_provides_a_fresh_course` checks these starting values.
 
 17. **Compare a list alias with a shallow copy.** `alias = course.students` refers to the same list. `.copy()` creates another list: popping from the copy leaves the original with three students. This is a shallow copy, so both lists still refer to the same student objects. Changing the copied list's first student to grade 80 also changes the original student.
+
+18. **Read the last item with a negative index.** List indexes start at zero from the front. Negative indexes count from the end: `students[-1]` is Annete and `students[-2]` is Hancho. An index must exist; indexing an empty list raises `IndexError`.
