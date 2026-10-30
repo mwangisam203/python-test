@@ -356,5 +356,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual([student.get_grade() for student in self.students], new_grades)
         self.assertAlmostEqual(self.course.get_average_grade(), 230 / 3)
 
+    def test_sorted_uses_a_key_and_preserves_enrollment_order(self):
+        ranked = sorted(self.course.students, key=lambda student: student.get_grade())
+        self.assertEqual([student.name for student in ranked], ["Annete", "Hancho", "Craig"])
+        self.assertEqual(
+            [student.name for student in self.course.students], ["Craig", "Hancho", "Annete"]
+        )
+
 if __name__ == "__main__":
     unittest.main()

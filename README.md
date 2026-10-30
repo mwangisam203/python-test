@@ -82,3 +82,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 26. **Number loop items with enumerate.** `enumerate(course.students, start=1)` supplies a counter and a student on each loop iteration. It produces `(1, "Craig")`, `(2, "Hancho")`, and `(3, "Annete")` here. Without `start=1`, counting begins at zero.
 
 27. **Pair students and new grades with zip.** `zip(students, [95, 70, 65])` pairs each student with a new grade. The loop calls `set_grade()` for each pair, and the course average becomes `230 / 3`. By default, `zip()` stops at the shorter input; these inputs both have three items.
+
+28. **Sort by a grade without changing the roster.** `sorted(students, key=lambda student: student.get_grade())` returns a new list in ascending grade order: Annete (45), Hancho (60), Craig (90). The small `lambda` function supplies the value used for sorting. The course keeps its enrollment order.
