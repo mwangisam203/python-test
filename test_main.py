@@ -305,5 +305,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(len(self.course.students), 3)
         self.assertEqual(self.course.students[10:], [])
 
+    def test_list_comprehension_collects_student_names(self):
+        names = [student.name for student in self.course.students]
+        self.assertEqual(names, ["Craig", "Hancho", "Annete"])
+        self.assertEqual(len(names), len(self.course.students))
+
 if __name__ == "__main__":
     unittest.main()

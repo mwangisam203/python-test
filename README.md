@@ -66,3 +66,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 18. **Read the last item with a negative index.** List indexes start at zero from the front. Negative indexes count from the end: `students[-1]` is Annete and `students[-2]` is Hancho. An index must exist; indexing an empty list raises `IndexError`.
 
 19. **Select part of a list with a slice.** `students[:2]` selects indexes 0 and 1; the stop index is excluded. The slice creates a new list, so clearing it leaves the course roster unchanged. Unlike indexing, slicing past the end is allowed: `[10:]` returns `[]`.
+
+20. **Build a list of names with a comprehension.** `[student.name for student in course.students]` collects one name per student, in enrollment order. The result is `["Craig", "Hancho", "Annete"]`. A list comprehension is a short way to build a list from a loop.
