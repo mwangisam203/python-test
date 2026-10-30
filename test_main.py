@@ -335,5 +335,13 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIn(60, unique_grades)
         self.assertEqual(len(unique_grades), 2)
 
+    def test_tuple_unpacking_names_student_details(self):
+        student = self.students[0]
+        details = (student.name, student.age, student.get_grade())
+        name, age, grade = details
+        self.assertEqual(name, "Craig")
+        self.assertEqual(age, 16)
+        self.assertEqual(grade, 90)
+
 if __name__ == "__main__":
     unittest.main()

@@ -76,3 +76,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 23. **Use get for an optional dictionary entry.** `gradebook.get("Maya", "Not enrolled")` returns the supplied default because Maya is absent. An existing key still returns its grade: `get("Craig", "Not enrolled")` is 90. Calling `.get()` does not add the missing key.
 
 24. **Collect unique values with a set.** After changing Annete's grade to 60, the grades are 90, 60, and 60. `{student.get_grade() for student in students}` produces the set `{90, 60}`. Sets keep unique values; compare membership or whole sets rather than relying on display order.
+
+25. **Unpack a tuple into named variables.** `details = ("Craig", 16, 90)` groups three values in a tuple. `name, age, grade = details` unpacks them in order. The number of variables must match the values unless a starred variable is used.
