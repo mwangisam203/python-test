@@ -92,3 +92,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 31. **Ask whether all students pass.** `all(student.has_passed() for student in students)` starts as `False` and becomes `True` after Annete reaches 60. `all([])` also returns `True` because no item fails the condition. Check that a course has students separately if that matters.
 
 32. **Check whether a roster is empty.** An empty list has length 0 and is false in a condition. After enrollment, the roster has length 1 and is true. This is why `if not self.students` works as the empty-course check in `get_average_grade()`.
+
+33. **Find the first match with next.** `next((student for student in students if student.name == "Hancho"), None)` returns the first matching student. Looking for Maya returns the default `None`. Supplying a default avoids `StopIteration` when there is no match.

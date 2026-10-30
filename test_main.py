@@ -390,5 +390,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(len(empty_course.students), 1)
         self.assertTrue(bool(empty_course.students))
 
+    def test_next_finds_a_student_or_returns_a_default(self):
+        found = next((student for student in self.students if student.name == "Hancho"), None)
+        missing = next((student for student in self.students if student.name == "Maya"), None)
+        self.assertIs(found, self.students[1])
+        self.assertIsNone(missing)
+
 if __name__ == "__main__":
     unittest.main()
