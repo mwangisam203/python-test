@@ -94,3 +94,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 32. **Check whether a roster is empty.** An empty list has length 0 and is false in a condition. After enrollment, the roster has length 1 and is true. This is why `if not self.students` works as the empty-course check in `get_average_grade()`.
 
 33. **Find the first match with next.** `next((student for student in students if student.name == "Hancho"), None)` returns the first matching student. Looking for Maya returns the default `None`. Supplying a default avoids `StopIteration` when there is no match.
+
+34. **Format a decimal inside an f-string.** `f"{course.name}: average {course.get_average_grade():.1f}"` produces `Python: average 65.0`. The format `.1f` displays one decimal place; `.2f` displays two, so `2 / 3` becomes `"0.67"`. Formatting creates text and does not change the numeric grade.

@@ -396,5 +396,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIs(found, self.students[1])
         self.assertIsNone(missing)
 
+    def test_f_string_formats_the_average_to_one_decimal_place(self):
+        message = f"{self.course.name}: average {self.course.get_average_grade():.1f}"
+        self.assertEqual(message, "Python: average 65.0")
+        self.assertEqual(f"{2 / 3:.2f}", "0.67")
+        self.assertEqual(self.course.get_average_grade(), 65)
+
 if __name__ == "__main__":
     unittest.main()
