@@ -402,5 +402,18 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(f"{2 / 3:.2f}", "0.67")
         self.assertEqual(self.course.get_average_grade(), 65)
 
+    def test_course_lifecycle_combines_the_small_lessons(self):
+        self.assertEqual(self.course.get_average_grade(), 65)
+        self.students[2].set_grade(75)
+        self.assertTrue(all(student.has_passed() for student in self.course.students))
+        self.assertEqual(self.course.get_average_grade(), 75)
+        self.assertTrue(self.course.remove_student(self.students[0]))
+        self.assertEqual(self.course.get_highest_grade(), 75)
+        maya = Student("Maya", 18, 100)
+        self.assertTrue(self.course.add_student(maya))
+        self.assertEqual(self.course.get_highest_grade(), 100)
+        self.assertAlmostEqual(self.course.get_average_grade(), 235 / 3)
+        self.assertEqual([student.name for student in self.course.students], ["Hancho", "Annete", "Maya"])
+
 if __name__ == "__main__":
     unittest.main()
