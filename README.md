@@ -68,3 +68,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 19. **Select part of a list with a slice.** `students[:2]` selects indexes 0 and 1; the stop index is excluded. The slice creates a new list, so clearing it leaves the course roster unchanged. Unlike indexing, slicing past the end is allowed: `[10:]` returns `[]`.
 
 20. **Build a list of names with a comprehension.** `[student.name for student in course.students]` collects one name per student, in enrollment order. The result is `["Craig", "Hancho", "Annete"]`. A list comprehension is a short way to build a list from a loop.
+
+21. **Filter a comprehension with a condition.** Adding `if student.has_passed()` keeps only students whose grades meet the default passing mark of 60. Craig (90) and Hancho (60) are selected; Annete (45) is left out. Filtering creates a result without removing anyone from the course.

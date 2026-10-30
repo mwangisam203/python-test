@@ -310,5 +310,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names, ["Craig", "Hancho", "Annete"])
         self.assertEqual(len(names), len(self.course.students))
 
+    def test_filtered_comprehension_finds_passing_students(self):
+        passing_names = [
+            student.name for student in self.course.students if student.has_passed()
+        ]
+        self.assertEqual(passing_names, ["Craig", "Hancho"])
+        self.assertEqual(len(self.course.students), 3)
+
 if __name__ == "__main__":
     unittest.main()
