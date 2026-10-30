@@ -78,3 +78,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 24. **Collect unique values with a set.** After changing Annete's grade to 60, the grades are 90, 60, and 60. `{student.get_grade() for student in students}` produces the set `{90, 60}`. Sets keep unique values; compare membership or whole sets rather than relying on display order.
 
 25. **Unpack a tuple into named variables.** `details = ("Craig", 16, 90)` groups three values in a tuple. `name, age, grade = details` unpacks them in order. The number of variables must match the values unless a starred variable is used.
+
+26. **Number loop items with enumerate.** `enumerate(course.students, start=1)` supplies a counter and a student on each loop iteration. It produces `(1, "Craig")`, `(2, "Hancho")`, and `(3, "Annete")` here. Without `start=1`, counting begins at zero.

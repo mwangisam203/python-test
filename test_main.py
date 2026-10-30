@@ -343,5 +343,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(age, 16)
         self.assertEqual(grade, 90)
 
+    def test_enumerate_numbers_the_roster_from_one(self):
+        numbered_names = []
+        for number, student in enumerate(self.course.students, start=1):
+            numbered_names.append((number, student.name))
+        self.assertEqual(numbered_names, [(1, "Craig"), (2, "Hancho"), (3, "Annete")])
+
 if __name__ == "__main__":
     unittest.main()
