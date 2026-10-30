@@ -86,3 +86,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 28. **Sort by a grade without changing the roster.** `sorted(students, key=lambda student: student.get_grade())` returns a new list in ascending grade order: Annete (45), Hancho (60), Craig (90). The small `lambda` function supplies the value used for sorting. The course keeps its enrollment order.
 
 29. **Total grades with sum.** `sum(student.get_grade() for student in students)` adds 90 + 60 + 45 to get 195. Dividing by the three students gives the course average of 65. `sum([])` returns 0; dividing by the length of an empty list would still raise `ZeroDivisionError`.
+
+30. **Ask whether any student needs help.** `any(not student.has_passed() for student in students)` is `True` while Annete has 45. Raising her grade to 60 makes it `False`. `any()` answers whether at least one item is true; an empty input gives `False`.

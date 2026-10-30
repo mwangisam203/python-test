@@ -369,5 +369,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertAlmostEqual(total / len(self.students), self.course.get_average_grade())
         self.assertEqual(sum([]), 0)
 
+    def test_any_detects_at_least_one_failing_grade(self):
+        needs_help = any(not student.has_passed() for student in self.students)
+        self.assertTrue(needs_help)
+        self.students[2].set_grade(60)
+        self.assertFalse(any(not student.has_passed() for student in self.students))
+        self.assertFalse(any([]))
+
 if __name__ == "__main__":
     unittest.main()
