@@ -281,5 +281,16 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(self.course.students, self.students)
         self.assertEqual([student.get_grade() for student in self.students], [90, 60, 45])
 
+    def test_list_copy_has_its_own_roster_but_shares_students(self):
+        alias = self.course.students
+        copied = self.course.students.copy()
+        self.assertIs(alias, self.course.students)
+        self.assertIsNot(copied, self.course.students)
+        copied.pop()
+        self.assertEqual(len(copied), 2)
+        self.assertEqual(len(self.course.students), 3)
+        copied[0].set_grade(80)
+        self.assertEqual(self.course.students[0].get_grade(), 80)
+
 if __name__ == "__main__":
     unittest.main()
