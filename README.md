@@ -88,3 +88,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 29. **Total grades with sum.** `sum(student.get_grade() for student in students)` adds 90 + 60 + 45 to get 195. Dividing by the three students gives the course average of 65. `sum([])` returns 0; dividing by the length of an empty list would still raise `ZeroDivisionError`.
 
 30. **Ask whether any student needs help.** `any(not student.has_passed() for student in students)` is `True` while Annete has 45. Raising her grade to 60 makes it `False`. `any()` answers whether at least one item is true; an empty input gives `False`.
+
+31. **Ask whether all students pass.** `all(student.has_passed() for student in students)` starts as `False` and becomes `True` after Annete reaches 60. `all([])` also returns `True` because no item fails the condition. Check that a course has students separately if that matters.

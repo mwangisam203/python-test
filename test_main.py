@@ -376,5 +376,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertFalse(any(not student.has_passed() for student in self.students))
         self.assertFalse(any([]))
 
+    def test_all_checks_every_passing_result(self):
+        self.assertFalse(all(student.has_passed() for student in self.students))
+        self.students[2].set_grade(60)
+        self.assertTrue(all(student.has_passed() for student in self.students))
+        self.assertTrue(all([]))
+
 if __name__ == "__main__":
     unittest.main()
