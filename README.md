@@ -64,3 +64,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 17. **Compare a list alias with a shallow copy.** `alias = course.students` refers to the same list. `.copy()` creates another list: popping from the copy leaves the original with three students. This is a shallow copy, so both lists still refer to the same student objects. Changing the copied list's first student to grade 80 also changes the original student.
 
 18. **Read the last item with a negative index.** List indexes start at zero from the front. Negative indexes count from the end: `students[-1]` is Annete and `students[-2]` is Hancho. An index must exist; indexing an empty list raises `IndexError`.
+
+19. **Select part of a list with a slice.** `students[:2]` selects indexes 0 and 1; the stop index is excluded. The slice creates a new list, so clearing it leaves the course roster unchanged. Unlike indexing, slicing past the end is allowed: `[10:]` returns `[]`.

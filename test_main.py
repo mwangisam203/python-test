@@ -298,5 +298,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(last_student.name, "Annete")
         self.assertEqual(self.course.students[-2].name, "Hancho")
 
+    def test_slice_selects_the_first_two_students(self):
+        first_two = self.course.students[:2]
+        self.assertEqual([student.name for student in first_two], ["Craig", "Hancho"])
+        first_two.clear()
+        self.assertEqual(len(self.course.students), 3)
+        self.assertEqual(self.course.students[10:], [])
+
 if __name__ == "__main__":
     unittest.main()
