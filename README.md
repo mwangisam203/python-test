@@ -132,3 +132,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 51. **Get a quotient and remainder together.** `divmod(95, 10)` returns `(9, 5)`: 10 fits into 95 nine times, with 5 left over. Tuple unpacking stores each result by name.
 
 52. **Use remainder to find even grades.** `grade % 2` is the remainder after dividing by 2. Even grades have remainder 0, so Craig (90) and Hancho (60) are selected.
+
+53. **Find the lowest grade with min.** `min()` returns the smallest value in the grades. Here Annete has the lowest grade, 45.

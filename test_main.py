@@ -494,5 +494,10 @@ class LearningTipsTests(unittest.TestCase):
         even_names = [student.name for student in self.students if student.get_grade() % 2 == 0]
         self.assertEqual(even_names, ["Craig", "Hancho"])
 
+    def test_min_returns_the_smallest_grade(self):
+        lowest = min(student.get_grade() for student in self.students)
+        self.assertEqual(lowest, 45)
+        self.assertEqual(self.students[2].name, "Annete")
+
 if __name__ == "__main__":
     unittest.main()
