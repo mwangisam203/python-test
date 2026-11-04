@@ -490,5 +490,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(quotient, 9)
         self.assertEqual(remainder, 5)
 
+    def test_remainder_operator_finds_even_numbers(self):
+        even_names = [student.name for student in self.students if student.get_grade() % 2 == 0]
+        self.assertEqual(even_names, ["Craig", "Hancho"])
+
 if __name__ == "__main__":
     unittest.main()
