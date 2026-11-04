@@ -435,5 +435,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(name.endswith("ig"))
         self.assertFalse(name.startswith("Ha"))
 
+    def test_replace_returns_a_string_with_new_text(self):
+        label = "Grade: 90"
+        self.assertEqual(label.replace("90", "95"), "Grade: 95")
+        self.assertEqual(label, "Grade: 90")
+
 if __name__ == "__main__":
     unittest.main()
