@@ -480,5 +480,10 @@ class LearningTipsTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             int("ninety")
 
+    def test_round_returns_the_requested_decimal_places(self):
+        average = 65.257
+        self.assertEqual(round(average, 1), 65.3)
+        self.assertEqual(average, 65.257)
+
 if __name__ == "__main__":
     unittest.main()

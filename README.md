@@ -126,3 +126,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 48. **Convert a decimal number from text.** `float("94.5")` converts decimal text to the number 94.5. The result is a `float`.
 
 49. **Expect bad number text to raise an error.** `int("ninety")` cannot convert a word to a whole number, so Python raises `ValueError`. `assertRaises` checks that expected error.
+
+50. **Round an average for display.** `round(average, 1)` returns a number rounded to one decimal place. The original value is unchanged.
