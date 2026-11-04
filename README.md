@@ -128,3 +128,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 49. **Expect bad number text to raise an error.** `int("ninety")` cannot convert a word to a whole number, so Python raises `ValueError`. `assertRaises` checks that expected error.
 
 50. **Round an average for display.** `round(average, 1)` returns a number rounded to one decimal place. The original value is unchanged.
+
+51. **Get a quotient and remainder together.** `divmod(95, 10)` returns `(9, 5)`: 10 fits into 95 nine times, with 5 left over. Tuple unpacking stores each result by name.

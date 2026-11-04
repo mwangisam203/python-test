@@ -485,5 +485,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(round(average, 1), 65.3)
         self.assertEqual(average, 65.257)
 
+    def test_divmod_returns_quotient_and_remainder(self):
+        quotient, remainder = divmod(95, 10)
+        self.assertEqual(quotient, 9)
+        self.assertEqual(remainder, 5)
+
 if __name__ == "__main__":
     unittest.main()
