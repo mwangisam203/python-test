@@ -110,3 +110,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 40. **Replace text in a string.** `replace("90", "95")` returns `"Grade: 95"`. The original label remains unchanged, as strings cannot be edited in place.
 
 41. **Split a comma separated list.** Calling `.split(",")` cuts the text at each comma and returns a list of three names.
+
+42. **Join names with a separator.** `" / ".join(names)` places the separator between each item and returns one string. The separator goes before `.join()`.

@@ -444,5 +444,9 @@ class LearningTipsTests(unittest.TestCase):
         names = "Craig,Hancho,Annete".split(",")
         self.assertEqual(names, ["Craig", "Hancho", "Annete"])
 
+    def test_join_connects_list_items_into_text(self):
+        names = [student.name for student in self.students]
+        self.assertEqual(" / ".join(names), "Craig / Hancho / Annete")
+
 if __name__ == "__main__":
     unittest.main()
