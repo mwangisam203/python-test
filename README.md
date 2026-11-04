@@ -118,3 +118,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 44. **Check whether text contains a word.** The `in` operator checks whether a piece of text occurs inside another string. The check is case sensitive.
 
 45. **Read a character by its index.** A string index selects one character. Index 0 is the first character, and index -1 is the last.
+
+46. **Build a message with string addition.** The `+` operator joins strings together. Both sides must be strings; use an f-string to include a number.

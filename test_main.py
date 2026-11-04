@@ -462,5 +462,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(name[0], "C")
         self.assertEqual(name[-1], "g")
 
+    def test_plus_combines_string_values(self):
+        message = self.students[0].name + " passed"
+        self.assertEqual(message, "Craig passed")
+
 if __name__ == "__main__":
     unittest.main()
