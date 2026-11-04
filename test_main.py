@@ -471,5 +471,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(grade, 90)
         self.assertIsInstance(grade, int)
 
+    def test_float_converts_decimal_text(self):
+        average = float("94.5")
+        self.assertEqual(average, 94.5)
+        self.assertIsInstance(average, float)
+
 if __name__ == "__main__":
     unittest.main()
