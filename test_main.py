@@ -440,5 +440,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(label.replace("90", "95"), "Grade: 95")
         self.assertEqual(label, "Grade: 90")
 
+    def test_split_turns_text_into_a_list(self):
+        names = "Craig,Hancho,Annete".split(",")
+        self.assertEqual(names, ["Craig", "Hancho", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()

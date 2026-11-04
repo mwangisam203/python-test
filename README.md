@@ -108,3 +108,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 39. **Check the beginning and ending of a name.** `startswith()` and `endswith()` check text at the beginning or end. They return `True` or `False` and are case sensitive.
 
 40. **Replace text in a string.** `replace("90", "95")` returns `"Grade: 95"`. The original label remains unchanged, as strings cannot be edited in place.
+
+41. **Split a comma separated list.** Calling `.split(",")` cuts the text at each comma and returns a list of three names.
