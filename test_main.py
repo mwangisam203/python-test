@@ -429,5 +429,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(label.strip(), "Craig")
         self.assertEqual(label, "  Craig  ")
 
+    def test_startswith_and_endswith_check_text_edges(self):
+        name = self.students[0].name
+        self.assertTrue(name.startswith("Cr"))
+        self.assertTrue(name.endswith("ig"))
+        self.assertFalse(name.startswith("Ha"))
+
 if __name__ == "__main__":
     unittest.main()

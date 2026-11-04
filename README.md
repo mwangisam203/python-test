@@ -104,3 +104,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 37. **Make a course name lowercase.** `lower()` changes uppercase letters to lowercase and leaves spaces in place. The original `course_name` remains `"PYTHON CLASS"`.
 
 38. **Remove spaces at the ends of text.** `strip()` removes whitespace from both ends of a string. It leaves spaces inside the string alone and returns a new string.
+
+39. **Check the beginning and ending of a name.** `startswith()` and `endswith()` check text at the beginning or end. They return `True` or `False` and are case sensitive.
