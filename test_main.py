@@ -476,5 +476,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(average, 94.5)
         self.assertIsInstance(average, float)
 
+    def test_invalid_integer_text_raises_value_error(self):
+        with self.assertRaises(ValueError):
+            int("ninety")
+
 if __name__ == "__main__":
     unittest.main()

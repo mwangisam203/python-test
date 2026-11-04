@@ -124,3 +124,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 47. **Convert a whole number from text.** `int("90")` converts digit text to the integer 90, so you can do arithmetic with it. The result is an `int`.
 
 48. **Convert a decimal number from text.** `float("94.5")` converts decimal text to the number 94.5. The result is a `float`.
+
+49. **Expect bad number text to raise an error.** `int("ninety")` cannot convert a word to a whole number, so Python raises `ValueError`. `assertRaises` checks that expected error.
