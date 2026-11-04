@@ -415,5 +415,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertAlmostEqual(self.course.get_average_grade(), 235 / 3)
         self.assertEqual([student.name for student in self.course.students], ["Hancho", "Annete", "Maya"])
 
+    def test_uppercase_changes_the_result_not_the_name(self):
+        name = self.students[0].name
+        self.assertEqual(name.upper(), "CRAIG")
+        self.assertEqual(name, "Craig")
+
 if __name__ == "__main__":
     unittest.main()

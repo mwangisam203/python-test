@@ -98,3 +98,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 34. **Format a decimal inside an f-string.** `f"{course.name}: average {course.get_average_grade():.1f}"` produces `Python: average 65.0`. The format `.1f` displays one decimal place; `.2f` displays two, so `2 / 3` becomes `"0.67"`. Formatting creates text and does not change the numeric grade.
 
 35. **Combine enrollment updates and removal in one exercise.** Start with an average of 65. Raise Annete from 45 to 75: all three students now pass and the average is 75. Remove Craig (90), then enroll Maya (100). The roster becomes Hancho, Annete, Maya; its highest grade is 100 and its average is `235 / 3`. This final test checks the methods working together.
+
+36. **Make a name uppercase.** `name.upper()` returns `"CRAIG"`. It makes a new string and leaves the original name `"Craig"` unchanged.
