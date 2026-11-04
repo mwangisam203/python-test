@@ -452,5 +452,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual("Annete".count("e"), 2)
         self.assertEqual("Annete".count("x"), 0)
 
+    def test_in_checks_for_a_substring(self):
+        message = "Craig passed the Python class"
+        self.assertTrue("passed" in message)
+        self.assertFalse("failed" in message)
+
 if __name__ == "__main__":
     unittest.main()
