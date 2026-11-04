@@ -504,5 +504,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(highest, 90)
         self.assertEqual(self.students[0].name, "Craig")
 
+    def test_sorted_reverse_orders_grades_descending(self):
+        ranked = sorted(self.students, key=lambda student: student.get_grade(), reverse=True)
+        self.assertEqual([student.name for student in ranked], ["Craig", "Hancho", "Annete"])
+        self.assertEqual([student.name for student in self.course.students], ["Craig", "Hancho", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()

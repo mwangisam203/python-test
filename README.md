@@ -136,3 +136,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 53. **Find the lowest grade with min.** `min()` returns the smallest value in the grades. Here Annete has the lowest grade, 45.
 
 54. **Find the highest grade with max.** `max()` returns the largest value in the grades. Here Craig has the highest grade, 90.
+
+55. **Sort grades from highest to lowest.** `sorted(..., reverse=True)` puts the highest grade first. It returns a new list; the course roster stays in its original order.
