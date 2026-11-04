@@ -134,3 +134,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 52. **Use remainder to find even grades.** `grade % 2` is the remainder after dividing by 2. Even grades have remainder 0, so Craig (90) and Hancho (60) are selected.
 
 53. **Find the lowest grade with min.** `min()` returns the smallest value in the grades. Here Annete has the lowest grade, 45.
+
+54. **Find the highest grade with max.** `max()` returns the largest value in the grades. Here Craig has the highest grade, 90.
