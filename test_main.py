@@ -448,5 +448,9 @@ class LearningTipsTests(unittest.TestCase):
         names = [student.name for student in self.students]
         self.assertEqual(" / ".join(names), "Craig / Hancho / Annete")
 
+    def test_count_returns_the_number_of_matches(self):
+        self.assertEqual("Annete".count("e"), 2)
+        self.assertEqual("Annete".count("x"), 0)
+
 if __name__ == "__main__":
     unittest.main()

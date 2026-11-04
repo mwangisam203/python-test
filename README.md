@@ -112,3 +112,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 41. **Split a comma separated list.** Calling `.split(",")` cuts the text at each comma and returns a list of three names.
 
 42. **Join names with a separator.** `" / ".join(names)` places the separator between each item and returns one string. The separator goes before `.join()`.
+
+43. **Count a letter in text.** `.count("e")` returns how many times that exact, case sensitive text appears. When it does not appear, `.count()` returns 0.
