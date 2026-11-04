@@ -466,5 +466,10 @@ class LearningTipsTests(unittest.TestCase):
         message = self.students[0].name + " passed"
         self.assertEqual(message, "Craig passed")
 
+    def test_int_converts_digit_text_to_an_integer(self):
+        grade = int("90")
+        self.assertEqual(grade, 90)
+        self.assertIsInstance(grade, int)
+
 if __name__ == "__main__":
     unittest.main()

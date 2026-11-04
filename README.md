@@ -120,3 +120,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 45. **Read a character by its index.** A string index selects one character. Index 0 is the first character, and index -1 is the last.
 
 46. **Build a message with string addition.** The `+` operator joins strings together. Both sides must be strings; use an f-string to include a number.
+
+47. **Convert a whole number from text.** `int("90")` converts digit text to the integer 90, so you can do arithmetic with it. The result is an `int`.
