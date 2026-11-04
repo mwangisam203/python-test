@@ -424,5 +424,10 @@ class LearningTipsTests(unittest.TestCase):
         course_name = "PYTHON CLASS"
         self.assertEqual(course_name.lower(), "python class")
 
+    def test_strip_removes_only_outer_spaces(self):
+        label = "  Craig  "
+        self.assertEqual(label.strip(), "Craig")
+        self.assertEqual(label, "  Craig  ")
+
 if __name__ == "__main__":
     unittest.main()
