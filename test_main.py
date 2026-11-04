@@ -457,5 +457,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue("passed" in message)
         self.assertFalse("failed" in message)
 
+    def test_string_index_reads_one_character(self):
+        name = self.students[0].name
+        self.assertEqual(name[0], "C")
+        self.assertEqual(name[-1], "g")
+
 if __name__ == "__main__":
     unittest.main()

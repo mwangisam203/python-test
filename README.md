@@ -116,3 +116,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 43. **Count a letter in text.** `.count("e")` returns how many times that exact, case sensitive text appears. When it does not appear, `.count()` returns 0.
 
 44. **Check whether text contains a word.** The `in` operator checks whether a piece of text occurs inside another string. The check is case sensitive.
+
+45. **Read a character by its index.** A string index selects one character. Index 0 is the first character, and index -1 is the last.
