@@ -420,5 +420,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(name.upper(), "CRAIG")
         self.assertEqual(name, "Craig")
 
+    def test_lowercase_changes_capital_letters(self):
+        course_name = "PYTHON CLASS"
+        self.assertEqual(course_name.lower(), "python class")
+
 if __name__ == "__main__":
     unittest.main()

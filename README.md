@@ -100,3 +100,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 35. **Combine enrollment updates and removal in one exercise.** Start with an average of 65. Raise Annete from 45 to 75: all three students now pass and the average is 75. Remove Craig (90), then enroll Maya (100). The roster becomes Hancho, Annete, Maya; its highest grade is 100 and its average is `235 / 3`. This final test checks the methods working together.
 
 36. **Make a name uppercase.** `name.upper()` returns `"CRAIG"`. It makes a new string and leaves the original name `"Craig"` unchanged.
+
+37. **Make a course name lowercase.** `lower()` changes uppercase letters to lowercase and leaves spaces in place. The original `course_name` remains `"PYTHON CLASS"`.
