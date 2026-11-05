@@ -138,3 +138,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 54. **Find the highest grade with max.** `max()` returns the largest value in the grades. Here Craig has the highest grade, 90.
 
 55. **Sort grades from highest to lowest.** `sorted(..., reverse=True)` puts the highest grade first. It returns a new list; the course roster stays in its original order.
+
+56. **Add an item to a list.** `append()` adds one item to the end of a list. Here it changes the separate `names` list; the course still has three students.

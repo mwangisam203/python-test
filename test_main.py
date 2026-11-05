@@ -509,5 +509,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual([student.name for student in ranked], ["Craig", "Hancho", "Annete"])
         self.assertEqual([student.name for student in self.course.students], ["Craig", "Hancho", "Annete"])
 
+    def test_append_adds_an_item_to_the_end(self):
+        names = [student.name for student in self.students]
+        names.append("Maya")
+        self.assertEqual(names, ["Craig", "Hancho", "Annete", "Maya"])
+        self.assertEqual(len(self.course.students), 3)
+
 if __name__ == "__main__":
     unittest.main()
