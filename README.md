@@ -164,3 +164,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 67. **Find shared values with set intersection.** Set `.intersection()` returns values that occur in both sets. Only grade 90 is in both examples.
 
 68. **Combine values with set union.** Set `.union()` combines values and removes duplicates. It returns a new set, leaving `class_grades` unchanged.
+
+69. **Divide whole numbers with floor division.** `//` divides and rounds down to a whole number; `/` gives a regular division result. So `95 // 10` is 9 while `95 / 10` is 9.5.

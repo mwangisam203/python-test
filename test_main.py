@@ -581,5 +581,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(class_grades.union(new_grades), {100, 90, 60, 45})
         self.assertEqual(class_grades, {90, 60, 45})
 
+    def test_floor_division_returns_a_whole_quotient(self):
+        self.assertEqual(95 // 10, 9)
+        self.assertEqual(95 / 10, 9.5)
+
 if __name__ == "__main__":
     unittest.main()
