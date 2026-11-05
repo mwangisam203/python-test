@@ -156,3 +156,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 63. **Read dictionary values.** `.values()` provides the dictionary values in insertion order. This gradebook was built from the students in roster order, so its values are 90, 60, 45.
 
 64. **Loop through dictionary key and value pairs.** `.items()` returns each dictionary entry as a `(key, value)` pair. Converting it to a list makes the three pairs easy to inspect.
+
+65. **Change a dictionary value.** Assigning `gradebook["Craig"] = 95` updates that dictionary entry. It does not change Craig's grade on the student object.
