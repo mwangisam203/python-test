@@ -144,3 +144,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 57. **Remove an item from a list.** `.remove("Hancho")` deletes the first matching value from a list. The course roster is unchanged because `names` is a separate list.
 
 58. **Check whether a student is in a list.** `assertIn(value, list)` checks that a list contains a value. This example checks both the student object and the student name.
+
+59. **Check whether a student is absent.** `assertNotIn` checks that Maya is not enrolled. The test frees a place, adds her, and uses `assertIn` to confirm she is on the roster.

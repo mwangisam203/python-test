@@ -525,5 +525,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIn(self.students[1], self.course.students)
         self.assertIn(self.students[1].name, [student.name for student in self.course.students])
 
+    def test_not_in_finds_a_student_who_is_absent(self):
+        maya = Student("Maya", 18, 88)
+        self.assertNotIn(maya, self.course.students)
+        self.assertTrue(self.course.remove_student(self.students[0]))
+        self.assertTrue(self.course.add_student(maya))
+        self.assertIn(maya, self.course.students)
+
 if __name__ == "__main__":
     unittest.main()
