@@ -585,5 +585,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(95 // 10, 9)
         self.assertEqual(95 / 10, 9.5)
 
+    def test_abs_returns_a_non_negative_distance(self):
+        self.assertEqual(abs(-45), 45)
+        self.assertEqual(abs(45), 45)
+        self.assertEqual(abs(0), 0)
+
 if __name__ == "__main__":
     unittest.main()

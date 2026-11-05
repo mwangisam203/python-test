@@ -166,3 +166,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 68. **Combine values with set union.** Set `.union()` combines values and removes duplicates. It returns a new set, leaving `class_grades` unchanged.
 
 69. **Divide whole numbers with floor division.** `//` divides and rounds down to a whole number; `/` gives a regular division result. So `95 // 10` is 9 while `95 / 10` is 9.5.
+
+70. **Find how far a number is from zero.** `abs()` returns a number's distance from zero, so the result is never negative.
