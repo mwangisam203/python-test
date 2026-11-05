@@ -515,5 +515,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names, ["Craig", "Hancho", "Annete", "Maya"])
         self.assertEqual(len(self.course.students), 3)
 
+    def test_remove_deletes_the_matching_list_item(self):
+        names = [student.name for student in self.students]
+        names.remove("Hancho")
+        self.assertEqual(names, ["Craig", "Annete"])
+        self.assertEqual(len(self.course.students), 3)
+
 if __name__ == "__main__":
     unittest.main()
