@@ -532,5 +532,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(self.course.add_student(maya))
         self.assertIn(maya, self.course.students)
 
+    def test_tuple_indexes_select_values(self):
+        details = ("Craig", 16, 90)
+        self.assertEqual(details[0], "Craig")
+        self.assertEqual(details[-1], 90)
+
 if __name__ == "__main__":
     unittest.main()
