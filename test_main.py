@@ -575,5 +575,11 @@ class LearningTipsTests(unittest.TestCase):
         honor_roll_grades = {100, 90}
         self.assertEqual(class_grades.intersection(honor_roll_grades), {90})
 
+    def test_union_combines_unique_grades(self):
+        class_grades = {90, 60, 45}
+        new_grades = {100, 90}
+        self.assertEqual(class_grades.union(new_grades), {100, 90, 60, 45})
+        self.assertEqual(class_grades, {90, 60, 45})
+
 if __name__ == "__main__":
     unittest.main()

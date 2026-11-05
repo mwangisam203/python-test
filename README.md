@@ -162,3 +162,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 66. **Remove and return a dictionary value.** `.pop("Annete")` returns 45 and removes that key from the dictionary. Annete's actual student grade is unchanged.
 
 67. **Find shared values with set intersection.** Set `.intersection()` returns values that occur in both sets. Only grade 90 is in both examples.
+
+68. **Combine values with set union.** Set `.union()` combines values and removes duplicates. It returns a new set, leaving `class_grades` unchanged.
