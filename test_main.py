@@ -551,5 +551,11 @@ class LearningTipsTests(unittest.TestCase):
         gradebook = {student.name: student.get_grade() for student in self.students}
         self.assertEqual(list(gradebook.values()), [90, 60, 45])
 
+    def test_items_returns_name_and_grade_pairs(self):
+        gradebook = {student.name: student.get_grade() for student in self.students}
+        pairs = list(gradebook.items())
+        self.assertEqual(pairs[0], ("Craig", 90))
+        self.assertEqual(len(pairs), 3)
+
 if __name__ == "__main__":
     unittest.main()
