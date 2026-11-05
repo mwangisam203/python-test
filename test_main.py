@@ -521,5 +521,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names, ["Craig", "Annete"])
         self.assertEqual(len(self.course.students), 3)
 
+    def test_in_finds_an_enrolled_student(self):
+        self.assertIn(self.students[1], self.course.students)
+        self.assertIn(self.students[1].name, [student.name for student in self.course.students])
+
 if __name__ == "__main__":
     unittest.main()
