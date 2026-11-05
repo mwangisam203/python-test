@@ -148,3 +148,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 59. **Check whether a student is absent.** `assertNotIn` checks that Maya is not enrolled. The test frees a place, adds her, and uses `assertIn` to confirm she is on the roster.
 
 60. **Read tuple values by index.** Tuples use the same index rules as lists: index 0 selects the first value and index -1 selects the last.
+
+61. **Tuples cannot be changed in place.** Tuples are immutable: assigning a new value to one of their indexes raises `TypeError`. The original name remains Craig.

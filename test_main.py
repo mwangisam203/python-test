@@ -537,5 +537,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(details[0], "Craig")
         self.assertEqual(details[-1], 90)
 
+    def test_tuple_assignment_raises_type_error(self):
+        details = ("Craig", 16, 90)
+        with self.assertRaises(TypeError):
+            details[0] = "Anne"
+        self.assertEqual(details[0], "Craig")
+
 if __name__ == "__main__":
     unittest.main()
