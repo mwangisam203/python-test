@@ -150,3 +150,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 60. **Read tuple values by index.** Tuples use the same index rules as lists: index 0 selects the first value and index -1 selects the last.
 
 61. **Tuples cannot be changed in place.** Tuples are immutable: assigning a new value to one of their indexes raises `TypeError`. The original name remains Craig.
+
+62. **Read dictionary keys.** `.keys()` provides a view of the dictionary keys. Converting it to a set makes the test compare names without depending on display formatting.

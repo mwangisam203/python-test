@@ -543,5 +543,9 @@ class LearningTipsTests(unittest.TestCase):
             details[0] = "Anne"
         self.assertEqual(details[0], "Craig")
 
+    def test_keys_lists_each_gradebook_name(self):
+        gradebook = {student.name: student.get_grade() for student in self.students}
+        self.assertEqual(set(gradebook.keys()), {"Craig", "Hancho", "Annete"})
+
 if __name__ == "__main__":
     unittest.main()
