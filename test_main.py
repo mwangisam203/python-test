@@ -563,5 +563,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(gradebook["Craig"], 95)
         self.assertEqual(self.students[0].get_grade(), 90)
 
+    def test_dictionary_pop_returns_and_removes_a_value(self):
+        gradebook = {student.name: student.get_grade() for student in self.students}
+        removed_grade = gradebook.pop("Annete")
+        self.assertEqual(removed_grade, 45)
+        self.assertNotIn("Annete", gradebook)
+        self.assertEqual(self.students[2].get_grade(), 45)
+
 if __name__ == "__main__":
     unittest.main()
