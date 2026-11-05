@@ -570,5 +570,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertNotIn("Annete", gradebook)
         self.assertEqual(self.students[2].get_grade(), 45)
 
+    def test_intersection_finds_grades_in_both_sets(self):
+        class_grades = {90, 60, 45}
+        honor_roll_grades = {100, 90}
+        self.assertEqual(class_grades.intersection(honor_roll_grades), {90})
+
 if __name__ == "__main__":
     unittest.main()
