@@ -152,3 +152,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 61. **Tuples cannot be changed in place.** Tuples are immutable: assigning a new value to one of their indexes raises `TypeError`. The original name remains Craig.
 
 62. **Read dictionary keys.** `.keys()` provides a view of the dictionary keys. Converting it to a set makes the test compare names without depending on display formatting.
+
+63. **Read dictionary values.** `.values()` provides the dictionary values in insertion order. This gradebook was built from the students in roster order, so its values are 90, 60, 45.
