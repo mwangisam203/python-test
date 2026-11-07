@@ -600,5 +600,11 @@ class LearningTipsTests(unittest.TestCase):
         names.extend(["Maya", "Lee"])
         self.assertEqual(names, ["Craig", "Hancho", "Annete", "Maya", "Lee"])
 
+    def test_reverse_changes_the_list_order(self):
+        names = [student.name for student in self.students]
+        names.reverse()
+        self.assertEqual(names, ["Annete", "Hancho", "Craig"])
+        self.assertEqual([student.name for student in self.course.students], ["Craig", "Hancho", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()
