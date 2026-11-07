@@ -590,5 +590,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(abs(45), 45)
         self.assertEqual(abs(0), 0)
 
+    def test_insert_places_an_item_at_an_index(self):
+        names = [student.name for student in self.students]
+        names.insert(1, "Maya")
+        self.assertEqual(names, ["Craig", "Maya", "Hancho", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()

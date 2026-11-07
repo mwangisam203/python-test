@@ -168,3 +168,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 69. **Divide whole numbers with floor division.** `//` divides and rounds down to a whole number; `/` gives a regular division result. So `95 // 10` is 9 while `95 / 10` is 9.5.
 
 70. **Find how far a number is from zero.** `abs()` returns a number's distance from zero, so the result is never negative.
+
+71. **Insert a value at a chosen position.** `insert(1, "Maya")` puts Maya at index 1 and shifts the later items right.
