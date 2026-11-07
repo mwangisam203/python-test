@@ -176,3 +176,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 73. **Reverse a list in place.** `.reverse()` changes the list it is called on. Here the separate names list is reversed; course enrollment order stays the same.
 
 74. **Find an item position with index.** `.index("Hancho")` returns 1 because Hancho is at index 1. It raises `ValueError` if the value is absent.
+
+75. **Take every other list item with a slice.** The third slice value is the step size. `[::2]` starts at the beginning and selects every second item.

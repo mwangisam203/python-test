@@ -610,5 +610,9 @@ class LearningTipsTests(unittest.TestCase):
         names = [student.name for student in self.students]
         self.assertEqual(names.index("Hancho"), 1)
 
+    def test_slice_step_selects_every_other_name(self):
+        names = [student.name for student in self.students]
+        self.assertEqual(names[::2], ["Craig", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()
