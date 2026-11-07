@@ -635,5 +635,11 @@ class LearningTipsTests(unittest.TestCase):
         gradebook.update({"Craig": 95, "Maya": 80})
         self.assertEqual(gradebook, {"Craig": 95, "Maya": 80})
 
+    def test_del_removes_a_dictionary_entry(self):
+        gradebook = {"Craig": 90, "Maya": 80}
+        del gradebook["Maya"]
+        self.assertEqual(gradebook, {"Craig": 90})
+        self.assertNotIn("Maya", gradebook)
+
 if __name__ == "__main__":
     unittest.main()

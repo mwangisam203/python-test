@@ -186,3 +186,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 78. **Set a dictionary default with setdefault.** `.setdefault(key, default)` adds a missing key with its default. For a key that already exists, it returns the current value.
 
 79. **Update a dictionary with another dictionary.** `.update()` replaces values for matching keys and adds new keys from another dictionary.
+
+80. **Delete a dictionary entry by key.** `del gradebook["Maya"]` removes the entry with that key. Deleting a missing key raises `KeyError`.
