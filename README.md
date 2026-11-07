@@ -196,3 +196,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 83. **Find values that occur in only one set.** Set `.difference()` returns values from the first set that are absent from the second.
 
 84. **Choose a value with a conditional expression.** `value_if_true if condition else value_if_false` chooses one of two values. Craig gets `"pass"`; Annete gets `"try again"`.
+
+85. **Add values with a for loop.** The loop adds one grade at a time to `total`. Starting at zero gives a final total of 90 + 60 + 45 = 195.

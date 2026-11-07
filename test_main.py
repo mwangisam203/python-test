@@ -664,5 +664,11 @@ class LearningTipsTests(unittest.TestCase):
         label = "pass" if student.has_passed() else "try again"
         self.assertEqual(label, "try again")
 
+    def test_for_loop_accumulates_the_student_grades(self):
+        total = 0
+        for student in self.students:
+            total += student.get_grade()
+        self.assertEqual(total, 195)
+
 if __name__ == "__main__":
     unittest.main()
