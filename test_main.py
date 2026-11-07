@@ -678,5 +678,11 @@ class LearningTipsTests(unittest.TestCase):
                 break
         self.assertEqual(first_passing, "Craig")
 
+    def test_while_loop_counts_three_steps(self):
+        steps = 0
+        while steps < 3:
+            steps += 1
+        self.assertEqual(steps, 3)
+
 if __name__ == "__main__":
     unittest.main()

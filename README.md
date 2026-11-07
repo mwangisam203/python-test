@@ -200,3 +200,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 85. **Add values with a for loop.** The loop adds one grade at a time to `total`. Starting at zero gives a final total of 90 + 60 + 45 = 195.
 
 86. **Stop a loop with break.** `break` exits the loop immediately. This loop stops when it finds the first passing student, Craig.
+
+87. **Repeat a task with a while loop.** `while` repeats as long as its condition is true. Updating `steps` each time eventually makes the condition false.
