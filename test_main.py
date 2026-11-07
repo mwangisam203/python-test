@@ -595,5 +595,10 @@ class LearningTipsTests(unittest.TestCase):
         names.insert(1, "Maya")
         self.assertEqual(names, ["Craig", "Maya", "Hancho", "Annete"])
 
+    def test_extend_adds_each_item_from_another_list(self):
+        names = [student.name for student in self.students]
+        names.extend(["Maya", "Lee"])
+        self.assertEqual(names, ["Craig", "Hancho", "Annete", "Maya", "Lee"])
+
 if __name__ == "__main__":
     unittest.main()

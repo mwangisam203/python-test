@@ -170,3 +170,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 70. **Find how far a number is from zero.** `abs()` returns a number's distance from zero, so the result is never negative.
 
 71. **Insert a value at a chosen position.** `insert(1, "Maya")` puts Maya at index 1 and shifts the later items right.
+
+72. **Add several items with extend.** `extend()` adds every item from another iterable to the end of a list.
