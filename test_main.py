@@ -614,5 +614,9 @@ class LearningTipsTests(unittest.TestCase):
         names = [student.name for student in self.students]
         self.assertEqual(names[::2], ["Craig", "Annete"])
 
+    def test_range_counts_up_to_but_not_including_the_stop(self):
+        numbers = list(range(1, 5))
+        self.assertEqual(numbers, [1, 2, 3, 4])
+
 if __name__ == "__main__":
     unittest.main()

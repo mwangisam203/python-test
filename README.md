@@ -178,3 +178,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 74. **Find an item position with index.** `.index("Hancho")` returns 1 because Hancho is at index 1. It raises `ValueError` if the value is absent.
 
 75. **Take every other list item with a slice.** The third slice value is the step size. `[::2]` starts at the beginning and selects every second item.
+
+76. **Use range to repeat a loop.** `range(1, 5)` counts from 1 up to, but does not include, 5. `list()` makes its values easy to inspect.
