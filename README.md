@@ -194,3 +194,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 82. **Check whether one set fits inside another.** `.issubset()` returns `True` if every value in the first set also occurs in the second set.
 
 83. **Find values that occur in only one set.** Set `.difference()` returns values from the first set that are absent from the second.
+
+84. **Choose a value with a conditional expression.** `value_if_true if condition else value_if_false` chooses one of two values. Craig gets `"pass"`; Annete gets `"try again"`.

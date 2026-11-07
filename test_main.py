@@ -656,5 +656,13 @@ class LearningTipsTests(unittest.TestCase):
         honor_roll = {90, 100}
         self.assertEqual(course_grades.difference(honor_roll), {60, 45})
 
+    def test_conditional_expression_selects_a_label(self):
+        student = self.students[0]
+        label = "pass" if student.has_passed() else "try again"
+        self.assertEqual(label, "pass")
+        student = self.students[2]
+        label = "pass" if student.has_passed() else "try again"
+        self.assertEqual(label, "try again")
+
 if __name__ == "__main__":
     unittest.main()
