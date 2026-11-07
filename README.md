@@ -180,3 +180,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 75. **Take every other list item with a slice.** The third slice value is the step size. `[::2]` starts at the beginning and selects every second item.
 
 76. **Use range to repeat a loop.** `range(1, 5)` counts from 1 up to, but does not include, 5. `list()` makes its values easy to inspect.
+
+77. **Iterate over a list backwards.** `reversed(names)` provides the values in reverse order without changing `names`. Convert it to a list to compare all values.

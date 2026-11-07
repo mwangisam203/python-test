@@ -618,5 +618,11 @@ class LearningTipsTests(unittest.TestCase):
         numbers = list(range(1, 5))
         self.assertEqual(numbers, [1, 2, 3, 4])
 
+    def test_reversed_returns_items_in_reverse_order(self):
+        names = [student.name for student in self.students]
+        backwards = list(reversed(names))
+        self.assertEqual(backwards, ["Annete", "Hancho", "Craig"])
+        self.assertEqual(names[0], "Craig")
+
 if __name__ == "__main__":
     unittest.main()
