@@ -645,5 +645,11 @@ class LearningTipsTests(unittest.TestCase):
         passing = {student.name: student.get_grade() for student in self.students if student.has_passed()}
         self.assertEqual(passing, {"Craig": 90, "Hancho": 60})
 
+    def test_issubset_checks_that_every_value_is_present(self):
+        course_grades = {student.get_grade() for student in self.students}
+        passing_grades = {60, 90}
+        self.assertTrue(passing_grades.issubset(course_grades))
+        self.assertFalse({100}.issubset(course_grades))
+
 if __name__ == "__main__":
     unittest.main()
