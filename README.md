@@ -182,3 +182,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 76. **Use range to repeat a loop.** `range(1, 5)` counts from 1 up to, but does not include, 5. `list()` makes its values easy to inspect.
 
 77. **Iterate over a list backwards.** `reversed(names)` provides the values in reverse order without changing `names`. Convert it to a list to compare all values.
+
+78. **Set a dictionary default with setdefault.** `.setdefault(key, default)` adds a missing key with its default. For a key that already exists, it returns the current value.

@@ -624,5 +624,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(backwards, ["Annete", "Hancho", "Craig"])
         self.assertEqual(names[0], "Craig")
 
+    def test_setdefault_adds_only_a_missing_key(self):
+        gradebook = {"Craig": 90}
+        self.assertEqual(gradebook.setdefault("Maya", 0), 0)
+        self.assertEqual(gradebook.setdefault("Craig", 0), 90)
+        self.assertEqual(gradebook, {"Craig": 90, "Maya": 0})
+
 if __name__ == "__main__":
     unittest.main()
