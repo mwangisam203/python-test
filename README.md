@@ -192,3 +192,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 81. **Build a dictionary for passing students.** A condition in a dictionary comprehension filters its entries. This example keeps names and grades for students with a passing grade.
 
 82. **Check whether one set fits inside another.** `.issubset()` returns `True` if every value in the first set also occurs in the second set.
+
+83. **Find values that occur in only one set.** Set `.difference()` returns values from the first set that are absent from the second.

@@ -651,5 +651,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(passing_grades.issubset(course_grades))
         self.assertFalse({100}.issubset(course_grades))
 
+    def test_difference_returns_values_missing_from_the_other_set(self):
+        course_grades = {90, 60, 45}
+        honor_roll = {90, 100}
+        self.assertEqual(course_grades.difference(honor_roll), {60, 45})
+
 if __name__ == "__main__":
     unittest.main()
