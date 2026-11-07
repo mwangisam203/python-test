@@ -174,3 +174,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 72. **Add several items with extend.** `extend()` adds every item from another iterable to the end of a list.
 
 73. **Reverse a list in place.** `.reverse()` changes the list it is called on. Here the separate names list is reversed; course enrollment order stays the same.
+
+74. **Find an item position with index.** `.index("Hancho")` returns 1 because Hancho is at index 1. It raises `ValueError` if the value is absent.

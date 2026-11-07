@@ -606,5 +606,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names, ["Annete", "Hancho", "Craig"])
         self.assertEqual([student.name for student in self.course.students], ["Craig", "Hancho", "Annete"])
 
+    def test_index_returns_the_first_matching_position(self):
+        names = [student.name for student in self.students]
+        self.assertEqual(names.index("Hancho"), 1)
+
 if __name__ == "__main__":
     unittest.main()
