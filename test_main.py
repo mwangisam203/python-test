@@ -684,5 +684,11 @@ class LearningTipsTests(unittest.TestCase):
             steps += 1
         self.assertEqual(steps, 3)
 
+    def test_local_function_reuses_a_passing_check(self):
+        def describe(student):
+            return f"{student.name}: {student.get_grade()}"
+        self.assertEqual(describe(self.students[0]), "Craig: 90")
+        self.assertEqual(describe(self.students[1]), "Hancho: 60")
+
 if __name__ == "__main__":
     unittest.main()

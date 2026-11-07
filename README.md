@@ -202,3 +202,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 86. **Stop a loop with break.** `break` exits the loop immediately. This loop stops when it finds the first passing student, Craig.
 
 87. **Repeat a task with a while loop.** `while` repeats as long as its condition is true. Updating `steps` each time eventually makes the condition false.
+
+88. **Write a small reusable function.** A function groups steps under a name. `describe()` can format different students without copying the same expression.
