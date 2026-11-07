@@ -188,3 +188,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 79. **Update a dictionary with another dictionary.** `.update()` replaces values for matching keys and adds new keys from another dictionary.
 
 80. **Delete a dictionary entry by key.** `del gradebook["Maya"]` removes the entry with that key. Deleting a missing key raises `KeyError`.
+
+81. **Build a dictionary for passing students.** A condition in a dictionary comprehension filters its entries. This example keeps names and grades for students with a passing grade.

@@ -641,5 +641,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(gradebook, {"Craig": 90})
         self.assertNotIn("Maya", gradebook)
 
+    def test_filtered_dictionary_keeps_passing_students(self):
+        passing = {student.name: student.get_grade() for student in self.students if student.has_passed()}
+        self.assertEqual(passing, {"Craig": 90, "Hancho": 60})
+
 if __name__ == "__main__":
     unittest.main()
