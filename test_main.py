@@ -670,5 +670,13 @@ class LearningTipsTests(unittest.TestCase):
             total += student.get_grade()
         self.assertEqual(total, 195)
 
+    def test_break_stops_after_the_first_passing_student(self):
+        first_passing = None
+        for student in self.students:
+            if student.has_passed():
+                first_passing = student.name
+                break
+        self.assertEqual(first_passing, "Craig")
+
 if __name__ == "__main__":
     unittest.main()
