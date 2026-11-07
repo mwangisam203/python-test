@@ -690,5 +690,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(describe(self.students[0]), "Craig: 90")
         self.assertEqual(describe(self.students[1]), "Hancho: 60")
 
+    def test_try_except_uses_a_fallback_for_bad_text(self):
+        try:
+            grade = int("ninety")
+        except ValueError:
+            grade = 0
+        self.assertEqual(grade, 0)
+
 if __name__ == "__main__":
     unittest.main()

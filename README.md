@@ -204,3 +204,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 87. **Repeat a task with a while loop.** `while` repeats as long as its condition is true. Updating `steps` each time eventually makes the condition false.
 
 88. **Write a small reusable function.** A function groups steps under a name. `describe()` can format different students without copying the same expression.
+
+89. **Handle a conversion error with try and except.** `try` runs code that may fail. `except ValueError` handles this invalid number text and assigns a fallback value.
