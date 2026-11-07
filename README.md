@@ -206,3 +206,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 88. **Write a small reusable function.** A function groups steps under a name. `describe()` can format different students without copying the same expression.
 
 89. **Handle a conversion error with try and except.** `try` runs code that may fail. `except ValueError` handles this invalid number text and assigns a fallback value.
+
+90. **Check for no result with is None.** `is None` checks for the special no-result value `None`. Use it when a lookup might not find anything.

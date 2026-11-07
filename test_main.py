@@ -697,5 +697,11 @@ class LearningTipsTests(unittest.TestCase):
             grade = 0
         self.assertEqual(grade, 0)
 
+    def test_none_check_distinguishes_a_missing_match(self):
+        missing = next((student for student in self.students if student.name == "Maya"), None)
+        self.assertIsNone(missing)
+        found = next((student for student in self.students if student.name == "Craig"), None)
+        self.assertIsNotNone(found)
+
 if __name__ == "__main__":
     unittest.main()
