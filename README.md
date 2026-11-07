@@ -184,3 +184,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 77. **Iterate over a list backwards.** `reversed(names)` provides the values in reverse order without changing `names`. Convert it to a list to compare all values.
 
 78. **Set a dictionary default with setdefault.** `.setdefault(key, default)` adds a missing key with its default. For a key that already exists, it returns the current value.
+
+79. **Update a dictionary with another dictionary.** `.update()` replaces values for matching keys and adds new keys from another dictionary.

@@ -630,5 +630,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(gradebook.setdefault("Craig", 0), 90)
         self.assertEqual(gradebook, {"Craig": 90, "Maya": 0})
 
+    def test_update_adds_and_replaces_dictionary_entries(self):
+        gradebook = {"Craig": 90}
+        gradebook.update({"Craig": 95, "Maya": 80})
+        self.assertEqual(gradebook, {"Craig": 95, "Maya": 80})
+
 if __name__ == "__main__":
     unittest.main()
