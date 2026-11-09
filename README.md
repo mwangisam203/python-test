@@ -218,3 +218,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 94. **Find text inside a string.** `.find()` returns the index of the first match. If the text is absent, it returns -1 instead of raising an error.
 
 95. **Split text into two parts.** `.partition(separator)` returns a three item tuple: the text before the first separator, the separator, and the text after it.
+
+96. **Remove a known prefix.** `.removeprefix()` removes the given text only when it appears at the start of the string.

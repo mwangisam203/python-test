@@ -721,5 +721,10 @@ class LearningTipsTests(unittest.TestCase):
         before, separator, after = "Grade: 90".partition(": ")
         self.assertEqual((before, separator, after), ("Grade", ": ", "90"))
 
+    def test_removeprefix_removes_only_the_starting_text(self):
+        label = "Grade: 90"
+        self.assertEqual(label.removeprefix("Grade: "), "90")
+        self.assertEqual(label.removeprefix("Score: "), label)
+
 if __name__ == "__main__":
     unittest.main()
