@@ -735,5 +735,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(f"{7:03}", "007")
         self.assertEqual(f"{90:03}", "090")
 
+    def test_string_slice_returns_a_section(self):
+        name = "Craig"
+        self.assertEqual(name[1:4], "rai")
+        self.assertEqual(name, "Craig")
+
 if __name__ == "__main__":
     unittest.main()
