@@ -804,5 +804,12 @@ class LearningTipsTests(unittest.TestCase):
         gradebook = dict.fromkeys(["Craig", "Hancho"], 0)
         self.assertEqual(gradebook, {"Craig": 0, "Hancho": 0})
 
+    def test_dictionary_copy_can_change_separately(self):
+        original = {"Craig": 90}
+        copied = original.copy()
+        copied["Maya"] = 80
+        self.assertEqual(original, {"Craig": 90})
+        self.assertEqual(copied, {"Craig": 90, "Maya": 80})
+
 if __name__ == "__main__":
     unittest.main()
