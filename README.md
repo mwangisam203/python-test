@@ -258,3 +258,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 114. **Use in to check dictionary keys.** For a dictionary, `in` checks keys. Use `.values()` when you want to check the stored values.
 
 115. **Raise a number to a power.** The `**` operator raises the left number to the power on the right.
+
+116. **Compare a value against a range.** `0 <= grade <= 100` checks both comparisons. It means the grade is at least zero and at most 100.

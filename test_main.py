@@ -827,5 +827,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(2 ** 3, 8)
         self.assertEqual(10 ** 2, 100)
 
+    def test_chained_comparison_checks_both_limits(self):
+        grade = 90
+        self.assertTrue(0 <= grade <= 100)
+        self.assertFalse(0 <= 101 <= 100)
+
 if __name__ == "__main__":
     unittest.main()
