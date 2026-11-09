@@ -745,5 +745,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names.count("Craig"), 2)
         self.assertEqual(names.count("Maya"), 0)
 
+    def test_pop_returns_and_removes_the_last_list_item(self):
+        names = [student.name for student in self.students]
+        last_name = names.pop()
+        self.assertEqual(last_name, "Annete")
+        self.assertEqual(names, ["Craig", "Hancho"])
+
 if __name__ == "__main__":
     unittest.main()
