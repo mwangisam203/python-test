@@ -779,5 +779,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(scores.count(90), 2)
         self.assertEqual(scores.count(100), 0)
 
+    def test_add_places_a_new_value_in_a_set(self):
+        grades = {90, 60}
+        grades.add(45)
+        self.assertEqual(grades, {90, 60, 45})
+
 if __name__ == "__main__":
     unittest.main()
