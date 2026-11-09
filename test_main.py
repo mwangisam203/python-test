@@ -795,5 +795,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(grades.issuperset({60, 45}))
         self.assertFalse(grades.issuperset({60, 100}))
 
+    def test_update_adds_all_values_from_another_collection(self):
+        grades = {90}
+        grades.update([60, 45, 90])
+        self.assertEqual(grades, {90, 60, 45})
+
 if __name__ == "__main__":
     unittest.main()
