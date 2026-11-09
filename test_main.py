@@ -878,5 +878,10 @@ class LearningTipsTests(unittest.TestCase):
         passing = list(filter(lambda grade: grade >= 60, grades))
         self.assertEqual(passing, [90, 60])
 
+    def test_isinstance_checks_a_values_type(self):
+        self.assertTrue(isinstance(90, int))
+        self.assertTrue(isinstance(94.5, float))
+        self.assertFalse(isinstance("90", int))
+
 if __name__ == "__main__":
     unittest.main()
