@@ -268,3 +268,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 119. **Calculate open course places.** Subtract the current enrollment count from the maximum capacity to find the number of remaining places.
 
 120. **Give a function argument a default.** A function uses a default argument value when the caller leaves that argument out. A caller can supply a different value.
+
+121. **Collect extra function arguments with args.** `*numbers` collects any number of positional arguments into a tuple that the function can loop over.

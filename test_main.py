@@ -857,5 +857,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(greeting("Craig"), "Hello, Craig!")
         self.assertEqual(greeting("Maya", "Welcome"), "Welcome, Maya!")
 
+    def test_star_args_collects_extra_values(self):
+        def total(*numbers):
+            return sum(numbers)
+        self.assertEqual(total(90, 60, 45), 195)
+        self.assertEqual(total(10), 10)
+
 if __name__ == "__main__":
     unittest.main()
