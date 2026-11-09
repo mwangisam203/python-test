@@ -823,5 +823,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertNotIn("Annete", gradebook)
         self.assertIn(90, gradebook.values())
 
+    def test_double_star_calculates_a_power(self):
+        self.assertEqual(2 ** 3, 8)
+        self.assertEqual(10 ** 2, 100)
+
 if __name__ == "__main__":
     unittest.main()
