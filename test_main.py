@@ -726,5 +726,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(label.removeprefix("Grade: "), "90")
         self.assertEqual(label.removeprefix("Score: "), label)
 
+    def test_isdecimal_checks_digit_text(self):
+        self.assertTrue("2026".isdecimal())
+        self.assertFalse("20.26".isdecimal())
+        self.assertFalse("twenty".isdecimal())
+
 if __name__ == "__main__":
     unittest.main()

@@ -220,3 +220,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 95. **Split text into two parts.** `.partition(separator)` returns a three item tuple: the text before the first separator, the separator, and the text after it.
 
 96. **Remove a known prefix.** `.removeprefix()` removes the given text only when it appears at the start of the string.
+
+97. **Check whether text contains only decimal digits.** `.isdecimal()` is true for text made only of decimal digits. A decimal point and words make it false.
