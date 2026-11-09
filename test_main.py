@@ -800,5 +800,9 @@ class LearningTipsTests(unittest.TestCase):
         grades.update([60, 45, 90])
         self.assertEqual(grades, {90, 60, 45})
 
+    def test_fromkeys_builds_a_dictionary(self):
+        gradebook = dict.fromkeys(["Craig", "Hancho"], 0)
+        self.assertEqual(gradebook, {"Craig": 0, "Hancho": 0})
+
 if __name__ == "__main__":
     unittest.main()

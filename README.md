@@ -248,3 +248,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 109. **Check whether a set contains another set.** `.issuperset()` returns true when the set contains every value in the other set.
 
 110. **Add several values to a set.** Set `.update()` adds all values from another collection. Repeated values are still kept only once.
+
+111. **Create dictionary keys with one default value.** `dict.fromkeys(keys, value)` creates a dictionary with each key set to the given value.
