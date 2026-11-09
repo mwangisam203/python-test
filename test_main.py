@@ -873,5 +873,10 @@ class LearningTipsTests(unittest.TestCase):
         labels = list(map(str, grades))
         self.assertEqual(labels, ["90", "60", "45"])
 
+    def test_filter_keeps_grades_that_pass_a_condition(self):
+        grades = [student.get_grade() for student in self.students]
+        passing = list(filter(lambda grade: grade >= 60, grades))
+        self.assertEqual(passing, [90, 60])
+
 if __name__ == "__main__":
     unittest.main()

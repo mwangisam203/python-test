@@ -274,3 +274,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 122. **Collect named function arguments with kwargs.** `**details` collects named arguments into a dictionary, so the function can look up each value by name.
 
 123. **Apply a function to every item with map.** `map(function, values)` applies a function to each value. Converting it to a list shows the results.
+
+124. **Keep matching items with filter.** `filter(function, values)` keeps values where the function returns true. This example keeps grades of 60 or higher.
