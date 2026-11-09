@@ -226,3 +226,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 98. **Pad a number with zeros for display.** The f-string format `03` displays a number in a width of three, padding the front with zeros.
 
 99. **Select characters with a string slice.** A string slice uses a start index and an excluded stop index. `name[1:4]` selects indexes 1, 2, and 3.
+
+100. **Count an item in a list.** `.count(value)` reports how many times a value occurs in a list. A value that does not occur has a count of zero.

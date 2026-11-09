@@ -740,5 +740,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(name[1:4], "rai")
         self.assertEqual(name, "Craig")
 
+    def test_list_count_counts_matching_values(self):
+        names = ["Craig", "Hancho", "Craig"]
+        self.assertEqual(names.count("Craig"), 2)
+        self.assertEqual(names.count("Maya"), 0)
+
 if __name__ == "__main__":
     unittest.main()
