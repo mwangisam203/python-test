@@ -208,3 +208,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 89. **Handle a conversion error with try and except.** `try` runs code that may fail. `except ValueError` handles this invalid number text and assigns a fallback value.
 
 90. **Check for no result with is None.** `is None` checks for the special no-result value `None`. Use it when a lookup might not find anything.
+
+91. **Capitalize a string.** `capitalize()` makes the first character uppercase and the remaining characters lowercase.

@@ -703,5 +703,8 @@ class LearningTipsTests(unittest.TestCase):
         found = next((student for student in self.students if student.name == "Craig"), None)
         self.assertIsNotNone(found)
 
+    def test_capitalize_changes_the_first_letter(self):
+        self.assertEqual("craig".capitalize(), "Craig")
+
 if __name__ == "__main__":
     unittest.main()
