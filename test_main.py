@@ -845,5 +845,11 @@ class LearningTipsTests(unittest.TestCase):
         grade -= 10
         self.assertEqual(grade, 85)
 
+    def test_subtraction_finds_remaining_capacity(self):
+        remaining = self.course.max_students - len(self.course.students)
+        self.assertEqual(remaining, 0)
+        small_course = Course("Maths", 5)
+        self.assertEqual(small_course.max_students - len(small_course.students), 5)
+
 if __name__ == "__main__":
     unittest.main()

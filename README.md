@@ -264,3 +264,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 117. **Convert a value to true or false.** `bool()` converts a value to `True` or `False`. Zero and an empty string are false; a nonzero number and nonempty string are true.
 
 118. **Update a number with an augmented assignment.** `+=` adds to a variable and stores the result back. `-=` works the same way for subtraction.
+
+119. **Calculate open course places.** Subtract the current enrollment count from the maximum capacity to find the number of remaining places.
