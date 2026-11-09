@@ -260,3 +260,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 115. **Raise a number to a power.** The `**` operator raises the left number to the power on the right.
 
 116. **Compare a value against a range.** `0 <= grade <= 100` checks both comparisons. It means the grade is at least zero and at most 100.
+
+117. **Convert a value to true or false.** `bool()` converts a value to `True` or `False`. Zero and an empty string are false; a nonzero number and nonempty string are true.

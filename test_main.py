@@ -832,5 +832,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(0 <= grade <= 100)
         self.assertFalse(0 <= 101 <= 100)
 
+    def test_bool_converts_values_to_truth_values(self):
+        self.assertFalse(bool(0))
+        self.assertTrue(bool(1))
+        self.assertTrue(bool("hello"))
+        self.assertFalse(bool(""))
+
 if __name__ == "__main__":
     unittest.main()
