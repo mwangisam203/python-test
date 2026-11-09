@@ -709,5 +709,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_title_capitalizes_each_word(self):
         self.assertEqual("python class".title(), "Python Class")
 
+    def test_swapcase_flips_letter_case(self):
+        self.assertEqual("Craig Passed".swapcase(), "cRAIG pASSED")
+
 if __name__ == "__main__":
     unittest.main()

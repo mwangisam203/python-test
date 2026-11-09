@@ -212,3 +212,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 91. **Capitalize a string.** `capitalize()` makes the first character uppercase and the remaining characters lowercase.
 
 92. **Make each word start with a capital.** `.title()` capitalizes the start of each word in a string.
+
+93. **Swap the case of each letter.** `.swapcase()` makes lowercase letters uppercase and uppercase letters lowercase.
