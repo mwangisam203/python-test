@@ -222,3 +222,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 96. **Remove a known prefix.** `.removeprefix()` removes the given text only when it appears at the start of the string.
 
 97. **Check whether text contains only decimal digits.** `.isdecimal()` is true for text made only of decimal digits. A decimal point and words make it false.
+
+98. **Pad a number with zeros for display.** The f-string format `03` displays a number in a width of three, padding the front with zeros.

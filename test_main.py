@@ -731,5 +731,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertFalse("20.26".isdecimal())
         self.assertFalse("twenty".isdecimal())
 
+    def test_f_string_can_pad_a_number(self):
+        self.assertEqual(f"{7:03}", "007")
+        self.assertEqual(f"{90:03}", "090")
+
 if __name__ == "__main__":
     unittest.main()
