@@ -216,3 +216,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 93. **Swap the case of each letter.** `.swapcase()` makes lowercase letters uppercase and uppercase letters lowercase.
 
 94. **Find text inside a string.** `.find()` returns the index of the first match. If the text is absent, it returns -1 instead of raising an error.
+
+95. **Split text into two parts.** `.partition(separator)` returns a three item tuple: the text before the first separator, the separator, and the text after it.

@@ -717,5 +717,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(message.find("passed"), 6)
         self.assertEqual(message.find("failed"), -1)
 
+    def test_partition_returns_before_separator_and_after(self):
+        before, separator, after = "Grade: 90".partition(": ")
+        self.assertEqual((before, separator, after), ("Grade", ": ", "90"))
+
 if __name__ == "__main__":
     unittest.main()
