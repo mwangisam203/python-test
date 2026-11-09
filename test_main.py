@@ -712,5 +712,10 @@ class LearningTipsTests(unittest.TestCase):
     def test_swapcase_flips_letter_case(self):
         self.assertEqual("Craig Passed".swapcase(), "cRAIG pASSED")
 
+    def test_find_returns_the_position_or_negative_one(self):
+        message = "Craig passed"
+        self.assertEqual(message.find("passed"), 6)
+        self.assertEqual(message.find("failed"), -1)
+
 if __name__ == "__main__":
     unittest.main()
