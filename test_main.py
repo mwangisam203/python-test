@@ -868,5 +868,10 @@ class LearningTipsTests(unittest.TestCase):
             return f"{details['name']}: {details['grade']}"
         self.assertEqual(student_label(name="Craig", grade=90), "Craig: 90")
 
+    def test_map_converts_each_grade_to_text(self):
+        grades = [student.get_grade() for student in self.students]
+        labels = list(map(str, grades))
+        self.assertEqual(labels, ["90", "60", "45"])
+
 if __name__ == "__main__":
     unittest.main()
