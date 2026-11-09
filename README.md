@@ -252,3 +252,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 111. **Create dictionary keys with one default value.** `dict.fromkeys(keys, value)` creates a dictionary with each key set to the given value.
 
 112. **Copy a dictionary.** `.copy()` makes a separate dictionary. Adding a key to the copy leaves the original dictionary unchanged.
+
+113. **Pop the most recently added dictionary entry.** `.popitem()` removes and returns the most recently added key and value as a pair.

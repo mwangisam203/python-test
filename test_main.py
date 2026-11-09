@@ -811,5 +811,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(original, {"Craig": 90})
         self.assertEqual(copied, {"Craig": 90, "Maya": 80})
 
+    def test_popitem_returns_the_last_added_pair(self):
+        gradebook = {"Craig": 90, "Maya": 80}
+        name, grade = gradebook.popitem()
+        self.assertEqual((name, grade), ("Maya", 80))
+        self.assertEqual(gradebook, {"Craig": 90})
+
 if __name__ == "__main__":
     unittest.main()
