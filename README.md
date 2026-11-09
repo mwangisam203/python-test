@@ -210,3 +210,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 90. **Check for no result with is None.** `is None` checks for the special no-result value `None`. Use it when a lookup might not find anything.
 
 91. **Capitalize a string.** `capitalize()` makes the first character uppercase and the remaining characters lowercase.
+
+92. **Make each word start with a capital.** `.title()` capitalizes the start of each word in a string.

@@ -706,5 +706,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_capitalize_changes_the_first_letter(self):
         self.assertEqual("craig".capitalize(), "Craig")
 
+    def test_title_capitalizes_each_word(self):
+        self.assertEqual("python class".title(), "Python Class")
+
 if __name__ == "__main__":
     unittest.main()
