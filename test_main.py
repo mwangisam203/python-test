@@ -763,5 +763,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names, ["Annete", "Craig", "Hancho"])
         self.assertIsNone(result)
 
+    def test_list_index_assignment_changes_one_item(self):
+        names = [student.name for student in self.students]
+        names[1] = "Maya"
+        self.assertEqual(names, ["Craig", "Maya", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()
