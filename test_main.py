@@ -784,5 +784,11 @@ class LearningTipsTests(unittest.TestCase):
         grades.add(45)
         self.assertEqual(grades, {90, 60, 45})
 
+    def test_discard_removes_a_value_if_present(self):
+        grades = {90, 60}
+        grades.discard(60)
+        grades.discard(45)
+        self.assertEqual(grades, {90})
+
 if __name__ == "__main__":
     unittest.main()

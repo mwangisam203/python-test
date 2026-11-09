@@ -242,3 +242,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 106. **Count a value in a tuple.** Tuples also provide `.count()` to count repeated values. The tuple remains unchanged.
 
 107. **Add a value to a set.** `.add()` inserts a value into a set. A set stores each value once.
+
+108. **Discard a value from a set safely.** `.discard()` removes a value if present and does nothing if absent. `.remove()` instead raises `KeyError` for an absent value.
