@@ -863,5 +863,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(total(90, 60, 45), 195)
         self.assertEqual(total(10), 10)
 
+    def test_double_star_args_collects_named_values(self):
+        def student_label(**details):
+            return f"{details['name']}: {details['grade']}"
+        self.assertEqual(student_label(name="Craig", grade=90), "Craig: 90")
+
 if __name__ == "__main__":
     unittest.main()

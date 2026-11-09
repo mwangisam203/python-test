@@ -270,3 +270,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 120. **Give a function argument a default.** A function uses a default argument value when the caller leaves that argument out. A caller can supply a different value.
 
 121. **Collect extra function arguments with args.** `*numbers` collects any number of positional arguments into a tuple that the function can loop over.
+
+122. **Collect named function arguments with kwargs.** `**details` collects named arguments into a dictionary, so the function can look up each value by name.
