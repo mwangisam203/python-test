@@ -838,5 +838,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(bool("hello"))
         self.assertFalse(bool(""))
 
+    def test_plus_equals_adds_to_a_value(self):
+        grade = 90
+        grade += 5
+        self.assertEqual(grade, 95)
+        grade -= 10
+        self.assertEqual(grade, 85)
+
 if __name__ == "__main__":
     unittest.main()
