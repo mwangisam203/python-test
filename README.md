@@ -236,3 +236,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 103. **Sort a list in place.** `.sort()` changes the list itself and returns `None`. Use `sorted()` when you need a new sorted list.
 
 104. **Replace a list item by index.** Assigning to a list index replaces the item at that position. Index 1 is the second item.
+
+105. **Unpack the first item and the rest.** A starred unpacking target collects zero or more remaining values into a list.

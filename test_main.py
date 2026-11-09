@@ -768,5 +768,11 @@ class LearningTipsTests(unittest.TestCase):
         names[1] = "Maya"
         self.assertEqual(names, ["Craig", "Maya", "Annete"])
 
+    def test_starred_unpacking_collects_remaining_items(self):
+        grades = [90, 60, 45]
+        first, *remaining = grades
+        self.assertEqual(first, 90)
+        self.assertEqual(remaining, [60, 45])
+
 if __name__ == "__main__":
     unittest.main()
