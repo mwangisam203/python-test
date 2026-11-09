@@ -757,5 +757,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(names, [])
         self.assertEqual(len(self.course.students), 3)
 
+    def test_sort_changes_a_list_and_returns_none(self):
+        names = ["Annete", "Craig", "Hancho"]
+        result = names.sort()
+        self.assertEqual(names, ["Annete", "Craig", "Hancho"])
+        self.assertIsNone(result)
+
 if __name__ == "__main__":
     unittest.main()

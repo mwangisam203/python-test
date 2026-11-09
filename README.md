@@ -232,3 +232,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 101. **Pop the last item from a list.** Calling `.pop()` without an index removes and returns the last list item.
 
 102. **Clear all items from a list.** `.clear()` removes all items from that list. The separate course roster is unchanged.
+
+103. **Sort a list in place.** `.sort()` changes the list itself and returns `None`. Use `sorted()` when you need a new sorted list.
