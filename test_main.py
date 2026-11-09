@@ -851,5 +851,11 @@ class LearningTipsTests(unittest.TestCase):
         small_course = Course("Maths", 5)
         self.assertEqual(small_course.max_students - len(small_course.students), 5)
 
+    def test_default_argument_is_used_when_omitted(self):
+        def greeting(name, word="Hello"):
+            return f"{word}, {name}!"
+        self.assertEqual(greeting("Craig"), "Hello, Craig!")
+        self.assertEqual(greeting("Maya", "Welcome"), "Welcome, Maya!")
+
 if __name__ == "__main__":
     unittest.main()
