@@ -244,3 +244,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 107. **Add a value to a set.** `.add()` inserts a value into a set. A set stores each value once.
 
 108. **Discard a value from a set safely.** `.discard()` removes a value if present and does nothing if absent. `.remove()` instead raises `KeyError` for an absent value.
+
+109. **Check whether a set contains another set.** `.issuperset()` returns true when the set contains every value in the other set.

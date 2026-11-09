@@ -790,5 +790,10 @@ class LearningTipsTests(unittest.TestCase):
         grades.discard(45)
         self.assertEqual(grades, {90})
 
+    def test_issuperset_checks_all_requested_values(self):
+        grades = {90, 60, 45}
+        self.assertTrue(grades.issuperset({60, 45}))
+        self.assertFalse(grades.issuperset({60, 100}))
+
 if __name__ == "__main__":
     unittest.main()
