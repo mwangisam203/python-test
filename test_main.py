@@ -817,5 +817,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual((name, grade), ("Maya", 80))
         self.assertEqual(gradebook, {"Craig": 90})
 
+    def test_in_checks_dictionary_keys(self):
+        gradebook = {"Craig": 90, "Maya": 80}
+        self.assertIn("Craig", gradebook)
+        self.assertNotIn("Annete", gradebook)
+        self.assertIn(90, gradebook.values())
+
 if __name__ == "__main__":
     unittest.main()
