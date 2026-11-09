@@ -230,3 +230,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 100. **Count an item in a list.** `.count(value)` reports how many times a value occurs in a list. A value that does not occur has a count of zero.
 
 101. **Pop the last item from a list.** Calling `.pop()` without an index removes and returns the last list item.
+
+102. **Clear all items from a list.** `.clear()` removes all items from that list. The separate course roster is unchanged.

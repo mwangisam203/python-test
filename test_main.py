@@ -751,5 +751,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(last_name, "Annete")
         self.assertEqual(names, ["Craig", "Hancho"])
 
+    def test_clear_empties_a_list_in_place(self):
+        names = [student.name for student in self.students]
+        names.clear()
+        self.assertEqual(names, [])
+        self.assertEqual(len(self.course.students), 3)
+
 if __name__ == "__main__":
     unittest.main()
