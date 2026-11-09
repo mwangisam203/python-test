@@ -774,5 +774,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(first, 90)
         self.assertEqual(remaining, [60, 45])
 
+    def test_tuple_count_finds_repeated_values(self):
+        scores = (90, 75, 90, 60)
+        self.assertEqual(scores.count(90), 2)
+        self.assertEqual(scores.count(100), 0)
+
 if __name__ == "__main__":
     unittest.main()

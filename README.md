@@ -238,3 +238,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 104. **Replace a list item by index.** Assigning to a list index replaces the item at that position. Index 1 is the second item.
 
 105. **Unpack the first item and the rest.** A starred unpacking target collects zero or more remaining values into a list.
+
+106. **Count a value in a tuple.** Tuples also provide `.count()` to count repeated values. The tuple remains unchanged.
