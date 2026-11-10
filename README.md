@@ -328,3 +328,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 149. **Change a value inside a nested list.** Use indexes from the outside in to change a value inside a nested list.
 
 150. **Add up values from a comprehension.** A generator expression can select values for `sum()`. Here only passing grades, 90 and 60, are added.
+
+151. **Round to two decimal places.** Pass 2 as the second argument to `round()` to round a number to two decimal places.

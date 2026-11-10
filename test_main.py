@@ -1006,5 +1006,9 @@ class LearningTipsTests(unittest.TestCase):
         total = sum(student.get_grade() for student in self.students if student.has_passed())
         self.assertEqual(total, 150)
 
+    def test_round_can_keep_two_decimal_places(self):
+        self.assertEqual(round(3.14159, 2), 3.14)
+        self.assertEqual(round(2.71828, 2), 2.72)
+
 if __name__ == "__main__":
     unittest.main()
