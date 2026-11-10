@@ -906,5 +906,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIsNot(first, second)
         self.assertIs(first, first)
 
+    def test_str_converts_a_grade_to_text(self):
+        label = str(self.students[0].get_grade())
+        self.assertEqual(label, "90")
+        self.assertIsInstance(label, str)
+
 if __name__ == "__main__":
     unittest.main()

@@ -286,3 +286,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 128. **Invert a condition with not.** `not` flips a boolean result. The passing student does not fail; Annete does not pass.
 
 129. **Compare values with equality.** `==` checks whether values are equal. `is` checks whether two names refer to the exact same object.
+
+130. **Convert a number to text.** `str()` converts a value to text. The result `"90"` is a string, so use `int()` if you need number arithmetic.
