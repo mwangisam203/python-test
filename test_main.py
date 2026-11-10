@@ -955,5 +955,11 @@ class LearningTipsTests(unittest.TestCase):
             labels.append(f"{name}: {grade}")
         self.assertEqual(labels, ["Craig: 90", "Hancho: 60"])
 
+    def test_keyword_arguments_name_their_values(self):
+        def greeting(name, word):
+            return f"{word}, {name}!"
+        self.assertEqual(greeting(name="Craig", word="Hello"), "Hello, Craig!")
+        self.assertEqual(greeting(word="Welcome", name="Maya"), "Welcome, Maya!")
+
 if __name__ == "__main__":
     unittest.main()
