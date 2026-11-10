@@ -334,3 +334,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 152. **Format a number as a percentage.** The `%` f-string format multiplies a fraction by 100 and adds a percent sign. `.0%` displays no decimal places.
 
 153. **Read a function docstring.** A string directly inside a function is its docstring. Python stores it in the function's `__doc__` attribute.
+
+154. **Require a named function argument.** Parameters after `*` are keyword only. The caller must use the parameter name, such as `name="Craig"`.

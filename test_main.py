@@ -1021,5 +1021,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(double(4), 8)
         self.assertEqual(double.__doc__, "Return a number multiplied by two.")
 
+    def test_keyword_only_arguments_must_be_named(self):
+        def greeting(*, name, word="Hello"):
+            return f"{word}, {name}!"
+        self.assertEqual(greeting(name="Craig"), "Hello, Craig!")
+        with self.assertRaises(TypeError):
+            greeting("Craig")
+
 if __name__ == "__main__":
     unittest.main()
