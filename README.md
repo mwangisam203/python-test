@@ -324,3 +324,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 147. **Make a set that cannot be changed.** `frozenset()` creates an immutable set. Like a regular set, it keeps each value only once.
 
 148. **Read a value from a nested dictionary.** A dictionary can contain another dictionary as a value. Use one key for each level to reach the nested value.
+
+149. **Change a value inside a nested list.** Use indexes from the outside in to change a value inside a nested list.

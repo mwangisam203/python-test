@@ -997,5 +997,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(gradebook["Craig"]["grade"], 90)
         self.assertEqual(gradebook["Craig"]["age"], 16)
 
+    def test_nested_list_item_can_be_updated(self):
+        grades = [[90, 80], [70, 60]]
+        grades[1][1] = 65
+        self.assertEqual(grades, [[90, 80], [70, 65]])
+
 if __name__ == "__main__":
     unittest.main()
