@@ -278,3 +278,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 124. **Keep matching items with filter.** `filter(function, values)` keeps values where the function returns true. This example keeps grades of 60 or higher.
 
 125. **Check a value type with isinstance.** `isinstance(value, type)` checks whether a value has the requested type. Numeric text such as `"90"` is still a string.
+
+126. **Combine conditions with and.** `and` is true only when both conditions are true. The example checks that a grade is at least 60 and at most 100.

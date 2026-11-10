@@ -883,5 +883,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(isinstance(94.5, float))
         self.assertFalse(isinstance("90", int))
 
+    def test_and_requires_both_conditions_to_be_true(self):
+        grade = self.students[0].get_grade()
+        self.assertTrue(grade >= 60 and grade <= 100)
+        self.assertFalse(grade < 60 and grade <= 100)
+
 if __name__ == "__main__":
     unittest.main()
