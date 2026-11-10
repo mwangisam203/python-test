@@ -296,3 +296,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 133. **Use operator precedence.** Multiplication happens before addition, so `2 + 3 * 4` evaluates to 14.
 
 134. **Use parentheses to set the order.** Parentheses make the addition happen before multiplication. This expression evaluates to 20.
+
+135. **Write a negative number.** A minus sign before a number makes it negative. Applying unary minus to a negative number makes it positive.
