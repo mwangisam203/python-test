@@ -961,5 +961,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(greeting(name="Craig", word="Hello"), "Hello, Craig!")
         self.assertEqual(greeting(word="Welcome", name="Maya"), "Welcome, Maya!")
 
+    def test_format_specifier_aligns_text(self):
+        self.assertEqual(f"{'Craig':>8}", "   Craig")
+        self.assertEqual(f"{'Craig':<8}", "Craig   ")
+
 if __name__ == "__main__":
     unittest.main()

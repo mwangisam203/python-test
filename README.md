@@ -308,3 +308,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 139. **Loop through dictionary entries.** `.items()` gives a dictionary's key and value pairs. The loop unpacks each pair into `name` and `grade`.
 
 140. **Pass a function argument by name.** Keyword arguments identify each value by parameter name. Their order can differ from the function definition.
+
+141. **Align text inside an f-string.** The `>` format aligns text to the right and `<` aligns it to the left within the requested width.
