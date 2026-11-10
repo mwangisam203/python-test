@@ -330,3 +330,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 150. **Add up values from a comprehension.** A generator expression can select values for `sum()`. Here only passing grades, 90 and 60, are added.
 
 151. **Round to two decimal places.** Pass 2 as the second argument to `round()` to round a number to two decimal places.
+
+152. **Format a number as a percentage.** The `%` f-string format multiplies a fraction by 100 and adds a percent sign. `.0%` displays no decimal places.

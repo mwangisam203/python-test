@@ -1010,5 +1010,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(round(3.14159, 2), 3.14)
         self.assertEqual(round(2.71828, 2), 2.72)
 
+    def test_percent_format_displays_a_percentage(self):
+        self.assertEqual(f"{0.875:.0%}", "88%")
+        self.assertEqual(f"{0.5:.1%}", "50.0%")
+
 if __name__ == "__main__":
     unittest.main()
