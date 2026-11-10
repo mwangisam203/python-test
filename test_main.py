@@ -941,5 +941,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(grades[0][1], 80)
         self.assertEqual(grades[1][0], 70)
 
+    def test_for_loop_unpacks_each_pair(self):
+        records = [("Craig", 90), ("Hancho", 60)]
+        labels = []
+        for name, grade in records:
+            labels.append(f"{name}: {grade}")
+        self.assertEqual(labels, ["Craig: 90", "Hancho: 60"])
+
 if __name__ == "__main__":
     unittest.main()
