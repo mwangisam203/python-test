@@ -290,3 +290,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 130. **Convert a number to text.** `str()` converts a value to text. The result `"90"` is a string, so use `int()` if you need number arithmetic.
 
 131. **Convert a decimal to a whole number.** `int()` drops the fractional part and moves toward zero. It does not round to the nearest integer.
+
+132. **Calculate a power with pow.** `pow(base, exponent)` raises the base to the exponent, like the `**` operator.

@@ -915,5 +915,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(int(94.9), 94)
         self.assertEqual(int(-2.9), -2)
 
+    def test_pow_calculates_an_exponent(self):
+        self.assertEqual(pow(2, 3), 8)
+        self.assertEqual(pow(5, 2), 25)
+
 if __name__ == "__main__":
     unittest.main()
