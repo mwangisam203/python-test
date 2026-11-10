@@ -992,5 +992,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(grades, frozenset({90, 60}))
         self.assertIn(60, grades)
 
+    def test_nested_dictionary_lookup_uses_two_keys(self):
+        gradebook = {"Craig": {"age": 16, "grade": 90}}
+        self.assertEqual(gradebook["Craig"]["grade"], 90)
+        self.assertEqual(gradebook["Craig"]["age"], 16)
+
 if __name__ == "__main__":
     unittest.main()
