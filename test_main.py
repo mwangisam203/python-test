@@ -969,5 +969,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual("7".zfill(3), "007")
         self.assertEqual("90".zfill(3), "090")
 
+    def test_splitlines_returns_each_line(self):
+        lines = "Craig\nHancho\nAnnete".splitlines()
+        self.assertEqual(lines, ["Craig", "Hancho", "Annete"])
+
 if __name__ == "__main__":
     unittest.main()

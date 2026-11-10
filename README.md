@@ -312,3 +312,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 141. **Align text inside an f-string.** The `>` format aligns text to the right and `<` aligns it to the left within the requested width.
 
 142. **Pad digit text with zeros.** `.zfill(width)` adds zeros to the left until a string reaches the requested width.
+
+143. **Split text at line breaks.** `.splitlines()` separates a string at its line breaks and returns the individual lines.
