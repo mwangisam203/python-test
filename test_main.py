@@ -919,5 +919,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(pow(2, 3), 8)
         self.assertEqual(pow(5, 2), 25)
 
+    def test_multiplication_happens_before_addition(self):
+        self.assertEqual(2 + 3 * 4, 14)
+
 if __name__ == "__main__":
     unittest.main()

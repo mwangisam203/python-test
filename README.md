@@ -292,3 +292,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 131. **Convert a decimal to a whole number.** `int()` drops the fractional part and moves toward zero. It does not round to the nearest integer.
 
 132. **Calculate a power with pow.** `pow(base, exponent)` raises the base to the exponent, like the `**` operator.
+
+133. **Use operator precedence.** Multiplication happens before addition, so `2 + 3 * 4` evaluates to 14.
