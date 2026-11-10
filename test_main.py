@@ -1028,5 +1028,13 @@ class LearningTipsTests(unittest.TestCase):
         with self.assertRaises(TypeError):
             greeting("Craig")
 
+    def test_early_return_avoids_extra_branches(self):
+        def passing_label(grade):
+            if grade >= 60:
+                return "pass"
+            return "try again"
+        self.assertEqual(passing_label(90), "pass")
+        self.assertEqual(passing_label(45), "try again")
+
 if __name__ == "__main__":
     unittest.main()

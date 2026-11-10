@@ -336,3 +336,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 153. **Read a function docstring.** A string directly inside a function is its docstring. Python stores it in the function's `__doc__` attribute.
 
 154. **Require a named function argument.** Parameters after `*` are keyword only. The caller must use the parameter name, such as `name="Craig"`.
+
+155. **Return early when a condition is met.** A `return` ends the function immediately. This lets a function handle a simple case before continuing to another return.
