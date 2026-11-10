@@ -888,5 +888,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(grade >= 60 and grade <= 100)
         self.assertFalse(grade < 60 and grade <= 100)
 
+    def test_or_can_provide_a_default_value(self):
+        grade = None
+        shown_grade = grade or 0
+        self.assertEqual(shown_grade, 0)
+        grade = 90
+        self.assertEqual(grade or 0, 90)
+
 if __name__ == "__main__":
     unittest.main()
