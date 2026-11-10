@@ -1002,5 +1002,9 @@ class LearningTipsTests(unittest.TestCase):
         grades[1][1] = 65
         self.assertEqual(grades, [[90, 80], [70, 65]])
 
+    def test_sum_can_add_values_selected_by_a_comprehension(self):
+        total = sum(student.get_grade() for student in self.students if student.has_passed())
+        self.assertEqual(total, 150)
+
 if __name__ == "__main__":
     unittest.main()

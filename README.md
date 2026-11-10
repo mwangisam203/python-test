@@ -326,3 +326,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 148. **Read a value from a nested dictionary.** A dictionary can contain another dictionary as a value. Use one key for each level to reach the nested value.
 
 149. **Change a value inside a nested list.** Use indexes from the outside in to change a value inside a nested list.
+
+150. **Add up values from a comprehension.** A generator expression can select values for `sum()`. Here only passing grades, 90 and 60, are added.
