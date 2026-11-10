@@ -965,5 +965,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(f"{'Craig':>8}", "   Craig")
         self.assertEqual(f"{'Craig':<8}", "Craig   ")
 
+    def test_zfill_adds_zeros_to_the_left(self):
+        self.assertEqual("7".zfill(3), "007")
+        self.assertEqual("90".zfill(3), "090")
+
 if __name__ == "__main__":
     unittest.main()
