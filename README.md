@@ -294,3 +294,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 132. **Calculate a power with pow.** `pow(base, exponent)` raises the base to the exponent, like the `**` operator.
 
 133. **Use operator precedence.** Multiplication happens before addition, so `2 + 3 * 4` evaluates to 14.
+
+134. **Use parentheses to set the order.** Parentheses make the addition happen before multiplication. This expression evaluates to 20.

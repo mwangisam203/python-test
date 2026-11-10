@@ -922,5 +922,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_multiplication_happens_before_addition(self):
         self.assertEqual(2 + 3 * 4, 14)
 
+    def test_parentheses_make_addition_happen_first(self):
+        self.assertEqual((2 + 3) * 4, 20)
+
 if __name__ == "__main__":
     unittest.main()
