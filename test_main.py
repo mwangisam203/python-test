@@ -982,5 +982,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertFalse("  a  ".isspace())
         self.assertFalse("".isspace())
 
+    def test_symmetric_difference_returns_values_in_one_set(self):
+        class_grades = {90, 60}
+        honor_roll = {90, 100}
+        self.assertEqual(class_grades.symmetric_difference(honor_roll), {60, 100})
+
 if __name__ == "__main__":
     unittest.main()
