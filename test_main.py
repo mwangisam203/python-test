@@ -948,5 +948,12 @@ class LearningTipsTests(unittest.TestCase):
             labels.append(f"{name}: {grade}")
         self.assertEqual(labels, ["Craig: 90", "Hancho: 60"])
 
+    def test_dictionary_items_can_be_unpacked_in_a_loop(self):
+        gradebook = {"Craig": 90, "Hancho": 60}
+        labels = []
+        for name, grade in gradebook.items():
+            labels.append(f"{name}: {grade}")
+        self.assertEqual(labels, ["Craig: 90", "Hancho: 60"])
+
 if __name__ == "__main__":
     unittest.main()

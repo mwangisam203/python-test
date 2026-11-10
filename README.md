@@ -304,3 +304,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 137. **Read an item from a nested list.** Use one index for the outer list and another for the inner list. Here `grades[0][1]` is the second value in the first row.
 
 138. **Unpack pairs while looping.** When a loop receives a tuple of two values, it can unpack them into two variables on each iteration.
+
+139. **Loop through dictionary entries.** `.items()` gives a dictionary's key and value pairs. The loop unpacks each pair into `name` and `grade`.
