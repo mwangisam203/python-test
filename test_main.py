@@ -911,5 +911,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(label, "90")
         self.assertIsInstance(label, str)
 
+    def test_int_truncates_a_decimal_towards_zero(self):
+        self.assertEqual(int(94.9), 94)
+        self.assertEqual(int(-2.9), -2)
+
 if __name__ == "__main__":
     unittest.main()
