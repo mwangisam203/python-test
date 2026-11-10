@@ -1014,5 +1014,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(f"{0.875:.0%}", "88%")
         self.assertEqual(f"{0.5:.1%}", "50.0%")
 
+    def test_function_docstring_describes_its_purpose(self):
+        def double(number):
+            """Return a number multiplied by two."""
+            return number * 2
+        self.assertEqual(double(4), 8)
+        self.assertEqual(double.__doc__, "Return a number multiplied by two.")
+
 if __name__ == "__main__":
     unittest.main()
