@@ -895,5 +895,9 @@ class LearningTipsTests(unittest.TestCase):
         grade = 90
         self.assertEqual(grade or 0, 90)
 
+    def test_not_flips_a_boolean_result(self):
+        self.assertFalse(not self.students[0].has_passed())
+        self.assertTrue(not self.students[2].has_passed())
+
 if __name__ == "__main__":
     unittest.main()

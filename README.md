@@ -282,3 +282,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 126. **Combine conditions with and.** `and` is true only when both conditions are true. The example checks that a grade is at least 60 and at most 100.
 
 127. **Use or to provide a default for None.** `or` returns its first truthy value, or the second value if the first is false. It can provide a fallback for `None`; zero also counts as false.
+
+128. **Invert a condition with not.** `not` flips a boolean result. The passing student does not fail; Annete does not pass.
