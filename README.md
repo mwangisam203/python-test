@@ -298,3 +298,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 134. **Use parentheses to set the order.** Parentheses make the addition happen before multiplication. This expression evaluates to 20.
 
 135. **Write a negative number.** A minus sign before a number makes it negative. Applying unary minus to a negative number makes it positive.
+
+136. **Swap two values in one assignment.** Python evaluates both values on the right before assigning them. This makes it easy to swap two variables.

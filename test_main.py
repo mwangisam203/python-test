@@ -930,5 +930,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(90 + grade_change, 80)
         self.assertEqual(-(-10), 10)
 
+    def test_multiple_assignment_swaps_two_values(self):
+        first, second = "Craig", "Hancho"
+        first, second = second, first
+        self.assertEqual(first, "Hancho")
+        self.assertEqual(second, "Craig")
+
 if __name__ == "__main__":
     unittest.main()
