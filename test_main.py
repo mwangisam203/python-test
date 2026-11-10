@@ -977,5 +977,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue("PYTHON".isupper())
         self.assertFalse("Python".isupper())
 
+    def test_isspace_checks_whitespace_characters(self):
+        self.assertTrue("   ".isspace())
+        self.assertFalse("  a  ".isspace())
+        self.assertFalse("".isspace())
+
 if __name__ == "__main__":
     unittest.main()

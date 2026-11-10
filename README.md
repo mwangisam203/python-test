@@ -316,3 +316,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 143. **Split text at line breaks.** `.splitlines()` separates a string at its line breaks and returns the individual lines.
 
 144. **Check whether letters are uppercase.** `.isupper()` is true when a string has at least one cased letter and all its cased letters are uppercase.
+
+145. **Check whether text contains only spaces.** `.isspace()` is true when the string contains one or more whitespace characters and nothing else. Empty text returns false.
