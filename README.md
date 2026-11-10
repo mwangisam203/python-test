@@ -314,3 +314,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 142. **Pad digit text with zeros.** `.zfill(width)` adds zeros to the left until a string reaches the requested width.
 
 143. **Split text at line breaks.** `.splitlines()` separates a string at its line breaks and returns the individual lines.
+
+144. **Check whether letters are uppercase.** `.isupper()` is true when a string has at least one cased letter and all its cased letters are uppercase.

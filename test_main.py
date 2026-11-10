@@ -973,5 +973,9 @@ class LearningTipsTests(unittest.TestCase):
         lines = "Craig\nHancho\nAnnete".splitlines()
         self.assertEqual(lines, ["Craig", "Hancho", "Annete"])
 
+    def test_isupper_checks_uppercase_letters(self):
+        self.assertTrue("PYTHON".isupper())
+        self.assertFalse("Python".isupper())
+
 if __name__ == "__main__":
     unittest.main()
