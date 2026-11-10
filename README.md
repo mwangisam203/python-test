@@ -284,3 +284,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 127. **Use or to provide a default for None.** `or` returns its first truthy value, or the second value if the first is false. It can provide a fallback for `None`; zero also counts as false.
 
 128. **Invert a condition with not.** `not` flips a boolean result. The passing student does not fail; Annete does not pass.
+
+129. **Compare values with equality.** `==` checks whether values are equal. `is` checks whether two names refer to the exact same object.

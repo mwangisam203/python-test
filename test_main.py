@@ -899,5 +899,12 @@ class LearningTipsTests(unittest.TestCase):
         self.assertFalse(not self.students[0].has_passed())
         self.assertTrue(not self.students[2].has_passed())
 
+    def test_equal_values_can_be_different_objects(self):
+        first = [90, 60]
+        second = [90, 60]
+        self.assertEqual(first, second)
+        self.assertIsNot(first, second)
+        self.assertIs(first, first)
+
 if __name__ == "__main__":
     unittest.main()
