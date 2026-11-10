@@ -936,5 +936,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(first, "Hancho")
         self.assertEqual(second, "Craig")
 
+    def test_two_indexes_read_a_nested_value(self):
+        grades = [[90, 80], [70, 60]]
+        self.assertEqual(grades[0][1], 80)
+        self.assertEqual(grades[1][0], 70)
+
 if __name__ == "__main__":
     unittest.main()
