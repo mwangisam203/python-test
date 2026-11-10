@@ -320,3 +320,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 145. **Check whether text contains only spaces.** `.isspace()` is true when the string contains one or more whitespace characters and nothing else. Empty text returns false.
 
 146. **Find values that differ between sets.** Set `.symmetric_difference()` returns values that appear in either set, but not in both.
+
+147. **Make a set that cannot be changed.** `frozenset()` creates an immutable set. Like a regular set, it keeps each value only once.

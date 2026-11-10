@@ -987,5 +987,10 @@ class LearningTipsTests(unittest.TestCase):
         honor_roll = {90, 100}
         self.assertEqual(class_grades.symmetric_difference(honor_roll), {60, 100})
 
+    def test_frozenset_keeps_unique_values(self):
+        grades = frozenset([90, 60, 90])
+        self.assertEqual(grades, frozenset({90, 60}))
+        self.assertIn(60, grades)
+
 if __name__ == "__main__":
     unittest.main()
