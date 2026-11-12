@@ -344,3 +344,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 157. **Flatten rows from a nested list.** A second `for` in a comprehension can visit items inside each row of a nested list.
 
 158. **Remove a dictionary key with a fallback.** Dictionary `.pop(key, default)` returns and removes an existing value. For a missing key, it returns the default.
+
+159. **Clear a dictionary.** `.clear()` removes all entries from the dictionary in place.
