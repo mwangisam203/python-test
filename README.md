@@ -338,3 +338,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 154. **Require a named function argument.** Parameters after `*` are keyword only. The caller must use the parameter name, such as `name="Craig"`.
 
 155. **Return early when a condition is met.** A `return` ends the function immediately. This lets a function handle a simple case before continuing to another return.
+
+156. **Choose a label inside a list comprehension.** A conditional expression can choose a value for each item in a list comprehension.
