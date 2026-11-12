@@ -346,3 +346,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 158. **Remove a dictionary key with a fallback.** Dictionary `.pop(key, default)` returns and removes an existing value. For a missing key, it returns the default.
 
 159. **Clear a dictionary.** `.clear()` removes all entries from the dictionary in place.
+
+160. **Count unique values with a set.** Converting a list to a set removes repeated values. `len()` then counts the unique grades.
