@@ -372,3 +372,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 171. **Encode and decode UTF-8 text.** `.encode("utf-8")` turns text into bytes. Decoding those bytes with UTF-8 recovers the original text. The accented character takes two bytes.
 
 172. **Use math sqrt to find a square root.** Importing the standard library `math` module gives you `sqrt()` for square roots.
+
+173. **Round a number upward with ceil.** `math.ceil()` rounds upward to the nearest integer.

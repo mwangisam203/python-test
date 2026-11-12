@@ -1119,5 +1119,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.sqrt(81), 9)
         self.assertEqual(math.sqrt(4), 2)
 
+    def test_math_ceil_rounds_up_to_an_integer(self):
+        self.assertEqual(math.ceil(65.1), 66)
+        self.assertEqual(math.ceil(65.0), 65)
+
 if __name__ == "__main__":
     unittest.main()
