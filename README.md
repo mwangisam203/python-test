@@ -350,3 +350,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 160. **Count unique values with a set.** Converting a list to a set removes repeated values. `len()` then counts the unique grades.
 
 161. **Create a tuple with one item.** A comma makes a one item tuple. Parentheses alone, as in `(90)`, do not.
+
+162. **Join tuples together.** The `+` operator joins tuples into a new tuple.
