@@ -368,3 +368,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 169. **Split text from the right.** `.rsplit()` starts at the right side. With a single split, it separates the final field.
 
 170. **Convert between a character and its code.** `ord()` returns a character's Unicode number; `chr()` converts that number back to a character.
+
+171. **Encode and decode UTF-8 text.** `.encode("utf-8")` turns text into bytes. Decoding those bytes with UTF-8 recovers the original text. The accented character takes two bytes.
