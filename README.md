@@ -356,3 +356,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 163. **Append a list as one nested item.** `append()` adds its argument as a single item. Appending a list creates a nested list.
 
 164. **Sort names by their length.** `key=len` tells `sorted()` to compare each name by its length. Names with equal lengths keep their original order.
+
+165. **Sort uppercase and lowercase text.** Normal string sorting is case sensitive. Uppercase letters sort before lowercase letters here.
