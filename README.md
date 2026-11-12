@@ -342,3 +342,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 156. **Choose a label inside a list comprehension.** A conditional expression can choose a value for each item in a list comprehension.
 
 157. **Flatten rows from a nested list.** A second `for` in a comprehension can visit items inside each row of a nested list.
+
+158. **Remove a dictionary key with a fallback.** Dictionary `.pop(key, default)` returns and removes an existing value. For a missing key, it returns the default.
