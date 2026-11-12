@@ -364,3 +364,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 167. **Remove a known suffix.** `.removesuffix()` removes the given text only when it appears at the end of the string.
 
 168. **Limit how many times split separates text.** `split(separator, maxsplit=1)` splits once, leaving the rest of the text together.
+
+169. **Split text from the right.** `.rsplit()` starts at the right side. With a single split, it separates the final field.
