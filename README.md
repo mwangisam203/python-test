@@ -340,3 +340,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 155. **Return early when a condition is met.** A `return` ends the function immediately. This lets a function handle a simple case before continuing to another return.
 
 156. **Choose a label inside a list comprehension.** A conditional expression can choose a value for each item in a list comprehension.
+
+157. **Flatten rows from a nested list.** A second `for` in a comprehension can visit items inside each row of a nested list.
