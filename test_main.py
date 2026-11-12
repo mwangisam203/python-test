@@ -498,6 +498,7 @@ class LearningTipsTests(unittest.TestCase):
         lowest = min(student.get_grade() for student in self.students)
         self.assertEqual(lowest, 45)
         self.assertEqual(self.students[2].name, "Annete")
+        
 
     def test_max_returns_the_largest_grade(self):
         highest = max(student.get_grade() for student in self.students)
