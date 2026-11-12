@@ -1037,5 +1037,87 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(passing_label(90), "pass")
         self.assertEqual(passing_label(45), "try again")
 
+    def test_conditional_comprehension_chooses_each_label(self):
+        labels = ["pass" if student.has_passed() else "try again" for student in self.students]
+        self.assertEqual(labels, ["pass", "pass", "try again"])
+
+    def test_nested_comprehension_flattens_rows(self):
+        rows = [[90, 80], [70, 60]]
+        flat = [grade for row in rows for grade in row]
+        self.assertEqual(flat, [90, 80, 70, 60])
+
+    def test_dict_pop_can_return_a_default(self):
+        gradebook = {"Craig": 90}
+        self.assertEqual(gradebook.pop("Maya", 0), 0)
+        self.assertEqual(gradebook, {"Craig": 90})
+        self.assertEqual(gradebook.pop("Craig", 0), 90)
+        self.assertEqual(gradebook, {})
+
+    def test_dictionary_clear_removes_all_entries(self):
+        gradebook = {"Craig": 90, "Hancho": 60}
+        gradebook.clear()
+        self.assertEqual(gradebook, {})
+
+    def test_set_length_counts_unique_grades(self):
+        grades = [90, 60, 60, 45]
+        self.assertEqual(len(set(grades)), 3)
+
+    def test_one_item_tuple_uses_a_trailing_comma(self):
+        one_grade = (90,)
+        self.assertEqual(one_grade, (90,))
+        self.assertIsInstance(one_grade, tuple)
+        self.assertNotIsInstance((90), tuple)
+
+    def test_plus_combines_tuples(self):
+        first = ("Craig", 90)
+        second = ("Hancho", 60)
+        self.assertEqual(first + second, ("Craig", 90, "Hancho", 60))
+
+    def test_append_keeps_a_list_as_one_item(self):
+        names = ["Craig", "Hancho"]
+        names.append(["Maya", "Lee"])
+        self.assertEqual(names, ["Craig", "Hancho", ["Maya", "Lee"]])
+        self.assertEqual(len(names), 3)
+
+    def test_sorted_can_use_string_length_as_a_key(self):
+        names = ["Craig", "Annete", "Hancho"]
+        self.assertEqual(sorted(names, key=len), ["Craig", "Annete", "Hancho"])
+
+    def test_string_sorting_is_case_sensitive(self):
+        names = ["annet", "Craig", "Annete"]
+        self.assertEqual(sorted(names), ["Annete", "Craig", "annet"])
+
+    def test_casefold_normalizes_text_for_comparison(self):
+        self.assertEqual("Python".casefold(), "python")
+        self.assertEqual("Straße".casefold(), "strasse")
+
+    def test_removesuffix_removes_only_the_ending_text(self):
+        filename = "grades.csv"
+        self.assertEqual(filename.removesuffix(".csv"), "grades")
+        self.assertEqual(filename.removesuffix(".txt"), filename)
+
+    def test_split_maxsplit_limits_the_number_of_splits(self):
+        record = "Craig:90:pass"
+        self.assertEqual(record.split(":", maxsplit=1), ["Craig", "90:pass"])
+
+    def test_rsplit_starts_splitting_from_the_right(self):
+        record = "Craig:90:pass"
+        self.assertEqual(record.rsplit(":", maxsplit=1), ["Craig:90", "pass"])
+
+    def test_ord_and_chr_convert_characters_and_codes(self):
+        self.assertEqual(ord("A"), 65)
+        self.assertEqual(chr(65), "A")
+
+    def test_utf8_encoding_can_be_decoded_back_to_text(self):
+        text = "café"
+        encoded = text.encode("utf-8")
+        self.assertIsInstance(encoded, bytes)
+        self.assertEqual(encoded.decode("utf-8"), text)
+        self.assertEqual(len(encoded), 5)
+
+    def test_math_sqrt_returns_a_square_root(self):
+        self.assertEqual(math.sqrt(81), 9)
+        self.assertEqual(math.sqrt(4), 2)
+
 if __name__ == "__main__":
     unittest.main()
