@@ -376,3 +376,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 173. **Round a number upward with ceil.** `math.ceil()` rounds upward to the nearest integer.
 
 174. **Round a number downward with floor.** `math.floor()` rounds downward to the nearest integer.
+
+175. **Find the average with statistics mean.** The standard library `statistics.mean()` calculates the arithmetic average of a list of numbers.

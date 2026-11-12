@@ -1127,5 +1127,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.floor(65.9), 65)
         self.assertEqual(math.floor(65.0), 65)
 
+    def test_statistics_mean_calculates_an_average(self):
+        self.assertEqual(statistics.mean([90, 60, 45]), 65)
+        self.assertEqual(statistics.mean([80, 100]), 90)
+
 if __name__ == "__main__":
     unittest.main()
