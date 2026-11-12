@@ -354,3 +354,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 162. **Join tuples together.** The `+` operator joins tuples into a new tuple.
 
 163. **Append a list as one nested item.** `append()` adds its argument as a single item. Appending a list creates a nested list.
+
+164. **Sort names by their length.** `key=len` tells `sorted()` to compare each name by its length. Names with equal lengths keep their original order.
