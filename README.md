@@ -358,3 +358,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 164. **Sort names by their length.** `key=len` tells `sorted()` to compare each name by its length. Names with equal lengths keep their original order.
 
 165. **Sort uppercase and lowercase text.** Normal string sorting is case sensitive. Uppercase letters sort before lowercase letters here.
+
+166. **Compare text without case differences.** `.casefold()` makes text lowercase for case insensitive comparisons, including some characters that `.lower()` leaves different.
