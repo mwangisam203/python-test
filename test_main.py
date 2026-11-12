@@ -1123,5 +1123,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.ceil(65.1), 66)
         self.assertEqual(math.ceil(65.0), 65)
 
+    def test_math_floor_rounds_down_to_an_integer(self):
+        self.assertEqual(math.floor(65.9), 65)
+        self.assertEqual(math.floor(65.0), 65)
+
 if __name__ == "__main__":
     unittest.main()
