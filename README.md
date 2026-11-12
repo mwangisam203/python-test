@@ -360,3 +360,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 165. **Sort uppercase and lowercase text.** Normal string sorting is case sensitive. Uppercase letters sort before lowercase letters here.
 
 166. **Compare text without case differences.** `.casefold()` makes text lowercase for case insensitive comparisons, including some characters that `.lower()` leaves different.
+
+167. **Remove a known suffix.** `.removesuffix()` removes the given text only when it appears at the end of the string.
