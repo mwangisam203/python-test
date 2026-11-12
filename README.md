@@ -352,3 +352,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 161. **Create a tuple with one item.** A comma makes a one item tuple. Parentheses alone, as in `(90)`, do not.
 
 162. **Join tuples together.** The `+` operator joins tuples into a new tuple.
+
+163. **Append a list as one nested item.** `append()` adds its argument as a single item. Appending a list creates a nested list.
