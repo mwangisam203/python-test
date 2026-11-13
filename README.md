@@ -424,3 +424,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 197. **Change a path suffix.** `.with_suffix()` returns a new path with the requested extension and leaves the original path unchanged.
 
 198. **Read the parts of a path.** `.parts` returns the components of a path as a tuple.
+
+199. **Check whether a path is absolute.** An absolute path starts from the filesystem root. A relative path is interpreted from the current folder.

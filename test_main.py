@@ -1235,5 +1235,9 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("reports/grades.csv")
         self.assertEqual(path.parts, ("reports", "grades.csv"))
 
+    def test_is_absolute_distinguishes_relative_paths(self):
+        self.assertFalse(Path("reports/grades.csv").is_absolute())
+        self.assertTrue(Path("/tmp/grades.csv").is_absolute())
+
 if __name__ == "__main__":
     unittest.main()
