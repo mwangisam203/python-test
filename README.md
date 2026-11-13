@@ -402,3 +402,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 186. **Calculate a factorial.** `math.factorial(5)` multiplies 5 × 4 × 3 × 2 × 1. By definition, zero factorial is 1.
 
 187. **Compare close floating point numbers.** `math.isclose()` checks whether two floating point results are close enough, allowing for small rounding differences.
+
+188. **Remove a decimal part without rounding.** `math.trunc()` removes the decimal part and moves toward zero for positive and negative numbers.

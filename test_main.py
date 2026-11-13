@@ -1191,5 +1191,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(math.isclose(0.1 + 0.2, 0.3))
         self.assertFalse(math.isclose(0.1 + 0.2, 0.4))
 
+    def test_trunc_removes_the_decimal_part(self):
+        self.assertEqual(math.trunc(3.9), 3)
+        self.assertEqual(math.trunc(-3.9), -3)
+
 if __name__ == "__main__":
     unittest.main()
