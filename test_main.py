@@ -1247,5 +1247,9 @@ class LearningTipsTests(unittest.TestCase):
         name = "Craig"
         self.assertEqual(f"{name!r}", "'Craig'")
 
+    def test_dictionary_unpacking_combines_entries(self):
+        person = {"name": "Craig", **{"age": 16}}
+        self.assertEqual(person, {"name": "Craig", "age": 16})
+
 if __name__ == "__main__":
     unittest.main()
