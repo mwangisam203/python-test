@@ -1166,5 +1166,9 @@ class LearningTipsTests(unittest.TestCase):
         names = list(itertools.chain(["Craig", "Hancho"], ["Annete"]))
         self.assertEqual(names, ["Craig", "Hancho", "Annete"])
 
+    def test_product_builds_every_pair(self):
+        pairs = list(itertools.product(["Craig", "Maya"], ["pass", "retry"]))
+        self.assertEqual(pairs, [("Craig", "pass"), ("Craig", "retry"), ("Maya", "pass"), ("Maya", "retry")])
+
 if __name__ == "__main__":
     unittest.main()

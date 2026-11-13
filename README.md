@@ -390,3 +390,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 180. **Rotate items in a deque.** `.rotate(1)` moves the last item to the front. A negative number rotates in the other direction.
 
 181. **Join iterables with chain.** `itertools.chain()` lets one loop visit multiple sequences in order.
+
+182. **Create pairs with product.** `itertools.product()` makes every possible pair from the supplied groups.
