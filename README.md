@@ -396,3 +396,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 183. **Repeat a value with itertools.** `itertools.repeat(value, count)` provides the value the requested number of times.
 
 184. **Take part of an iterator with islice.** `islice()` takes a start, stop, and step, much like a list slice, while reading an iterator.
+
+185. **Find a greatest common divisor.** `math.gcd()` returns the largest integer that divides both inputs evenly.

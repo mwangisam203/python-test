@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+import math
 import itertools
 from collections import Counter, defaultdict, deque
 import math
@@ -1177,6 +1178,10 @@ class LearningTipsTests(unittest.TestCase):
     def test_islice_selects_a_range_of_iterator_values(self):
         values = list(itertools.islice(range(10), 2, 7, 2))
         self.assertEqual(values, [2, 4, 6])
+
+    def test_gcd_finds_the_largest_shared_factor(self):
+        self.assertEqual(math.gcd(12, 18), 6)
+        self.assertEqual(math.gcd(8, 12), 4)
 
 if __name__ == "__main__":
     unittest.main()
