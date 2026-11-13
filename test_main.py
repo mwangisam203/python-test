@@ -1297,5 +1297,11 @@ class LearningTipsTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "between 0 and 100"):
             check_grade(101)
 
+    def test_function_annotations_describe_inputs_and_outputs(self):
+        def double(number: int) -> int:
+            return number * 2
+        self.assertEqual(double(4), 8)
+        self.assertEqual(double.__annotations__, {"number": int, "return": int})
+
 if __name__ == "__main__":
     unittest.main()

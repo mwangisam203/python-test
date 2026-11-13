@@ -446,3 +446,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 208. **Use finally to always run cleanup code.** The `finally` block runs after `try`, whether the work succeeded or raised an error. It is often used for cleanup.
 
 209. **Raise an error for invalid input.** `raise ValueError(...)` stops a function when its input is invalid. `assertRaisesRegex` checks both the error type and message.
+
+210. **Add type hints to a function.** Type hints document the expected input and return types. Python records them in `__annotations__`; they do not automatically enforce types.
