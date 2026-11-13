@@ -422,3 +422,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 196. **Read the parent folder name.** `Path.parent` returns the containing path. Its `.name` is the folder `reports`.
 
 197. **Change a path suffix.** `.with_suffix()` returns a new path with the requested extension and leaves the original path unchanged.
+
+198. **Read the parts of a path.** `.parts` returns the components of a path as a tuple.

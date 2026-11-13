@@ -1231,5 +1231,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(path.with_suffix(".txt"), Path("reports/grades.txt"))
         self.assertEqual(path.suffix, ".csv")
 
+    def test_path_parts_returns_each_component(self):
+        path = Path("reports/grades.csv")
+        self.assertEqual(path.parts, ("reports", "grades.csv"))
+
 if __name__ == "__main__":
     unittest.main()
