@@ -1271,5 +1271,14 @@ class LearningTipsTests(unittest.TestCase):
             found = False
         self.assertFalse(found)
 
+    def test_try_else_runs_when_no_error_occurs(self):
+        try:
+            grade = int("90")
+        except ValueError:
+            result = "invalid"
+        else:
+            result = "valid"
+        self.assertEqual((grade, result), (90, "valid"))
+
 if __name__ == "__main__":
     unittest.main()

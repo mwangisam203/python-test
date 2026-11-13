@@ -440,3 +440,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 205. **Check set containment with comparisons.** For sets, `<=` checks whether every item in the left set is also in the right set.
 
 206. **Use loop else when no item matched.** A loop's `else` block runs when the loop finishes without `break`. Here Maya is absent, so the `else` runs.
+
+207. **Use try else after a successful conversion.** The `else` block after `try` runs only when the `try` block completes without an exception.
