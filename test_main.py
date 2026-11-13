@@ -1243,5 +1243,9 @@ class LearningTipsTests(unittest.TestCase):
         message = "{} earned {} points".format("Craig", 90)
         self.assertEqual(message, "Craig earned 90 points")
 
+    def test_f_string_repr_shows_string_quotes(self):
+        name = "Craig"
+        self.assertEqual(f"{name!r}", "'Craig'")
+
 if __name__ == "__main__":
     unittest.main()
