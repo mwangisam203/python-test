@@ -1214,5 +1214,9 @@ class LearningTipsTests(unittest.TestCase):
     def test_pstdev_returns_population_standard_deviation(self):
         self.assertEqual(statistics.pstdev([2, 4, 4, 4, 5, 5, 7, 9]), 2)
 
+    def test_path_name_returns_the_final_component(self):
+        path = Path("reports/grades.csv")
+        self.assertEqual(path.name, "grades.csv")
+
 if __name__ == "__main__":
     unittest.main()

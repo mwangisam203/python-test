@@ -414,3 +414,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 192. **Find the most frequent value with mode.** `statistics.mode()` returns the value that occurs most often.
 
 193. **Measure population spread with pstdev.** `statistics.pstdev()` calculates the population standard deviation, a measure of how spread out the values are.
+
+194. **Read a file name from a path.** `Path.name` returns the last part of a path. It works on the path text without opening a file.
