@@ -1251,5 +1251,8 @@ class LearningTipsTests(unittest.TestCase):
         person = {"name": "Craig", **{"age": 16}}
         self.assertEqual(person, {"name": "Craig", "age": 16})
 
+    def test_ampersand_finds_set_intersection(self):
+        self.assertEqual({90, 60} & {60, 45}, {60})
+
 if __name__ == "__main__":
     unittest.main()

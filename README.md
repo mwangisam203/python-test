@@ -432,3 +432,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 201. **Show quotation marks with the repr conversion.** The `!r` f-string conversion uses `repr()` so that the resulting text shows string quotation marks.
 
 202. **Combine dictionaries with unpacking.** `**` inside a dictionary literal copies entries from another dictionary.
+
+203. **Find shared set values with an operator.** The `&` operator finds the intersection: values present in both sets.
