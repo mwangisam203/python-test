@@ -380,3 +380,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 175. **Find the average with statistics mean.** The standard library `statistics.mean()` calculates the arithmetic average of a list of numbers.
 
 176. **Count repeated values with Counter.** `collections.Counter` counts how often each item appears.
+
+177. **Find the most common value.** `.most_common(1)` returns a list containing the most common value and its count.

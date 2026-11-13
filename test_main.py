@@ -1139,5 +1139,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(counts["pass"], 2)
         self.assertEqual(counts["try again"], 1)
 
+    def test_counter_most_common_returns_ranked_pairs(self):
+        counts = Counter(["pass", "pass", "try again"])
+        self.assertEqual(counts.most_common(1), [("pass", 2)])
+
 if __name__ == "__main__":
     unittest.main()
