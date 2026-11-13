@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+import itertools
 from collections import Counter, defaultdict, deque
 import math
 from pathlib import Path
@@ -1160,6 +1161,10 @@ class LearningTipsTests(unittest.TestCase):
         grades = deque([90, 60, 45])
         grades.rotate(1)
         self.assertEqual(list(grades), [45, 90, 60])
+
+    def test_chain_iterates_over_sequences_in_order(self):
+        names = list(itertools.chain(["Craig", "Hancho"], ["Annete"]))
+        self.assertEqual(names, ["Craig", "Hancho", "Annete"])
 
 if __name__ == "__main__":
     unittest.main()
