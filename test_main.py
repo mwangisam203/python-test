@@ -1199,5 +1199,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.log10(100), 2)
         self.assertEqual(math.log10(1000), 3)
 
+    def test_fsum_sums_decimal_values(self):
+        self.assertEqual(math.fsum([0.1] * 10), 1.0)
+        self.assertEqual(math.fsum([1.5, 2.5]), 4.0)
+
 if __name__ == "__main__":
     unittest.main()

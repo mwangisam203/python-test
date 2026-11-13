@@ -406,3 +406,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 188. **Remove a decimal part without rounding.** `math.trunc()` removes the decimal part and moves toward zero for positive and negative numbers.
 
 189. **Find a base ten logarithm.** `math.log10(value)` answers which power of ten gives that value.
+
+190. **Add decimals accurately with fsum.** `math.fsum()` adds floating point values while reducing small rounding errors.
