@@ -1170,5 +1170,9 @@ class LearningTipsTests(unittest.TestCase):
         pairs = list(itertools.product(["Craig", "Maya"], ["pass", "retry"]))
         self.assertEqual(pairs, [("Craig", "pass"), ("Craig", "retry"), ("Maya", "pass"), ("Maya", "retry")])
 
+    def test_repeat_produces_a_fixed_number_of_values(self):
+        values = list(itertools.repeat("practice", 3))
+        self.assertEqual(values, ["practice", "practice", "practice"])
+
 if __name__ == "__main__":
     unittest.main()

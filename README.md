@@ -392,3 +392,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 181. **Join iterables with chain.** `itertools.chain()` lets one loop visit multiple sequences in order.
 
 182. **Create pairs with product.** `itertools.product()` makes every possible pair from the supplied groups.
+
+183. **Repeat a value with itertools.** `itertools.repeat(value, count)` provides the value the requested number of times.
