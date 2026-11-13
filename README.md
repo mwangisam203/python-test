@@ -426,3 +426,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 198. **Read the parts of a path.** `.parts` returns the components of a path as a tuple.
 
 199. **Check whether a path is absolute.** An absolute path starts from the filesystem root. A relative path is interpreted from the current folder.
+
+200. **Format text with format.** `.format()` puts supplied values into `{}` placeholders in a string.

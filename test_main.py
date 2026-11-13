@@ -1239,5 +1239,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertFalse(Path("reports/grades.csv").is_absolute())
         self.assertTrue(Path("/tmp/grades.csv").is_absolute())
 
+    def test_format_places_values_in_braces(self):
+        message = "{} earned {} points".format("Craig", 90)
+        self.assertEqual(message, "Craig earned 90 points")
+
 if __name__ == "__main__":
     unittest.main()
