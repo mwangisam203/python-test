@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+from collections import Counter
 import math
 from pathlib import Path
 import subprocess
@@ -1132,6 +1133,11 @@ class LearningTipsTests(unittest.TestCase):
     def test_statistics_mean_calculates_an_average(self):
         self.assertEqual(statistics.mean([90, 60, 45]), 65)
         self.assertEqual(statistics.mean([80, 100]), 90)
+
+    def test_counter_counts_repeated_values(self):
+        counts = Counter(["pass", "pass", "try again"])
+        self.assertEqual(counts["pass"], 2)
+        self.assertEqual(counts["try again"], 1)
 
 if __name__ == "__main__":
     unittest.main()

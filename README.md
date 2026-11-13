@@ -378,3 +378,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 174. **Round a number downward with floor.** `math.floor()` rounds downward to the nearest integer.
 
 175. **Find the average with statistics mean.** The standard library `statistics.mean()` calculates the arithmetic average of a list of numbers.
+
+176. **Count repeated values with Counter.** `collections.Counter` counts how often each item appears.
