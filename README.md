@@ -434,3 +434,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 202. **Combine dictionaries with unpacking.** `**` inside a dictionary literal copies entries from another dictionary.
 
 203. **Find shared set values with an operator.** The `&` operator finds the intersection: values present in both sets.
+
+204. **Combine sets with the union operator.** The `|` operator combines sets and keeps each value only once.

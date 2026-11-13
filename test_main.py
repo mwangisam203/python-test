@@ -1254,5 +1254,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_ampersand_finds_set_intersection(self):
         self.assertEqual({90, 60} & {60, 45}, {60})
 
+    def test_pipe_combines_set_values(self):
+        self.assertEqual({90, 60} | {60, 45}, {90, 60, 45})
+
 if __name__ == "__main__":
     unittest.main()
