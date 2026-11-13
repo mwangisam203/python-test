@@ -1211,5 +1211,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_mode_returns_the_most_frequent_value(self):
         self.assertEqual(statistics.mode([90, 60, 60, 45]), 60)
 
+    def test_pstdev_returns_population_standard_deviation(self):
+        self.assertEqual(statistics.pstdev([2, 4, 4, 4, 5, 5, 7, 9]), 2)
+
 if __name__ == "__main__":
     unittest.main()

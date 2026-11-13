@@ -412,3 +412,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 191. **Find the middle value with median.** `statistics.median()` returns the middle value after ordering the data. For an even number of values, it averages the middle pair.
 
 192. **Find the most frequent value with mode.** `statistics.mode()` returns the value that occurs most often.
+
+193. **Measure population spread with pstdev.** `statistics.pstdev()` calculates the population standard deviation, a measure of how spread out the values are.
