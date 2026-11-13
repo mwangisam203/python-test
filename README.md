@@ -416,3 +416,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 193. **Measure population spread with pstdev.** `statistics.pstdev()` calculates the population standard deviation, a measure of how spread out the values are.
 
 194. **Read a file name from a path.** `Path.name` returns the last part of a path. It works on the path text without opening a file.
+
+195. **Read a file suffix from a path.** `Path.suffix` returns the final file extension, including its leading dot.
