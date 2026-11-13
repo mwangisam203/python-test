@@ -386,3 +386,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 178. **Give missing dictionary keys a list.** `defaultdict(list)` automatically creates an empty list the first time a missing key is used.
 
 179. **Use a deque as a first in first out queue.** `deque` supports adding items at either end. `popleft()` removes the oldest item from the left side.
+
+180. **Rotate items in a deque.** `.rotate(1)` moves the last item to the front. A negative number rotates in the other direction.

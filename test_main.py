@@ -1156,5 +1156,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(queue.popleft(), "Craig")
         self.assertEqual(list(queue), ["Hancho"])
 
+    def test_deque_rotate_moves_items_around(self):
+        grades = deque([90, 60, 45])
+        grades.rotate(1)
+        self.assertEqual(list(grades), [45, 90, 60])
+
 if __name__ == "__main__":
     unittest.main()
