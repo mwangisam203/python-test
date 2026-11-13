@@ -418,3 +418,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 194. **Read a file name from a path.** `Path.name` returns the last part of a path. It works on the path text without opening a file.
 
 195. **Read a file suffix from a path.** `Path.suffix` returns the final file extension, including its leading dot.
+
+196. **Read the parent folder name.** `Path.parent` returns the containing path. Its `.name` is the folder `reports`.

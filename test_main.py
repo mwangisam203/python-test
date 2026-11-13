@@ -1222,5 +1222,9 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("reports/grades.csv")
         self.assertEqual(path.suffix, ".csv")
 
+    def test_path_parent_returns_the_containing_folder(self):
+        path = Path("reports/grades.csv")
+        self.assertEqual(path.parent.name, "reports")
+
 if __name__ == "__main__":
     unittest.main()
