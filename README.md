@@ -404,3 +404,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 187. **Compare close floating point numbers.** `math.isclose()` checks whether two floating point results are close enough, allowing for small rounding differences.
 
 188. **Remove a decimal part without rounding.** `math.trunc()` removes the decimal part and moves toward zero for positive and negative numbers.
+
+189. **Find a base ten logarithm.** `math.log10(value)` answers which power of ten gives that value.

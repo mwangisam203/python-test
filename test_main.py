@@ -1195,5 +1195,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.trunc(3.9), 3)
         self.assertEqual(math.trunc(-3.9), -3)
 
+    def test_log10_finds_a_power_of_ten(self):
+        self.assertEqual(math.log10(100), 2)
+        self.assertEqual(math.log10(1000), 3)
+
 if __name__ == "__main__":
     unittest.main()
