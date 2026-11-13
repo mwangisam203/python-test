@@ -384,3 +384,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 177. **Find the most common value.** `.most_common(1)` returns a list containing the most common value and its count.
 
 178. **Give missing dictionary keys a list.** `defaultdict(list)` automatically creates an empty list the first time a missing key is used.
+
+179. **Use a deque as a first in first out queue.** `deque` supports adding items at either end. `popleft()` removes the oldest item from the left side.

@@ -1150,5 +1150,11 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(scores["Craig"], [90, 95])
         self.assertEqual(scores["Maya"], [])
 
+    def test_deque_removes_the_oldest_item_first(self):
+        queue = deque(["Craig"])
+        queue.append("Hancho")
+        self.assertEqual(queue.popleft(), "Craig")
+        self.assertEqual(list(queue), ["Hancho"])
+
 if __name__ == "__main__":
     unittest.main()
