@@ -1183,5 +1183,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.gcd(12, 18), 6)
         self.assertEqual(math.gcd(8, 12), 4)
 
+    def test_factorial_multiplies_positive_whole_numbers(self):
+        self.assertEqual(math.factorial(5), 120)
+        self.assertEqual(math.factorial(0), 1)
+
 if __name__ == "__main__":
     unittest.main()

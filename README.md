@@ -398,3 +398,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 184. **Take part of an iterator with islice.** `islice()` takes a start, stop, and step, much like a list slice, while reading an iterator.
 
 185. **Find a greatest common divisor.** `math.gcd()` returns the largest integer that divides both inputs evenly.
+
+186. **Calculate a factorial.** `math.factorial(5)` multiplies 5 × 4 × 3 × 2 × 1. By definition, zero factorial is 1.
