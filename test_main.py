@@ -1226,5 +1226,10 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("reports/grades.csv")
         self.assertEqual(path.parent.name, "reports")
 
+    def test_with_suffix_returns_a_path_with_a_new_extension(self):
+        path = Path("reports/grades.csv")
+        self.assertEqual(path.with_suffix(".txt"), Path("reports/grades.txt"))
+        self.assertEqual(path.suffix, ".csv")
+
 if __name__ == "__main__":
     unittest.main()

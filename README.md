@@ -420,3 +420,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 195. **Read a file suffix from a path.** `Path.suffix` returns the final file extension, including its leading dot.
 
 196. **Read the parent folder name.** `Path.parent` returns the containing path. Its `.name` is the folder `reports`.
+
+197. **Change a path suffix.** `.with_suffix()` returns a new path with the requested extension and leaves the original path unchanged.
