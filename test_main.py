@@ -1288,5 +1288,14 @@ class LearningTipsTests(unittest.TestCase):
             steps.append("cleanup")
         self.assertEqual(steps, ["work", "cleanup"])
 
+    def test_raise_stops_a_function_with_value_error(self):
+        def check_grade(grade):
+            if not 0 <= grade <= 100:
+                raise ValueError("Grade must be between 0 and 100")
+            return grade
+        self.assertEqual(check_grade(90), 90)
+        with self.assertRaisesRegex(ValueError, "between 0 and 100"):
+            check_grade(101)
+
 if __name__ == "__main__":
     unittest.main()
