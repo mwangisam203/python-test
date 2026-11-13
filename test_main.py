@@ -1208,5 +1208,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(statistics.median([90, 60, 45]), 60)
         self.assertEqual(statistics.median([60, 80]), 70)
 
+    def test_mode_returns_the_most_frequent_value(self):
+        self.assertEqual(statistics.mode([90, 60, 60, 45]), 60)
+
 if __name__ == "__main__":
     unittest.main()

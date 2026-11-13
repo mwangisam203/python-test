@@ -410,3 +410,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 190. **Add decimals accurately with fsum.** `math.fsum()` adds floating point values while reducing small rounding errors.
 
 191. **Find the middle value with median.** `statistics.median()` returns the middle value after ordering the data. For an even number of values, it averages the middle pair.
+
+192. **Find the most frequent value with mode.** `statistics.mode()` returns the value that occurs most often.
