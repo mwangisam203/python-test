@@ -1187,5 +1187,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.factorial(5), 120)
         self.assertEqual(math.factorial(0), 1)
 
+    def test_isclose_checks_approximate_equality(self):
+        self.assertTrue(math.isclose(0.1 + 0.2, 0.3))
+        self.assertFalse(math.isclose(0.1 + 0.2, 0.4))
+
 if __name__ == "__main__":
     unittest.main()
