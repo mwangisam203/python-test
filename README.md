@@ -438,3 +438,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 204. **Combine sets with the union operator.** The `|` operator combines sets and keeps each value only once.
 
 205. **Check set containment with comparisons.** For sets, `<=` checks whether every item in the left set is also in the right set.
+
+206. **Use loop else when no item matched.** A loop's `else` block runs when the loop finishes without `break`. Here Maya is absent, so the `else` runs.

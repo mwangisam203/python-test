@@ -1261,5 +1261,15 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue({60, 45} <= {90, 60, 45})
         self.assertFalse({100} <= {90, 60, 45})
 
+    def test_for_else_runs_when_loop_did_not_break(self):
+        found = False
+        for student in self.students:
+            if student.name == "Maya":
+                found = True
+                break
+        else:
+            found = False
+        self.assertFalse(found)
+
 if __name__ == "__main__":
     unittest.main()
