@@ -382,3 +382,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 176. **Count repeated values with Counter.** `collections.Counter` counts how often each item appears.
 
 177. **Find the most common value.** `.most_common(1)` returns a list containing the most common value and its count.
+
+178. **Give missing dictionary keys a list.** `defaultdict(list)` automatically creates an empty list the first time a missing key is used.

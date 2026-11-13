@@ -2,7 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
-from collections import Counter
+from collections import Counter, defaultdict, deque
 import math
 from pathlib import Path
 import subprocess
@@ -1142,6 +1142,13 @@ class LearningTipsTests(unittest.TestCase):
     def test_counter_most_common_returns_ranked_pairs(self):
         counts = Counter(["pass", "pass", "try again"])
         self.assertEqual(counts.most_common(1), [("pass", 2)])
+
+    def test_defaultdict_creates_a_default_list(self):
+        scores = defaultdict(list)
+        scores["Craig"].append(90)
+        scores["Craig"].append(95)
+        self.assertEqual(scores["Craig"], [90, 95])
+        self.assertEqual(scores["Maya"], [])
 
 if __name__ == "__main__":
     unittest.main()
