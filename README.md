@@ -436,3 +436,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 203. **Find shared set values with an operator.** The `&` operator finds the intersection: values present in both sets.
 
 204. **Combine sets with the union operator.** The `|` operator combines sets and keeps each value only once.
+
+205. **Check set containment with comparisons.** For sets, `<=` checks whether every item in the left set is also in the right set.

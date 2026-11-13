@@ -1257,5 +1257,9 @@ class LearningTipsTests(unittest.TestCase):
     def test_pipe_combines_set_values(self):
         self.assertEqual({90, 60} | {60, 45}, {90, 60, 45})
 
+    def test_less_equal_checks_set_subset(self):
+        self.assertTrue({60, 45} <= {90, 60, 45})
+        self.assertFalse({100} <= {90, 60, 45})
+
 if __name__ == "__main__":
     unittest.main()
