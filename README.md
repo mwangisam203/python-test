@@ -408,3 +408,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 189. **Find a base ten logarithm.** `math.log10(value)` answers which power of ten gives that value.
 
 190. **Add decimals accurately with fsum.** `math.fsum()` adds floating point values while reducing small rounding errors.
+
+191. **Find the middle value with median.** `statistics.median()` returns the middle value after ordering the data. For an even number of values, it averages the middle pair.

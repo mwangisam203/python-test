@@ -9,6 +9,7 @@ import math
 from pathlib import Path
 import subprocess
 import statistics
+import statistics
 import sys
 import unittest
 
@@ -1202,6 +1203,10 @@ class LearningTipsTests(unittest.TestCase):
     def test_fsum_sums_decimal_values(self):
         self.assertEqual(math.fsum([0.1] * 10), 1.0)
         self.assertEqual(math.fsum([1.5, 2.5]), 4.0)
+
+    def test_median_returns_the_middle_number(self):
+        self.assertEqual(statistics.median([90, 60, 45]), 60)
+        self.assertEqual(statistics.median([60, 80]), 70)
 
 if __name__ == "__main__":
     unittest.main()
