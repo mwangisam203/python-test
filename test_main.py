@@ -1174,5 +1174,9 @@ class LearningTipsTests(unittest.TestCase):
         values = list(itertools.repeat("practice", 3))
         self.assertEqual(values, ["practice", "practice", "practice"])
 
+    def test_islice_selects_a_range_of_iterator_values(self):
+        values = list(itertools.islice(range(10), 2, 7, 2))
+        self.assertEqual(values, [2, 4, 6])
+
 if __name__ == "__main__":
     unittest.main()

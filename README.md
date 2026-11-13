@@ -394,3 +394,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 182. **Create pairs with product.** `itertools.product()` makes every possible pair from the supplied groups.
 
 183. **Repeat a value with itertools.** `itertools.repeat(value, count)` provides the value the requested number of times.
+
+184. **Take part of an iterator with islice.** `islice()` takes a start, stop, and step, much like a list slice, while reading an iterator.
