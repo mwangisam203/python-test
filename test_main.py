@@ -1280,5 +1280,13 @@ class LearningTipsTests(unittest.TestCase):
             result = "valid"
         self.assertEqual((grade, result), (90, "valid"))
 
+    def test_finally_runs_after_try(self):
+        steps = []
+        try:
+            steps.append("work")
+        finally:
+            steps.append("cleanup")
+        self.assertEqual(steps, ["work", "cleanup"])
+
 if __name__ == "__main__":
     unittest.main()
