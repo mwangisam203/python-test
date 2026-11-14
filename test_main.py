@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+from datetime import date, datetime, timedelta
 import math
 import itertools
 from collections import Counter, defaultdict, deque
@@ -1364,6 +1365,10 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("reports/grades.csv")
         self.assertTrue(path.is_relative_to(Path("reports")))
         self.assertFalse(path.is_relative_to(Path("images")))
+
+    def test_date_stores_year_month_and_day(self):
+        school_day = date(2026, 11, 14)
+        self.assertEqual((school_day.year, school_day.month, school_day.day), (2026, 11, 14))
 
 if __name__ == "__main__":
     unittest.main()

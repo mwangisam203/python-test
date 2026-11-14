@@ -478,3 +478,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 224. **Display a path with forward slashes.** `.as_posix()` displays path parts with forward slashes, regardless of the platform separator.
 
 225. **Check whether a path is inside another path.** `.is_relative_to()` checks whether a path begins with the given parent path. It does not access the filesystem.
+
+226. **Create a calendar date.** `date(year, month, day)` creates a calendar date with separate year, month, and day values.
