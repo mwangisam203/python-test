@@ -506,3 +506,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 238. **Convert a dictionary to JSON text.** `json.dumps()` turns Python data into JSON text. `sort_keys=True` makes dictionary keys appear in sorted order.
 
 239. **Read JSON text into Python values.** `json.loads()` reads JSON text and creates the corresponding Python dictionary.
+
+240. **Round trip nested data through JSON.** Encoding data with `json.dumps()` and reading it with `json.loads()` preserves nested lists and dictionaries.

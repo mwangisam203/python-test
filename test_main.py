@@ -1429,5 +1429,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(record["name"], "Craig")
         self.assertEqual(record["grade"], 90)
 
+    def test_json_round_trip_preserves_nested_values(self):
+        original = {"students": [{"name": "Craig", "grades": [90, 95]}]}
+        restored = json.loads(json.dumps(original))
+        self.assertEqual(restored, original)
+
 if __name__ == "__main__":
     unittest.main()
