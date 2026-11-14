@@ -470,3 +470,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 220. **Split ordered data into quartiles.** `statistics.quantiles(data, n=4)` divides ordered data into four groups and returns the three cut points.
 
 221. **Read a file name without its extension.** `Path.stem` returns the final path name without its last suffix.
+
+222. **Read every suffix in a file name.** `Path.suffixes` returns all extensions, which helps with names such as `archive.tar.gz`.

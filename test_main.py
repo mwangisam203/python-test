@@ -1347,5 +1347,9 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("reports/grades.csv")
         self.assertEqual(path.stem, "grades")
 
+    def test_path_suffixes_returns_multiple_extensions(self):
+        path = Path("archive.tar.gz")
+        self.assertEqual(path.suffixes, [".tar", ".gz"])
+
 if __name__ == "__main__":
     unittest.main()
