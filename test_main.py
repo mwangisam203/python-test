@@ -1339,5 +1339,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(statistics.multimode([1, 1, 2, 2, 3]), [1, 2])
         self.assertEqual(statistics.multimode([4, 4, 4]), [4])
 
+    def test_quantiles_returns_three_cut_points(self):
+        cuts = statistics.quantiles([1, 2, 3, 4], n=4)
+        self.assertEqual(cuts, [1.25, 2.5, 3.75])
+
 if __name__ == "__main__":
     unittest.main()
