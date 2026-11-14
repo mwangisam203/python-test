@@ -492,3 +492,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 231. **Parse a date from text.** `datetime.strptime(text, format)` reads text using the format you describe. `%Y`, `%m`, and `%d` mean year, month, and day.
 
 232. **Format a date with strftime.** `.strftime()` turns a date into text using format codes such as `%Y` for year and `%m` for month.
+
+233. **Check whether a year is a leap year.** `calendar.isleap(year)` returns whether the year has a leap day.

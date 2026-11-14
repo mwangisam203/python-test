@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+import calendar
 from datetime import date, datetime, timedelta
 import math
 import itertools
@@ -1395,6 +1396,10 @@ class LearningTipsTests(unittest.TestCase):
     def test_strftime_formats_date_parts(self):
         school_day = date(2026, 11, 14)
         self.assertEqual(school_day.strftime("%Y/%m/%d"), "2026/11/14")
+
+    def test_isleap_checks_leap_years(self):
+        self.assertTrue(calendar.isleap(2024))
+        self.assertFalse(calendar.isleap(2025))
 
 if __name__ == "__main__":
     unittest.main()
