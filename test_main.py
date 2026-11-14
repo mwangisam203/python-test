@@ -1327,5 +1327,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.copysign(5, -1), -5)
         self.assertEqual(math.copysign(5, 1), 5)
 
+    def test_radians_converts_degrees_to_radians(self):
+        self.assertAlmostEqual(math.radians(180), math.pi)
+        self.assertAlmostEqual(math.radians(90), math.pi / 2)
+
 if __name__ == "__main__":
     unittest.main()

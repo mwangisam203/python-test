@@ -460,3 +460,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 215. **Find an integer square root.** `math.isqrt()` returns the whole-number square root, rounding down when the input is not a perfect square.
 
 216. **Give a number the sign of another.** `math.copysign(value, sign)` takes the size of the first number and the sign of the second.
+
+217. **Convert degrees to radians.** `math.radians()` converts degrees to radians, the angle unit used by many math functions.
