@@ -490,3 +490,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 230. **Subtract dates to find a duration.** Subtracting one date from another returns a duration. Its `.days` value is the number of days between them.
 
 231. **Parse a date from text.** `datetime.strptime(text, format)` reads text using the format you describe. `%Y`, `%m`, and `%d` mean year, month, and day.
+
+232. **Format a date with strftime.** `.strftime()` turns a date into text using format codes such as `%Y` for year and `%m` for month.

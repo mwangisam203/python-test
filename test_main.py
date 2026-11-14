@@ -1392,5 +1392,9 @@ class LearningTipsTests(unittest.TestCase):
         parsed = datetime.strptime("2026-11-14", "%Y-%m-%d").date()
         self.assertEqual(parsed, date(2026, 11, 14))
 
+    def test_strftime_formats_date_parts(self):
+        school_day = date(2026, 11, 14)
+        self.assertEqual(school_day.strftime("%Y/%m/%d"), "2026/11/14")
+
 if __name__ == "__main__":
     unittest.main()
