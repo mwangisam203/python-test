@@ -1311,5 +1311,9 @@ class LearningTipsTests(unittest.TestCase):
         pairs = list(itertools.combinations(["Craig", "Hancho", "Annete"], 2))
         self.assertEqual(pairs, [("Craig", "Hancho"), ("Craig", "Annete"), ("Hancho", "Annete")])
 
+    def test_permutations_lists_different_orders(self):
+        orders = list(itertools.permutations(["A", "B"]))
+        self.assertEqual(orders, [("A", "B"), ("B", "A")])
+
 if __name__ == "__main__":
     unittest.main()
