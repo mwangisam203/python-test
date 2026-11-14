@@ -480,3 +480,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 225. **Check whether a path is inside another path.** `.is_relative_to()` checks whether a path begins with the given parent path. It does not access the filesystem.
 
 226. **Create a calendar date.** `date(year, month, day)` creates a calendar date with separate year, month, and day values.
+
+227. **Format a date as ISO text.** `.isoformat()` writes a date in the consistent `YYYY-MM-DD` format.

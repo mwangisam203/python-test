@@ -1370,5 +1370,9 @@ class LearningTipsTests(unittest.TestCase):
         school_day = date(2026, 11, 14)
         self.assertEqual((school_day.year, school_day.month, school_day.day), (2026, 11, 14))
 
+    def test_date_isoformat_uses_year_month_day_order(self):
+        school_day = date(2026, 11, 14)
+        self.assertEqual(school_day.isoformat(), "2026-11-14")
+
 if __name__ == "__main__":
     unittest.main()
