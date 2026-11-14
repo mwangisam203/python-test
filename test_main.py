@@ -1303,5 +1303,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(double(4), 8)
         self.assertEqual(double.__annotations__, {"number": int, "return": int})
 
+    def test_accumulate_returns_running_totals(self):
+        totals = list(itertools.accumulate([2, 3, 4]))
+        self.assertEqual(totals, [2, 5, 9])
+
 if __name__ == "__main__":
     unittest.main()
