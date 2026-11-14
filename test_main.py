@@ -1343,5 +1343,9 @@ class LearningTipsTests(unittest.TestCase):
         cuts = statistics.quantiles([1, 2, 3, 4], n=4)
         self.assertEqual(cuts, [1.25, 2.5, 3.75])
 
+    def test_path_stem_returns_name_without_suffix(self):
+        path = Path("reports/grades.csv")
+        self.assertEqual(path.stem, "grades")
+
 if __name__ == "__main__":
     unittest.main()

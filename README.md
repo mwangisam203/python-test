@@ -468,3 +468,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 219. **Find every most common value with multimode.** `statistics.multimode()` returns every value tied for most frequent, in the order each first appears.
 
 220. **Split ordered data into quartiles.** `statistics.quantiles(data, n=4)` divides ordered data into four groups and returns the three cut points.
+
+221. **Read a file name without its extension.** `Path.stem` returns the final path name without its last suffix.
