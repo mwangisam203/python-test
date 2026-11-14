@@ -504,3 +504,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 237. **Match an entire string with a pattern.** `re.fullmatch()` succeeds only when the pattern matches the entire string. `\d{3}` means exactly three digits.
 
 238. **Convert a dictionary to JSON text.** `json.dumps()` turns Python data into JSON text. `sort_keys=True` makes dictionary keys appear in sorted order.
+
+239. **Read JSON text into Python values.** `json.loads()` reads JSON text and creates the corresponding Python dictionary.
