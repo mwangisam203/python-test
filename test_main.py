@@ -1415,5 +1415,9 @@ class LearningTipsTests(unittest.TestCase):
         cleaned = re.sub(r"\s+", " ", "Craig   Hancho")
         self.assertEqual(cleaned, "Craig Hancho")
 
+    def test_fullmatch_requires_the_whole_string_to_match(self):
+        self.assertIsNotNone(re.fullmatch(r"\d{3}", "123"))
+        self.assertIsNone(re.fullmatch(r"\d{3}", "1234"))
+
 if __name__ == "__main__":
     unittest.main()
