@@ -1388,5 +1388,9 @@ class LearningTipsTests(unittest.TestCase):
         end = date(2026, 11, 14)
         self.assertEqual((end - start).days, 13)
 
+    def test_strptime_reads_a_date_with_a_format(self):
+        parsed = datetime.strptime("2026-11-14", "%Y-%m-%d").date()
+        self.assertEqual(parsed, date(2026, 11, 14))
+
 if __name__ == "__main__":
     unittest.main()
