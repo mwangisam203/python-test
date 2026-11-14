@@ -1401,5 +1401,10 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(calendar.isleap(2024))
         self.assertFalse(calendar.isleap(2025))
 
+    def test_monthrange_returns_weekday_and_month_length(self):
+        first_weekday, day_count = calendar.monthrange(2024, 2)
+        self.assertEqual(first_weekday, 3)
+        self.assertEqual(day_count, 29)
+
 if __name__ == "__main__":
     unittest.main()

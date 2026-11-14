@@ -494,3 +494,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 232. **Format a date with strftime.** `.strftime()` turns a date into text using format codes such as `%Y` for year and `%m` for month.
 
 233. **Check whether a year is a leap year.** `calendar.isleap(year)` returns whether the year has a leap day.
+
+234. **Find the number of days in a month.** `calendar.monthrange(year, month)` returns the weekday of the first day and the number of days in that month. Monday is 0.
