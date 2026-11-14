@@ -1323,5 +1323,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.isqrt(81), 9)
         self.assertEqual(math.isqrt(80), 8)
 
+    def test_copysign_uses_a_second_numbers_sign(self):
+        self.assertEqual(math.copysign(5, -1), -5)
+        self.assertEqual(math.copysign(5, 1), 5)
+
 if __name__ == "__main__":
     unittest.main()

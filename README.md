@@ -458,3 +458,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 214. **Multiply values with prod.** `math.prod()` multiplies all the values in an iterable. The product of an empty iterable is defined as 1.
 
 215. **Find an integer square root.** `math.isqrt()` returns the whole-number square root, rounding down when the input is not a perfect square.
+
+216. **Give a number the sign of another.** `math.copysign(value, sign)` takes the size of the first number and the sign of the second.
