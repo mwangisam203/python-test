@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+import re
 import calendar
 from datetime import date, datetime, timedelta
 import math
@@ -1405,6 +1406,10 @@ class LearningTipsTests(unittest.TestCase):
         first_weekday, day_count = calendar.monthrange(2024, 2)
         self.assertEqual(first_weekday, 3)
         self.assertEqual(day_count, 29)
+
+    def test_findall_collects_every_digit_group(self):
+        numbers = re.findall(r"\d+", "Craig scored 90 in room 2")
+        self.assertEqual(numbers, ["90", "2"])
 
 if __name__ == "__main__":
     unittest.main()

@@ -496,3 +496,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 233. **Check whether a year is a leap year.** `calendar.isleap(year)` returns whether the year has a leap day.
 
 234. **Find the number of days in a month.** `calendar.monthrange(year, month)` returns the weekday of the first day and the number of days in that month. Monday is 0.
+
+235. **Find digit groups with a regular expression.** `re.findall()` returns every match. The pattern `\d+` means one or more digits.
