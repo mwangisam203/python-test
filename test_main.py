@@ -1351,5 +1351,10 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("archive.tar.gz")
         self.assertEqual(path.suffixes, [".tar", ".gz"])
 
+    def test_with_name_replaces_the_final_path_name(self):
+        path = Path("reports/grades.csv")
+        self.assertEqual(path.with_name("summary.txt"), Path("reports/summary.txt"))
+        self.assertEqual(path.name, "grades.csv")
+
 if __name__ == "__main__":
     unittest.main()

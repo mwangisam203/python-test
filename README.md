@@ -472,3 +472,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 221. **Read a file name without its extension.** `Path.stem` returns the final path name without its last suffix.
 
 222. **Read every suffix in a file name.** `Path.suffixes` returns all extensions, which helps with names such as `archive.tar.gz`.
+
+223. **Change the name at the end of a path.** `.with_name()` returns a new path with a replacement final name, while leaving the original unchanged.
