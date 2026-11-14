@@ -1411,5 +1411,9 @@ class LearningTipsTests(unittest.TestCase):
         numbers = re.findall(r"\d+", "Craig scored 90 in room 2")
         self.assertEqual(numbers, ["90", "2"])
 
+    def test_regex_sub_replaces_matching_text(self):
+        cleaned = re.sub(r"\s+", " ", "Craig   Hancho")
+        self.assertEqual(cleaned, "Craig Hancho")
+
 if __name__ == "__main__":
     unittest.main()

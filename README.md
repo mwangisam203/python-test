@@ -498,3 +498,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 234. **Find the number of days in a month.** `calendar.monthrange(year, month)` returns the weekday of the first day and the number of days in that month. Monday is 0.
 
 235. **Find digit groups with a regular expression.** `re.findall()` returns every match. The pattern `\d+` means one or more digits.
+
+236. **Replace repeated spaces with one space.** `re.sub(pattern, replacement, text)` replaces every section of text that matches a pattern. `\s+` matches one or more spaces.
