@@ -1315,5 +1315,9 @@ class LearningTipsTests(unittest.TestCase):
         orders = list(itertools.permutations(["A", "B"]))
         self.assertEqual(orders, [("A", "B"), ("B", "A")])
 
+    def test_math_prod_multiplies_values(self):
+        self.assertEqual(math.prod([2, 3, 4]), 24)
+        self.assertEqual(math.prod([]), 1)
+
 if __name__ == "__main__":
     unittest.main()

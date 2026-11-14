@@ -454,3 +454,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 212. **Choose pairs with combinations.** `itertools.combinations(items, 2)` creates pairs without repeating an item or reversing the same pair.
 
 213. **Arrange items with permutations.** `itertools.permutations()` lists possible orderings. With two different items there are two orders.
+
+214. **Multiply values with prod.** `math.prod()` multiplies all the values in an iterable. The product of an empty iterable is defined as 1.
