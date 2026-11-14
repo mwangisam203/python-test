@@ -2,6 +2,7 @@
 
 from contextlib import redirect_stdout
 import io
+import json
 import re
 import calendar
 from datetime import date, datetime, timedelta
@@ -1418,6 +1419,10 @@ class LearningTipsTests(unittest.TestCase):
     def test_fullmatch_requires_the_whole_string_to_match(self):
         self.assertIsNotNone(re.fullmatch(r"\d{3}", "123"))
         self.assertIsNone(re.fullmatch(r"\d{3}", "1234"))
+
+    def test_json_dumps_serializes_a_dictionary(self):
+        text = json.dumps({"name": "Craig", "grade": 90}, sort_keys=True)
+        self.assertEqual(text, '{"grade": 90, "name": "Craig"}')
 
 if __name__ == "__main__":
     unittest.main()

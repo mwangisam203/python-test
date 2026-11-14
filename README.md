@@ -502,3 +502,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 236. **Replace repeated spaces with one space.** `re.sub(pattern, replacement, text)` replaces every section of text that matches a pattern. `\s+` matches one or more spaces.
 
 237. **Match an entire string with a pattern.** `re.fullmatch()` succeeds only when the pattern matches the entire string. `\d{3}` means exactly three digits.
+
+238. **Convert a dictionary to JSON text.** `json.dumps()` turns Python data into JSON text. `sort_keys=True` makes dictionary keys appear in sorted order.
