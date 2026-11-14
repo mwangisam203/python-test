@@ -1360,5 +1360,10 @@ class LearningTipsTests(unittest.TestCase):
         path = Path("reports") / "grades.csv"
         self.assertEqual(path.as_posix(), "reports/grades.csv")
 
+    def test_is_relative_to_checks_a_path_prefix(self):
+        path = Path("reports/grades.csv")
+        self.assertTrue(path.is_relative_to(Path("reports")))
+        self.assertFalse(path.is_relative_to(Path("images")))
+
 if __name__ == "__main__":
     unittest.main()

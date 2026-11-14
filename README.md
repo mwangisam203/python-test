@@ -476,3 +476,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 223. **Change the name at the end of a path.** `.with_name()` returns a new path with a replacement final name, while leaving the original unchanged.
 
 224. **Display a path with forward slashes.** `.as_posix()` displays path parts with forward slashes, regardless of the platform separator.
+
+225. **Check whether a path is inside another path.** `.is_relative_to()` checks whether a path begins with the given parent path. It does not access the filesystem.
