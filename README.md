@@ -464,3 +464,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 217. **Convert degrees to radians.** `math.radians()` converts degrees to radians, the angle unit used by many math functions.
 
 218. **Convert radians to degrees.** `math.degrees()` converts radians back to degrees.
+
+219. **Find every most common value with multimode.** `statistics.multimode()` returns every value tied for most frequent, in the order each first appears.

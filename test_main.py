@@ -1335,5 +1335,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertAlmostEqual(math.degrees(math.pi), 180)
         self.assertAlmostEqual(math.degrees(math.pi / 2), 90)
 
+    def test_multimode_returns_all_tied_modes(self):
+        self.assertEqual(statistics.multimode([1, 1, 2, 2, 3]), [1, 2])
+        self.assertEqual(statistics.multimode([4, 4, 4]), [4])
+
 if __name__ == "__main__":
     unittest.main()
