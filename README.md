@@ -484,3 +484,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 227. **Format a date as ISO text.** `.isoformat()` writes a date in the consistent `YYYY-MM-DD` format.
 
 228. **Read the weekday number from a date.** `.weekday()` numbers Monday as 0 and Sunday as 6.
+
+229. **Add days to a date.** `timedelta(days=...)` represents a duration that can be added to a date.

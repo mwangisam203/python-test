@@ -1379,5 +1379,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(monday.weekday(), 0)
         self.assertEqual(date(2024, 1, 7).weekday(), 6)
 
+    def test_timedelta_moves_a_date_forward(self):
+        start = date(2026, 11, 14)
+        self.assertEqual(start + timedelta(days=7), date(2026, 11, 21))
+
 if __name__ == "__main__":
     unittest.main()
