@@ -1356,5 +1356,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(path.with_name("summary.txt"), Path("reports/summary.txt"))
         self.assertEqual(path.name, "grades.csv")
 
+    def test_as_posix_uses_forward_slashes(self):
+        path = Path("reports") / "grades.csv"
+        self.assertEqual(path.as_posix(), "reports/grades.csv")
+
 if __name__ == "__main__":
     unittest.main()
