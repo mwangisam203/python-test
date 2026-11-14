@@ -482,3 +482,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 226. **Create a calendar date.** `date(year, month, day)` creates a calendar date with separate year, month, and day values.
 
 227. **Format a date as ISO text.** `.isoformat()` writes a date in the consistent `YYYY-MM-DD` format.
+
+228. **Read the weekday number from a date.** `.weekday()` numbers Monday as 0 and Sunday as 6.

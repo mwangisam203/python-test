@@ -1374,5 +1374,10 @@ class LearningTipsTests(unittest.TestCase):
         school_day = date(2026, 11, 14)
         self.assertEqual(school_day.isoformat(), "2026-11-14")
 
+    def test_weekday_numbers_monday_as_zero(self):
+        monday = date(2024, 1, 1)
+        self.assertEqual(monday.weekday(), 0)
+        self.assertEqual(date(2024, 1, 7).weekday(), 6)
+
 if __name__ == "__main__":
     unittest.main()
