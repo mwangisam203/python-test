@@ -1307,5 +1307,9 @@ class LearningTipsTests(unittest.TestCase):
         totals = list(itertools.accumulate([2, 3, 4]))
         self.assertEqual(totals, [2, 5, 9])
 
+    def test_combinations_selects_pairs_without_repeats(self):
+        pairs = list(itertools.combinations(["Craig", "Hancho", "Annete"], 2))
+        self.assertEqual(pairs, [("Craig", "Hancho"), ("Craig", "Annete"), ("Hancho", "Annete")])
+
 if __name__ == "__main__":
     unittest.main()

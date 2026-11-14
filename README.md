@@ -450,3 +450,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 210. **Add type hints to a function.** Type hints document the expected input and return types. Python records them in `__annotations__`; they do not automatically enforce types.
 
 211. **Keep a running total with accumulate.** `itertools.accumulate()` returns each running total, which is useful for tracking a sum as values arrive.
+
+212. **Choose pairs with combinations.** `itertools.combinations(items, 2)` creates pairs without repeating an item or reversing the same pair.
