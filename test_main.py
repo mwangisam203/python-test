@@ -1319,5 +1319,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(math.prod([2, 3, 4]), 24)
         self.assertEqual(math.prod([]), 1)
 
+    def test_isqrt_returns_the_floor_of_a_square_root(self):
+        self.assertEqual(math.isqrt(81), 9)
+        self.assertEqual(math.isqrt(80), 8)
+
 if __name__ == "__main__":
     unittest.main()
