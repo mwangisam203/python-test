@@ -462,3 +462,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 216. **Give a number the sign of another.** `math.copysign(value, sign)` takes the size of the first number and the sign of the second.
 
 217. **Convert degrees to radians.** `math.radians()` converts degrees to radians, the angle unit used by many math functions.
+
+218. **Convert radians to degrees.** `math.degrees()` converts radians back to degrees.
