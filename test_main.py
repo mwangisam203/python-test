@@ -1383,5 +1383,10 @@ class LearningTipsTests(unittest.TestCase):
         start = date(2026, 11, 14)
         self.assertEqual(start + timedelta(days=7), date(2026, 11, 21))
 
+    def test_date_subtraction_returns_elapsed_days(self):
+        start = date(2026, 11, 1)
+        end = date(2026, 11, 14)
+        self.assertEqual((end - start).days, 13)
+
 if __name__ == "__main__":
     unittest.main()

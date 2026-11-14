@@ -486,3 +486,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 228. **Read the weekday number from a date.** `.weekday()` numbers Monday as 0 and Sunday as 6.
 
 229. **Add days to a date.** `timedelta(days=...)` represents a duration that can be added to a date.
+
+230. **Subtract dates to find a duration.** Subtracting one date from another returns a duration. Its `.days` value is the number of days between them.
