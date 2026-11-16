@@ -586,3 +586,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 278. **Use the tau circle constant.** `math.tau` is the circle constant equal to two times `math.pi`.
 
 279. **Repeat values from an iterable.** `itertools.cycle()` repeats an iterable. `islice()` can take a finite number of values from it.
+
+280. **Generate increasing numbers.** `itertools.count()` generates numbers from a start value, optionally increasing by a chosen step.

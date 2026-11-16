@@ -1571,5 +1571,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_cycle_repeats_values(self):
         self.assertEqual(list(itertools.islice(itertools.cycle(["A", "B"]), 5)), ["A", "B", "A", "B", "A"])
 
+    def test_count_generates_numbers_with_a_step(self):
+        self.assertEqual(list(itertools.islice(itertools.count(2, 3), 4)), [2, 5, 8, 11])
+
 if __name__ == "__main__":
     unittest.main()
