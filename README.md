@@ -546,3 +546,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 258. **Limit regular expression replacements.** `re.sub()` accepts `count` to limit how many matches it replaces.
 
 259. **Compare calendar dates.** Date objects can be compared in chronological order.
+
+260. **Count days from a date ordinal.** `toordinal()` gives a date an integer day number. Later dates have larger ordinal values.
