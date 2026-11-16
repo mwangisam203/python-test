@@ -1454,5 +1454,9 @@ class LearningTipsTests(unittest.TestCase):
     def test_json_null_becomes_none(self):
         self.assertIsNone(json.loads("null"))
 
+    def test_invalid_json_raises_decode_error(self):
+        with self.assertRaises(json.JSONDecodeError):
+            json.loads("{bad json}")
+
 if __name__ == "__main__":
     unittest.main()

@@ -520,3 +520,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 245. **Read JSON booleans as Python booleans.** JSON `true` and `false` become Python `True` and `False`.
 
 246. **Read JSON null as None.** JSON `null` maps to Python `None`.
+
+247. **Catch invalid JSON text.** Malformed JSON raises `json.JSONDecodeError`, which is a `ValueError` subclass.
