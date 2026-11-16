@@ -1538,5 +1538,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_hypot_calculates_right_triangle_length(self):
         self.assertEqual(math.hypot(3, 4), 5)
 
+    def test_fmod_returns_division_remainder(self):
+        self.assertEqual(math.fmod(7, 4), 3)
+
 if __name__ == "__main__":
     unittest.main()

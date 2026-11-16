@@ -566,3 +566,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 268. **Read date and time fields.** A `datetime` stores date fields and time fields that can be read by name.
 
 269. **Find a right triangle hypotenuse.** `math.hypot(x, y)` calculates the Euclidean distance from the origin to `(x, y)`.
+
+270. **Find a floating point remainder.** `math.fmod()` returns the remainder after division for floating point values.
