@@ -1480,5 +1480,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIsNotNone(re.search(r"^Grade", "Grade: 90"))
         self.assertIsNone(re.search(r"^Grade", "Final Grade"))
 
+    def test_regex_end_anchor_checks_suffix(self):
+        self.assertIsNotNone(re.search(r"\d+$", "Grade: 90"))
+        self.assertIsNone(re.search(r"\d+$", "Grade: 90 points"))
+
 if __name__ == "__main__":
     unittest.main()

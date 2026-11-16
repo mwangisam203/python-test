@@ -534,3 +534,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 252. **Match text without case sensitivity.** Pass `re.IGNORECASE` to make a regular expression match uppercase and lowercase letters alike.
 
 253. **Require a pattern at the start.** The `^` anchor matches the beginning of the text.
+
+254. **Require a pattern at the end.** The `$` anchor matches the end of the text.
