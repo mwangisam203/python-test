@@ -1492,5 +1492,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIsNotNone(re.fullmatch(r"[ABC]", "B"))
         self.assertIsNone(re.fullmatch(r"[ABC]", "D"))
 
+    def test_regex_word_boundary_finds_whole_word(self):
+        self.assertIsNotNone(re.search(r"\bpass\b", "students pass"))
+        self.assertIsNone(re.search(r"\bpass\b", "compass"))
+
 if __name__ == "__main__":
     unittest.main()

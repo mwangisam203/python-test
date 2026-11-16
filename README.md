@@ -540,3 +540,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 255. **Make a regular expression part optional.** A question mark makes the preceding pattern optional. Here, the letter `s` may appear zero or one times.
 
 256. **Match one character from a group.** Square brackets define a character class. `[ABC]` matches one of those three letters.
+
+257. **Find a whole word with a boundary.** The `\b` pattern marks a word boundary, so it can find a word without matching that text inside a longer word.
