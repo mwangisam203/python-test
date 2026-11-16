@@ -1458,5 +1458,8 @@ class LearningTipsTests(unittest.TestCase):
         with self.assertRaises(json.JSONDecodeError):
             json.loads("{bad json}")
 
+    def test_json_object_keys_are_strings(self):
+        self.assertEqual(json.loads(json.dumps({1: "one"})), {"1": "one"})
+
 if __name__ == "__main__":
     unittest.main()

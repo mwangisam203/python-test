@@ -522,3 +522,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 246. **Read JSON null as None.** JSON `null` maps to Python `None`.
 
 247. **Catch invalid JSON text.** Malformed JSON raises `json.JSONDecodeError`, which is a `ValueError` subclass.
+
+248. **Turn dictionary keys into JSON strings.** JSON object keys are strings. Integer dictionary keys are converted to text during encoding.
