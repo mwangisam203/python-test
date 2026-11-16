@@ -1535,5 +1535,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual((moment.year, moment.month, moment.day), (2026, 11, 16))
         self.assertEqual((moment.hour, moment.minute), (14, 30))
 
+    def test_hypot_calculates_right_triangle_length(self):
+        self.assertEqual(math.hypot(3, 4), 5)
+
 if __name__ == "__main__":
     unittest.main()
