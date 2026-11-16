@@ -526,3 +526,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 248. **Turn dictionary keys into JSON strings.** JSON object keys are strings. Integer dictionary keys are converted to text during encoding.
 
 249. **Find a match anywhere in text.** `re.search()` looks through the text and returns a match object for the first match, or `None`.
+
+250. **Capture parts of a regular expression match.** Parentheses create capture groups. `group(1)` returns the text captured by the first pair of parentheses.

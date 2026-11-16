@@ -1465,5 +1465,10 @@ class LearningTipsTests(unittest.TestCase):
         match = re.search(r"\d+", "Grade: 90")
         self.assertEqual(match.group(), "90")
 
+    def test_regex_group_returns_captured_text(self):
+        match = re.fullmatch(r"(\w+):(\d+)", "Craig:90")
+        self.assertEqual(match.group(1), "Craig")
+        self.assertEqual(match.group(2), "90")
+
 if __name__ == "__main__":
     unittest.main()
