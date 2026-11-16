@@ -1554,5 +1554,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(math.isfinite(90))
         self.assertFalse(math.isfinite(math.inf))
 
+    def test_isinf_recognizes_infinity(self):
+        self.assertTrue(math.isinf(math.inf))
+        self.assertFalse(math.isinf(100))
+
 if __name__ == "__main__":
     unittest.main()

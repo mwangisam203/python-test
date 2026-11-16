@@ -576,3 +576,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 273. **Find a natural logarithm.** `math.log()` returns the natural logarithm. The natural logarithm of `e` is 1.
 
 274. **Check whether a number is finite.** `math.isfinite()` is true for ordinary finite numbers and false for infinity.
+
+275. **Recognize an infinite number.** `math.isinf()` checks whether a number is positive or negative infinity.
