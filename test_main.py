@@ -1484,5 +1484,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIsNotNone(re.search(r"\d+$", "Grade: 90"))
         self.assertIsNone(re.search(r"\d+$", "Grade: 90 points"))
 
+    def test_regex_question_mark_makes_letter_optional(self):
+        self.assertIsNotNone(re.fullmatch(r"grades?", "grade"))
+        self.assertIsNotNone(re.fullmatch(r"grades?", "grades"))
+
 if __name__ == "__main__":
     unittest.main()

@@ -536,3 +536,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 253. **Require a pattern at the start.** The `^` anchor matches the beginning of the text.
 
 254. **Require a pattern at the end.** The `$` anchor matches the end of the text.
+
+255. **Make a regular expression part optional.** A question mark makes the preceding pattern optional. Here, the letter `s` may appear zero or one times.
