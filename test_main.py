@@ -1434,5 +1434,10 @@ class LearningTipsTests(unittest.TestCase):
         restored = json.loads(json.dumps(original))
         self.assertEqual(restored, original)
 
+    def test_json_indent_pretty_prints_nested_data(self):
+        result = json.dumps({"student": {"name": "Craig"}}, indent=2)
+        self.assertIn("\n  \"student\"", result)
+        self.assertIn("\n    \"name\"", result)
+
 if __name__ == "__main__":
     unittest.main()

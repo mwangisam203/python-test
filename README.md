@@ -508,3 +508,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 239. **Read JSON text into Python values.** `json.loads()` reads JSON text and creates the corresponding Python dictionary.
 
 240. **Round trip nested data through JSON.** Encoding data with `json.dumps()` and reading it with `json.loads()` preserves nested lists and dictionaries.
+
+241. **Pretty-print JSON with an indent.** json.dumps() accepts `indent` to make JSON easier to read. An indent of 2 adds two spaces for each nested level.
