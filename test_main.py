@@ -1488,5 +1488,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIsNotNone(re.fullmatch(r"grades?", "grade"))
         self.assertIsNotNone(re.fullmatch(r"grades?", "grades"))
 
+    def test_regex_character_class_matches_one_choice(self):
+        self.assertIsNotNone(re.fullmatch(r"[ABC]", "B"))
+        self.assertIsNone(re.fullmatch(r"[ABC]", "D"))
+
 if __name__ == "__main__":
     unittest.main()
