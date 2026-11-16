@@ -1442,5 +1442,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_json_can_keep_unicode_characters(self):
         self.assertEqual(json.dumps("café", ensure_ascii=False), '"café"')
 
+    def test_json_separators_make_compact_text(self):
+        self.assertEqual(json.dumps({"grade": 90}, separators=(",", ":")), '{"grade":90}')
+
 if __name__ == "__main__":
     unittest.main()

@@ -512,3 +512,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 241. **Pretty-print JSON with an indent.** json.dumps() accepts `indent` to make JSON easier to read. An indent of 2 adds two spaces for each nested level.
 
 242. **Keep unicode characters in JSON text.** By default, `json.dumps()` escapes non-ASCII characters. `ensure_ascii=False` keeps characters such as `é` readable in the result.
+
+243. **Remove extra spaces from JSON.** The `separators` option controls punctuation spacing. Using `(',', ':')` makes compact JSON text.
