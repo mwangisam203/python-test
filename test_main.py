@@ -1562,5 +1562,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(math.isnan(math.nan))
         self.assertFalse(math.isnan(0.0))
 
+    def test_copysign_uses_magnitude_and_sign(self):
+        self.assertEqual(math.copysign(7, -1), -7)
+
 if __name__ == "__main__":
     unittest.main()

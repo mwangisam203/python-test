@@ -580,3 +580,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 275. **Recognize an infinite number.** `math.isinf()` checks whether a number is positive or negative infinity.
 
 276. **Recognize a not-a-number value.** `math.isnan()` checks for a NaN value, which is used to represent an undefined numeric result.
+
+277. **Preserve a number while changing its sign.** `math.copysign()` takes the magnitude from one value and the sign from another.
