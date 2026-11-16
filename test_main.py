@@ -1496,5 +1496,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIsNotNone(re.search(r"\bpass\b", "students pass"))
         self.assertIsNone(re.search(r"\bpass\b", "compass"))
 
+    def test_regex_sub_count_limits_replacements(self):
+        self.assertEqual(re.sub(r" ", "-", "A B C", count=1), "A-B C")
+
 if __name__ == "__main__":
     unittest.main()
