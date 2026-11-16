@@ -552,3 +552,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 261. **Create a date with one changed part.** `date.replace()` returns a new date with selected fields changed and leaves the original intact.
 
 262. **Read a time difference in days.** Subtracting two dates produces a `timedelta`; its `days` attribute gives the day difference.
+
+263. **Add a week to a date.** A `timedelta` can be created with weeks and added to a date.

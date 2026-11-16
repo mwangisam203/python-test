@@ -1513,5 +1513,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_date_difference_reports_days(self):
         self.assertEqual((date(2026, 11, 16) - date(2026, 11, 1)).days, 15)
 
+    def test_timedelta_weeks_advances_date(self):
+        self.assertEqual(date(2026, 11, 16) + timedelta(weeks=1), date(2026, 11, 23))
+
 if __name__ == "__main__":
     unittest.main()
