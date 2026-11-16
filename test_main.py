@@ -1526,5 +1526,9 @@ class LearningTipsTests(unittest.TestCase):
         moment = datetime.strptime("14:30", "%H:%M")
         self.assertEqual((moment.hour, moment.minute), (14, 30))
 
+    def test_strftime_formats_hour_and_minute(self):
+        moment = datetime(2026, 11, 16, 14, 5)
+        self.assertEqual(moment.strftime("%H:%M"), "14:05")
+
 if __name__ == "__main__":
     unittest.main()

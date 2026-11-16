@@ -560,3 +560,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 265. **Format a date as a day number.** `%j` formats a date as its day number within the year, from 001 to 366.
 
 266. **Parse a time from text.** `datetime.strptime()` reads a time string when given a matching format.
+
+267. **Format a time with a 24 hour clock.** `%H:%M` formats the hour and minute using a 24 hour clock.
