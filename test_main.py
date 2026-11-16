@@ -1547,5 +1547,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_exp_zero_is_one(self):
         self.assertEqual(math.exp(0), 1)
 
+    def test_natural_logarithm_of_e_is_one(self):
+        self.assertEqual(math.log(math.e), 1)
+
 if __name__ == "__main__":
     unittest.main()

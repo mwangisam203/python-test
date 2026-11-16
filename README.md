@@ -572,3 +572,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 271. **Raise a number to a power.** `math.pow()` raises its first argument to the power of its second and returns a float.
 
 272. **Calculate an exponential value.** `math.exp(x)` returns e raised to the power `x`.
+
+273. **Find a natural logarithm.** `math.log()` returns the natural logarithm. The natural logarithm of `e` is 1.
