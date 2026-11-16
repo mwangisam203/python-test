@@ -1544,5 +1544,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_math_pow_raises_a_number_to_a_power(self):
         self.assertEqual(math.pow(2, 3), 8.0)
 
+    def test_exp_zero_is_one(self):
+        self.assertEqual(math.exp(0), 1)
+
 if __name__ == "__main__":
     unittest.main()

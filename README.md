@@ -570,3 +570,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 270. **Find a floating point remainder.** `math.fmod()` returns the remainder after division for floating point values.
 
 271. **Raise a number to a power.** `math.pow()` raises its first argument to the power of its second and returns a float.
+
+272. **Calculate an exponential value.** `math.exp(x)` returns e raised to the power `x`.
