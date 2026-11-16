@@ -1558,5 +1558,9 @@ class LearningTipsTests(unittest.TestCase):
         self.assertTrue(math.isinf(math.inf))
         self.assertFalse(math.isinf(100))
 
+    def test_isnan_recognizes_nan(self):
+        self.assertTrue(math.isnan(math.nan))
+        self.assertFalse(math.isnan(0.0))
+
 if __name__ == "__main__":
     unittest.main()

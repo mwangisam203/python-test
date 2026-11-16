@@ -578,3 +578,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 274. **Check whether a number is finite.** `math.isfinite()` is true for ordinary finite numbers and false for infinity.
 
 275. **Recognize an infinite number.** `math.isinf()` checks whether a number is positive or negative infinity.
+
+276. **Recognize a not-a-number value.** `math.isnan()` checks for a NaN value, which is used to represent an undefined numeric result.
