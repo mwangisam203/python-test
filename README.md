@@ -574,3 +574,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 272. **Calculate an exponential value.** `math.exp(x)` returns e raised to the power `x`.
 
 273. **Find a natural logarithm.** `math.log()` returns the natural logarithm. The natural logarithm of `e` is 1.
+
+274. **Check whether a number is finite.** `math.isfinite()` is true for ordinary finite numbers and false for infinity.
