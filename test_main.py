@@ -1505,5 +1505,10 @@ class LearningTipsTests(unittest.TestCase):
     def test_date_ordinal_increases_by_one_day(self):
         self.assertEqual(date(2026, 11, 16).toordinal() - date(2026, 11, 15).toordinal(), 1)
 
+    def test_date_replace_changes_year_only(self):
+        original = date(2026, 11, 16)
+        self.assertEqual(original.replace(year=2027), date(2027, 11, 16))
+        self.assertEqual(original.year, 2026)
+
 if __name__ == "__main__":
     unittest.main()

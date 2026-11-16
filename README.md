@@ -548,3 +548,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 259. **Compare calendar dates.** Date objects can be compared in chronological order.
 
 260. **Count days from a date ordinal.** `toordinal()` gives a date an integer day number. Later dates have larger ordinal values.
+
+261. **Create a date with one changed part.** `date.replace()` returns a new date with selected fields changed and leaves the original intact.
