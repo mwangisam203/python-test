@@ -1530,5 +1530,10 @@ class LearningTipsTests(unittest.TestCase):
         moment = datetime(2026, 11, 16, 14, 5)
         self.assertEqual(moment.strftime("%H:%M"), "14:05")
 
+    def test_datetime_exposes_date_and_time_fields(self):
+        moment = datetime(2026, 11, 16, 14, 30)
+        self.assertEqual((moment.year, moment.month, moment.day), (2026, 11, 16))
+        self.assertEqual((moment.hour, moment.minute), (14, 30))
+
 if __name__ == "__main__":
     unittest.main()

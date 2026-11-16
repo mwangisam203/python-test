@@ -562,3 +562,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 266. **Parse a time from text.** `datetime.strptime()` reads a time string when given a matching format.
 
 267. **Format a time with a 24 hour clock.** `%H:%M` formats the hour and minute using a 24 hour clock.
+
+268. **Read date and time fields.** A `datetime` stores date fields and time fields that can be read by name.
