@@ -518,3 +518,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 244. **Read a JSON array as a list.** A JSON array becomes a Python list when `json.loads()` reads it.
 
 245. **Read JSON booleans as Python booleans.** JSON `true` and `false` become Python `True` and `False`.
+
+246. **Read JSON null as None.** JSON `null` maps to Python `None`.

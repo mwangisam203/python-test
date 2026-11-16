@@ -1451,5 +1451,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_json_booleans_become_python_booleans(self):
         self.assertEqual(json.loads("[true, false]"), [True, False])
 
+    def test_json_null_becomes_none(self):
+        self.assertIsNone(json.loads("null"))
+
 if __name__ == "__main__":
     unittest.main()
