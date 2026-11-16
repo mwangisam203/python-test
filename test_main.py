@@ -1445,5 +1445,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_json_separators_make_compact_text(self):
         self.assertEqual(json.dumps({"grade": 90}, separators=(",", ":")), '{"grade":90}')
 
+    def test_json_array_loads_as_a_list(self):
+        self.assertEqual(json.loads("[90, 80, 70]"), [90, 80, 70])
+
 if __name__ == "__main__":
     unittest.main()
