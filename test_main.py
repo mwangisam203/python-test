@@ -1439,5 +1439,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertIn("\n  \"student\"", result)
         self.assertIn("\n    \"name\"", result)
 
+    def test_json_can_keep_unicode_characters(self):
+        self.assertEqual(json.dumps("café", ensure_ascii=False), '"café"')
+
 if __name__ == "__main__":
     unittest.main()
