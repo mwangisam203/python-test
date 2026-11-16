@@ -584,3 +584,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 277. **Preserve a number while changing its sign.** `math.copysign()` takes the magnitude from one value and the sign from another.
 
 278. **Use the tau circle constant.** `math.tau` is the circle constant equal to two times `math.pi`.
+
+279. **Repeat values from an iterable.** `itertools.cycle()` repeats an iterable. `islice()` can take a finite number of values from it.

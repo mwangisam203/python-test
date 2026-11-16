@@ -1568,5 +1568,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_tau_is_two_pi(self):
         self.assertEqual(math.tau, 2 * math.pi)
 
+    def test_cycle_repeats_values(self):
+        self.assertEqual(list(itertools.islice(itertools.cycle(["A", "B"]), 5)), ["A", "B", "A", "B", "A"])
+
 if __name__ == "__main__":
     unittest.main()
