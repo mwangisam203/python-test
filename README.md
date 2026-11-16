@@ -550,3 +550,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 260. **Count days from a date ordinal.** `toordinal()` gives a date an integer day number. Later dates have larger ordinal values.
 
 261. **Create a date with one changed part.** `date.replace()` returns a new date with selected fields changed and leaves the original intact.
+
+262. **Read a time difference in days.** Subtracting two dates produces a `timedelta`; its `days` attribute gives the day difference.
