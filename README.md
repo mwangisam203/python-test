@@ -544,3 +544,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 257. **Find a whole word with a boundary.** The `\b` pattern marks a word boundary, so it can find a word without matching that text inside a longer word.
 
 258. **Limit regular expression replacements.** `re.sub()` accepts `count` to limit how many matches it replaces.
+
+259. **Compare calendar dates.** Date objects can be compared in chronological order.

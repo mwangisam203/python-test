@@ -1499,5 +1499,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_regex_sub_count_limits_replacements(self):
         self.assertEqual(re.sub(r" ", "-", "A B C", count=1), "A-B C")
 
+    def test_dates_compare_in_calendar_order(self):
+        self.assertLess(date(2026, 1, 1), date(2026, 2, 1))
+
 if __name__ == "__main__":
     unittest.main()
