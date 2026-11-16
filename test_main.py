@@ -1470,5 +1470,8 @@ class LearningTipsTests(unittest.TestCase):
         self.assertEqual(match.group(1), "Craig")
         self.assertEqual(match.group(2), "90")
 
+    def test_regex_split_handles_repeated_spaces(self):
+        self.assertEqual(re.split(r"\s+", "Craig   Hancho"), ["Craig", "Hancho"])
+
 if __name__ == "__main__":
     unittest.main()

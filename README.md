@@ -528,3 +528,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 249. **Find a match anywhere in text.** `re.search()` looks through the text and returns a match object for the first match, or `None`.
 
 250. **Capture parts of a regular expression match.** Parentheses create capture groups. `group(1)` returns the text captured by the first pair of parentheses.
+
+251. **Split text with a regular expression.** `re.split()` divides text wherever its pattern matches. `\s+` handles one or more whitespace characters.
