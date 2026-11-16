@@ -1565,5 +1565,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_copysign_uses_magnitude_and_sign(self):
         self.assertEqual(math.copysign(7, -1), -7)
 
+    def test_tau_is_two_pi(self):
+        self.assertEqual(math.tau, 2 * math.pi)
+
 if __name__ == "__main__":
     unittest.main()

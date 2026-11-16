@@ -582,3 +582,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 276. **Recognize a not-a-number value.** `math.isnan()` checks for a NaN value, which is used to represent an undefined numeric result.
 
 277. **Preserve a number while changing its sign.** `math.copysign()` takes the magnitude from one value and the sign from another.
+
+278. **Use the tau circle constant.** `math.tau` is the circle constant equal to two times `math.pi`.
