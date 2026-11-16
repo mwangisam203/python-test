@@ -1473,5 +1473,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_regex_split_handles_repeated_spaces(self):
         self.assertEqual(re.split(r"\s+", "Craig   Hancho"), ["Craig", "Hancho"])
 
+    def test_regex_ignore_case_matches_uppercase(self):
+        self.assertIsNotNone(re.fullmatch(r"python", "PYTHON", re.IGNORECASE))
+
 if __name__ == "__main__":
     unittest.main()

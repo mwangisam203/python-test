@@ -530,3 +530,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 250. **Capture parts of a regular expression match.** Parentheses create capture groups. `group(1)` returns the text captured by the first pair of parentheses.
 
 251. **Split text with a regular expression.** `re.split()` divides text wherever its pattern matches. `\s+` handles one or more whitespace characters.
+
+252. **Match text without case sensitivity.** Pass `re.IGNORECASE` to make a regular expression match uppercase and lowercase letters alike.
