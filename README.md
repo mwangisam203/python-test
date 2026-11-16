@@ -516,3 +516,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 243. **Remove extra spaces from JSON.** The `separators` option controls punctuation spacing. Using `(',', ':')` makes compact JSON text.
 
 244. **Read a JSON array as a list.** A JSON array becomes a Python list when `json.loads()` reads it.
+
+245. **Read JSON booleans as Python booleans.** JSON `true` and `false` become Python `True` and `False`.
