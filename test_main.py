@@ -1424,6 +1424,7 @@ class LearningTipsTests(unittest.TestCase):
         text = json.dumps({"name": "Craig", "grade": 90}, sort_keys=True)
         self.assertEqual(text, '{"grade": 90, "name": "Craig"}')
 
+
     def test_json_loads_deserializes_a_dictionary(self):
         record = json.loads('{"name": "Craig", "grade": 90}')
         self.assertEqual(record["name"], "Craig")
