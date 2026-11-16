@@ -556,3 +556,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 263. **Add a week to a date.** A `timedelta` can be created with weeks and added to a date.
 
 264. **Format a date with its weekday name.** `%A` formats the full weekday name for a date.
+
+265. **Format a date as a day number.** `%j` formats a date as its day number within the year, from 001 to 366.

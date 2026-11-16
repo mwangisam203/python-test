@@ -1519,5 +1519,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_date_format_includes_weekday_name(self):
         self.assertEqual(date(2024, 1, 1).strftime("%A"), "Monday")
 
+    def test_date_format_returns_day_of_year(self):
+        self.assertEqual(date(2024, 1, 2).strftime("%j"), "002")
+
 if __name__ == "__main__":
     unittest.main()
