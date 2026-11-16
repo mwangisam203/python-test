@@ -558,3 +558,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 264. **Format a date with its weekday name.** `%A` formats the full weekday name for a date.
 
 265. **Format a date as a day number.** `%j` formats a date as its day number within the year, from 001 to 366.
+
+266. **Parse a time from text.** `datetime.strptime()` reads a time string when given a matching format.

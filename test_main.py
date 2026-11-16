@@ -1522,5 +1522,9 @@ class LearningTipsTests(unittest.TestCase):
     def test_date_format_returns_day_of_year(self):
         self.assertEqual(date(2024, 1, 2).strftime("%j"), "002")
 
+    def test_strptime_reads_hour_and_minute(self):
+        moment = datetime.strptime("14:30", "%H:%M")
+        self.assertEqual((moment.hour, moment.minute), (14, 30))
+
 if __name__ == "__main__":
     unittest.main()
