@@ -1461,5 +1461,9 @@ class LearningTipsTests(unittest.TestCase):
     def test_json_object_keys_are_strings(self):
         self.assertEqual(json.loads(json.dumps({1: "one"})), {"1": "one"})
 
+    def test_regex_search_finds_digits_inside_text(self):
+        match = re.search(r"\d+", "Grade: 90")
+        self.assertEqual(match.group(), "90")
+
 if __name__ == "__main__":
     unittest.main()
