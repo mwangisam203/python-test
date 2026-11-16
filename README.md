@@ -554,3 +554,5 @@ These twenty lessons use `LearningTipsTests` in `test_main.py`. Run them with `p
 262. **Read a time difference in days.** Subtracting two dates produces a `timedelta`; its `days` attribute gives the day difference.
 
 263. **Add a week to a date.** A `timedelta` can be created with weeks and added to a date.
+
+264. **Format a date with its weekday name.** `%A` formats the full weekday name for a date.
