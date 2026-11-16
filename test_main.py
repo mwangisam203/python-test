@@ -1541,5 +1541,8 @@ class LearningTipsTests(unittest.TestCase):
     def test_fmod_returns_division_remainder(self):
         self.assertEqual(math.fmod(7, 4), 3)
 
+    def test_math_pow_raises_a_number_to_a_power(self):
+        self.assertEqual(math.pow(2, 3), 8.0)
+
 if __name__ == "__main__":
     unittest.main()
