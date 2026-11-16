@@ -1476,5 +1476,9 @@ class LearningTipsTests(unittest.TestCase):
     def test_regex_ignore_case_matches_uppercase(self):
         self.assertIsNotNone(re.fullmatch(r"python", "PYTHON", re.IGNORECASE))
 
+    def test_regex_start_anchor_checks_prefix(self):
+        self.assertIsNotNone(re.search(r"^Grade", "Grade: 90"))
+        self.assertIsNone(re.search(r"^Grade", "Final Grade"))
+
 if __name__ == "__main__":
     unittest.main()
